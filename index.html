@@ -82,7 +82,7 @@ textarea{resize:none;min-height:80px}
 .icon-btn.active{background:var(--accent-dim);border-color:var(--accent)}
 .receipt-drop{background:var(--subtle);border:1.5px dashed var(--border);border-radius:12px;padding:14px;text-align:center;cursor:pointer;margin-bottom:14px;color:var(--muted);font-size:13px}
 ::-webkit-scrollbar{width:0}
- 
+
 /* ── ONBOARDING ── */
 #onboarding{position:fixed;inset:0;background:#070d1a;z-index:200;display:flex;flex-direction:column;overflow:hidden}
 .ob-slide{display:none;flex-direction:column;align-items:center;justify-content:center;flex:1;padding:32px 28px;text-align:center;gap:20px;animation:fadeUp .5s ease}
@@ -101,7 +101,7 @@ textarea{resize:none;min-height:80px}
 .ob-color-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}
 .ob-color-btn{width:40px;height:40px;border-radius:50%;border:3px solid transparent;cursor:pointer;transition:transform .2s}
 .ob-color-btn.selected{border-color:#fff;transform:scale(1.15)}
- 
+
 /* ── VOICE INPUT ── */
 #voice-overlay{position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:150;display:none;flex-direction:column;align-items:center;justify-content:center;gap:24px}
 .voice-ring{width:120px;height:120px;border-radius:50%;background:rgba(var(--accent-rgb),.15);display:flex;align-items:center;justify-content:center;position:relative}
@@ -112,7 +112,7 @@ textarea{resize:none;min-height:80px}
 .voice-text{color:#e2e8f0;font-size:16px;font-weight:600;text-align:center;max-width:280px}
 .voice-result{color:var(--accent);font-size:18px;font-weight:700;text-align:center;min-height:28px}
 .voice-close{background:#1a2d47;border:none;border-radius:99px;color:#e2e8f0;padding:10px 24px;font-size:14px;cursor:pointer;font-family:inherit}
- 
+
 /* ── QR SCANNER ── */
 #qr-overlay{position:fixed;inset:0;background:#000;z-index:150;display:none;flex-direction:column}
 #qr-video{width:100%;flex:1;object-fit:cover}
@@ -121,14 +121,14 @@ textarea{resize:none;min-height:80px}
 @keyframes scan{0%{top:0}100%{top:100%}}
 .qr-close{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);background:#1a2d47;border:none;border-radius:99px;color:#e2e8f0;padding:12px 32px;font-size:15px;cursor:pointer;font-family:inherit}
 .qr-label{position:absolute;top:16px;left:0;right:0;text-align:center;color:#fff;font-size:14px;font-weight:600}
- 
+
 /* ── SMART HINTS ── */
 .hint-card{border-radius:14px;padding:12px 14px;margin-bottom:12px;display:flex;align-items:flex-start;gap:10px}
 .hint-icon{font-size:22px;flex-shrink:0;margin-top:2px}
 .hint-text{flex:1}
 .hint-text p:first-child{color:var(--text);font-size:13px;font-weight:600;margin-bottom:2px}
 .hint-text p:last-child{color:var(--muted);font-size:12px;line-height:1.5}
- 
+
 /* ── DEBTS ── */
 .debt-row{display:flex;align-items:center;gap:12px;margin-bottom:14px}
 .debt-avatar{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;color:#fff;flex-shrink:0}
@@ -137,7 +137,7 @@ textarea{resize:none;min-height:80px}
 .debt-note{color:var(--muted);font-size:12px}
 .debt-amount{font-weight:700;font-size:15px}
 .debt-pay-btn{background:var(--accent-dim);border:1px solid var(--accent);border-radius:10px;color:var(--accent);font-size:12px;padding:6px 12px;cursor:pointer;font-family:inherit}
- 
+
 /* ── PIN ── */
 #pin-screen{position:fixed;inset:0;background:#070d1a;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;z-index:100;font-family:'Cairo',sans-serif;display:none}
 .pin-dots{display:flex;gap:16px}
@@ -157,7 +157,7 @@ textarea{resize:none;min-height:80px}
 </style>
 </head>
 <body>
- 
+
 <!-- ONBOARDING -->
 <div id="onboarding">
   <div class="ob-slide active" id="ob0">
@@ -198,7 +198,7 @@ textarea{resize:none;min-height:80px}
     <button class="ob-btn" onclick="finishOnboarding()">ابدأ الاستخدام 🚀</button>
   </div>
 </div>
- 
+
 <!-- PIN SCREEN -->
 <div id="pin-screen">
   <div style="font-size:52px">🔐</div>
@@ -214,7 +214,7 @@ textarea{resize:none;min-height:80px}
     <button class="pin-key empty"></button><button class="pin-key" onclick="pinPress('0')">0</button><button class="pin-key" onclick="pinBack()" style="font-size:22px">⌫</button>
   </div>
 </div>
- 
+
 <!-- VOICE OVERLAY -->
 <div id="voice-overlay">
   <div class="voice-ring"><div class="voice-mic">🎙️</div></div>
@@ -222,7 +222,7 @@ textarea{resize:none;min-height:80px}
   <div class="voice-result" id="voice-result">جاري الاستماع...</div>
   <button class="voice-close" onclick="stopVoice()">إلغاء</button>
 </div>
- 
+
 <!-- QR OVERLAY -->
 <div id="qr-overlay">
   <div class="qr-label">وجّه الكاميرا نحو QR code الإيصال</div>
@@ -230,7 +230,7 @@ textarea{resize:none;min-height:80px}
   <div class="qr-frame"><div class="qr-bar"></div></div>
   <button class="qr-close" onclick="stopQR()">إغلاق</button>
 </div>
- 
+
 <!-- MAIN APP -->
 <div id="app">
   <header>
@@ -251,7 +251,7 @@ textarea{resize:none;min-height:80px}
     <button onclick="nav('settings')"  id="nb-settings" ><span>⚙️</span><span>إعدادات</span></button>
   </nav>
 </div>
- 
+
 <script>
 // ════════════════════════════════════════════
 // STATE
@@ -280,7 +280,7 @@ const WALLETS = [
   {id:'bank',label:'بطاقة بنكية',icon:'💳'},
   {id:'savings',label:'ادخار',icon:'🏦'},
 ];
- 
+
 function seedData(){
   return {
     budget:3000, theme:'dark', currency:'EUR',
@@ -322,10 +322,10 @@ function seedData(){
     ],
   };
 }
- 
+
 let S = (() => { try { const r=localStorage.getItem(SCHEMA); return r?JSON.parse(r):seedData(); } catch{ return seedData(); } })();
 const save = () => { try { localStorage.setItem(SCHEMA,JSON.stringify(S)); } catch{} };
- 
+
 // ════════════════════════════════════════════
 // THEME & ACCENT
 // ════════════════════════════════════════════
@@ -375,7 +375,7 @@ function applyAppBranding(){
   document.title=S.appName||'مالي PRO';
 }
 function toggleTheme(){ S.theme=S.theme==='dark'?'light':'dark'; save(); applyTheme(); render(); }
- 
+
 // ════════════════════════════════════════════
 // ONBOARDING
 // ════════════════════════════════════════════
@@ -403,7 +403,7 @@ function finishOnboarding(){
   if(S.pinEnabled) document.getElementById('pin-screen').style.display='flex';
   render();
 }
- 
+
 // ════════════════════════════════════════════
 // PIN
 // ════════════════════════════════════════════
@@ -426,7 +426,7 @@ function renderPinDots(err){
     d.className='pin-dot'+(pinEntered.length>i?(err?' err':' filled'):'');
   });
 }
- 
+
 // ════════════════════════════════════════════
 // VOICE INPUT
 // ════════════════════════════════════════════
@@ -488,7 +488,7 @@ function parseVoiceInput(text){
     },300);
   }
 }
- 
+
 // ════════════════════════════════════════════
 // QR SCANNER
 // ════════════════════════════════════════════
@@ -526,7 +526,7 @@ function processQR(data){
     },300);
   }
 }
- 
+
 // ════════════════════════════════════════════
 // SMART HINTS ENGINE
 // ════════════════════════════════════════════
@@ -536,10 +536,10 @@ function generateHints(){
   const today=new Date();
   const THIS_MONTH=`${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,'0')}`;
   const PREV_MONTH=`${today.getMonth()===0?today.getFullYear()-1:today.getFullYear()}-${String(today.getMonth()===0?12:today.getMonth()).padStart(2,'0')}`;
- 
+
   const thisMonthExp=txs.filter(t=>gm(t.date)===THIS_MONTH&&t.type==='expense');
   const prevMonthExp=txs.filter(t=>gm(t.date)===PREV_MONTH&&t.type==='expense');
- 
+
   // Compare by category
   EXPENSE_CATS.forEach(cat=>{
     const thisTotal=thisMonthExp.filter(t=>t.category===cat).reduce((s,t)=>s+t.amount,0);
@@ -553,7 +553,7 @@ function generateHints(){
       });
     }
   });
- 
+
   // Budget warning
   const totalExp=thisMonthExp.reduce((s,t)=>s+t.amount,0);
   const budPct=S.budget>0?(totalExp/S.budget)*100:0;
@@ -565,7 +565,7 @@ function generateHints(){
       desc:`أنفقت ${Math.round(budPct)}% من ميزانيتك الشهرية. تبقى لك ${fmt(S.budget-totalExp)} فقط.`,
     });
   }
- 
+
   // Savings encouragement
   const totalInc=txs.filter(t=>gm(t.date)===THIS_MONTH&&t.type==='income').reduce((s,t)=>s+t.amount,0);
   const savePct=totalInc>0?Math.round(((totalInc-totalExp)/totalInc)*100):0;
@@ -577,7 +577,7 @@ function generateHints(){
       desc:`وفّرت ${savePct}% من دخلك هذا الشهر. استمر على هذا النهج!`,
     });
   }
- 
+
   // Recurring reminder
   const upcoming=S.bills.filter(b=>{const d=b.dueDay-today.getDate();return d>=0&&d<=3;});
   if(upcoming.length>0){
@@ -588,17 +588,17 @@ function generateHints(){
       desc:upcoming.map(b=>`${b.name}: ${fmt(b.amount)}`).join(' · '),
     });
   }
- 
+
   if(!hints.length) hints.push({
     icon:'✅', type:'success',
     bg:'rgba(74,222,128,.08)', border:'rgba(74,222,128,.2)',
     title:'كل شيء على ما يرام',
     desc:'لا تنبيهات حالياً. استمر في تتبع مصاريفك يومياً.',
   });
- 
+
   return hints;
 }
- 
+
 // ════════════════════════════════════════════
 // HELPERS
 // ════════════════════════════════════════════
@@ -644,7 +644,7 @@ function walletChips(){
     <span style="color:var(--text);font-weight:700;font-size:14px">${fmt(S.wallets[w.id])}</span>
   </div>`).join('');
 }
- 
+
 // ════════════════════════════════════════════
 // SCREENS
 // ════════════════════════════════════════════
@@ -657,12 +657,12 @@ function renderDashboard(){
   const budPct=S.budget>0?Math.min((totalExp/S.budget)*100,100):0;
   const daysPassed=todayD.getDate(), daysTotal=getDays(todayD.getFullYear(),todayD.getMonth()+1);
   const projected=daysPassed>0?Math.round((totalExp/daysPassed)*daysTotal):0;
- 
+
   const catTots=EXPENSE_CATS.map(c=>({id:c,total:exp.filter(tx=>tx.category===c).reduce((s,tx)=>s+tx.amount,0),color:S.catColors[c]||'#6b7280'}));
   const donutData=catTots.filter(c=>c.total>0);
   const topCat=[...catTots].sort((a,b)=>b.total-a.total)[0];
   const upcomingBills=S.bills.filter(b=>{const d=b.dueDay-todayD.getDate();return d>=0&&d<=7;});
- 
+
   const monthMap=groupByMonth(txs);
   const sortedM=Object.keys(monthMap).sort().slice(-6);
   let running=Object.values(S.wallets).reduce((s,v)=>s+v,0);
@@ -671,7 +671,7 @@ function renderDashboard(){
     if(i===sortedM.length-1)return{x:i,y:running};
     running=running-income+expense; return{x:i,y:running};
   }).reverse().map((p,i)=>({x:i,y:p.y}));
- 
+
   const W=300,H=80,pad=8; let lineChartSVG='';
   if(linePoints.length>=2){
     const vals=linePoints.map(p=>p.y),min=Math.min(...vals),max=Math.max(...vals),range=max-min||1;
@@ -689,7 +689,7 @@ function renderDashboard(){
     </svg>
     <div class="line-labels">${sortedM.map(m=>`<span>${arMonth(m)}</span>`).join('')}</div>`;
   }
- 
+
   const mbKeys=Object.keys(monthMap).sort().slice(-4);
   const mbMax=Math.max(...mbKeys.flatMap(k=>[monthMap[k].income,monthMap[k].expense]),1);
   const miniBar=mbKeys.map(k=>{
@@ -702,7 +702,7 @@ function renderDashboard(){
       <span style="color:var(--muted);font-size:10px">${arMonth(k)}</span>
     </div>`;
   }).join('');
- 
+
   // Smart hints
   const hints=generateHints();
   const hintsHTML=hints.slice(0,2).map(h=>`
@@ -713,11 +713,11 @@ function renderDashboard(){
         <p>${h.desc}</p>
       </div>
     </div>`).join('');
- 
+
   // Debts preview
   const totalOwed=S.debts.filter(d=>d.type==='owed').reduce((s,d)=>s+d.amount,0);
   const totalLent=S.debts.filter(d=>d.type==='lent').reduce((s,d)=>s+d.amount,0);
- 
+
   // Donut
   let donutSVG='';
   if(donutData.length>0){
@@ -728,7 +728,7 @@ function renderDashboard(){
       ${segs.map(s=>`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${s.color}" stroke-width="${sw}" stroke-dasharray="${s.dash} ${circ-s.dash}" stroke-dashoffset="${-s.off}" style="transition:all .6s"/>`).join('')}
     </svg>`;
   }
- 
+
   return `<div class="screen">
   <!-- HERO -->
   <div class="hero">
@@ -756,13 +756,13 @@ function renderDashboard(){
       <div class="hero-stat" style="border-right:none"><p>التوقع</p><p style="color:#fbbf24;font-weight:700;font-size:13px">${fmt(projected)}</p></div>
     </div>
   </div>
- 
+
   <!-- SMART HINTS -->
   <div class="card">
     <div class="sec-title"><h3>تلميحات ذكية 🤖</h3><button onclick="nav('analytics')">المزيد ←</button></div>
     ${hintsHTML}
   </div>
- 
+
   ${upcomingBills.length>0?`
   <div class="warn-card">
     <div class="sec-title"><h3 style="color:#fbbf24">فواتير قادمة هذا الأسبوع</h3><button onclick="nav('bills')">إدارة ←</button></div>
@@ -773,7 +773,7 @@ function renderDashboard(){
       <span style="color:#f59e0b;font-size:11px">يوم ${b.dueDay}</span>
     </div>`).join('')}
   </div>`:''}
- 
+
   <!-- DEBTS SUMMARY -->
   <div class="card">
     <div class="sec-title"><h3>نمط الديون</h3><button onclick="nav('debts')">إدارة ←</button></div>
@@ -788,13 +788,13 @@ function renderDashboard(){
       </div>
     </div>
   </div>
- 
+
   <!-- LINE CHART -->
   <div class="card">
     <div class="sec-title"><h3>الرصيد عبر الزمن</h3></div>
     ${lineChartSVG}
   </div>
- 
+
   <!-- BAR CHART -->
   <div class="card">
     <div class="sec-title"><h3>مقارنة الأشهر</h3><button onclick="nav('analytics')">تفاصيل ←</button></div>
@@ -805,7 +805,7 @@ function renderDashboard(){
       </div>
     </div>
   </div>
- 
+
   ${donutData.length>0?`
   <div class="card">
     <div class="sec-title"><h3>توزيع الإنفاق</h3></div>
@@ -829,7 +829,7 @@ function renderDashboard(){
       <span style="color:var(--text);font-weight:700;font-size:13px">${topCat.id} — ${fmt(topCat.total)}</span>
     </div>`:''}
   </div>`:''}
- 
+
   <!-- CAT BUDGETS -->
   <div class="card">
     <div class="sec-title"><h3>ميزانية الفئات</h3><button onclick="nav('catBudgets')">تعديل ←</button></div>
@@ -845,7 +845,7 @@ function renderDashboard(){
       </div>`;
     }).join('')}
   </div>
- 
+
   <!-- GOALS -->
   <div class="card">
     <div class="sec-title"><h3>أهداف الادخار</h3><button onclick="nav('goals')">إدارة ←</button></div>
@@ -865,13 +865,13 @@ function renderDashboard(){
       </div>`;
     }).join('')}
   </div>
- 
+
   <!-- WALLETS -->
   <div class="card">
     <div class="sec-title"><h3>محافظي</h3><button onclick="nav('transfer')">تحويل ←</button></div>
     <div style="display:flex;gap:10px">${walletChips()}</div>
   </div>
- 
+
   <!-- RECENT -->
   <div class="card">
     <div class="sec-title"><h3>آخر العمليات</h3><button onclick="nav('history')">عرض الكل ←</button></div>
@@ -881,7 +881,7 @@ function renderDashboard(){
   </div>
   </div>`;
 }
- 
+
 function renderAdd(){
   return `<div class="screen"><div class="card" id="add-card">
     <!-- Voice & QR buttons -->
@@ -926,7 +926,7 @@ function renderAdd(){
     <button class="primary-btn" onclick="submitAdd()">حفظ المصروف</button>
   </div></div>`;
 }
- 
+
 function renderDebts(){
   const owed=S.debts.filter(d=>d.type==='owed');
   const lent=S.debts.filter(d=>d.type==='lent');
@@ -944,7 +944,7 @@ function renderDebts(){
         <p style="color:var(--income);font-weight:800;font-size:22px;margin:0">${fmt(totalLent)}</p>
       </div>
     </div>
- 
+
     ${owed.length>0?`<div class="card">
       <div class="sec-title"><h3 style="color:#f87171">أنا مدين</h3></div>
       ${owed.map(d=>`<div class="debt-row">
@@ -959,7 +959,7 @@ function renderDebts(){
         </div>
       </div>`).join('')}
     </div>`:''}
- 
+
     ${lent.length>0?`<div class="card">
       <div class="sec-title"><h3 style="color:var(--income)">يديّنون لي</h3></div>
       ${lent.map(d=>`<div class="debt-row">
@@ -974,13 +974,13 @@ function renderDebts(){
         </div>
       </div>`).join('')}
     </div>`:''}
- 
+
     <div id="debt-form-wrap">
       <button class="dashed-btn" onclick="showDebtForm()">＋ إضافة دين جديد</button>
     </div>
   </div>`;
 }
- 
+
 function renderAnalytics(){
   const monthMap=groupByMonth(S.transactions);
   const months=Object.keys(monthMap).sort();
@@ -1058,7 +1058,7 @@ function renderAnalytics(){
     </div>
   </div>`;
 }
- 
+
 function renderGoals(){
   return `<div class="screen">
     ${S.goals.map(g=>{
@@ -1090,7 +1090,7 @@ function renderGoals(){
     <div id="goal-form-wrap"><button class="dashed-btn" onclick="showGoalForm()">＋ إضافة هدف جديد</button></div>
   </div>`;
 }
- 
+
 function renderBills(){
   return `<div class="screen">
     ${S.bills.map(b=>{
@@ -1115,7 +1115,7 @@ function renderBills(){
     <div id="bill-form-wrap"><button class="dashed-btn" onclick="showBillForm()">＋ إضافة فاتورة جديدة</button></div>
   </div>`;
 }
- 
+
 function renderHistory(){
   return `<div class="screen">
     <div class="card">
@@ -1132,7 +1132,7 @@ function renderHistory(){
     <div class="card" id="hist-list"></div>
   </div>`;
 }
- 
+
 function renderTransfer(){
   return `<div class="screen"><div class="card">
     <h2 style="color:var(--text);font-weight:800;font-size:20px;margin-bottom:20px">التحويل بين المحافظ</h2>
@@ -1147,7 +1147,7 @@ function renderTransfer(){
     <button class="primary-btn" onclick="submitTransfer()">تحويل الآن 🔄</button>
   </div></div>`;
 }
- 
+
 function renderSettings(){
   const ACCENT_PRESETS=[
     {color:'#4ade80',dim:'#052e16',label:'أخضر'},
@@ -1171,7 +1171,7 @@ function renderSettings(){
       </div>
       <button class="primary-btn" onclick="saveAppBranding()">حفظ الهوية</button>
     </div>
- 
+
     <!-- Accent Color -->
     <div class="card">
       <div class="sec-title"><h3>🎨 اللون الرئيسي</h3></div>
@@ -1187,7 +1187,7 @@ function renderSettings(){
         <span style="color:var(--muted);font-size:13px">اختر أي لون تريده</span>
       </div>
     </div>
- 
+
     <div class="card">
       <div class="sec-title"><h3>العملة</h3></div>
       <div style="display:flex;gap:8px;flex-wrap:wrap">
@@ -1238,7 +1238,7 @@ function renderSettings(){
     </div>
   </div>`;
 }
- 
+
 function renderCatBudgets(){
   return `<div class="screen"><div class="card">
     <h2 style="color:var(--text);font-weight:800;font-size:20px;margin-bottom:20px">ميزانية كل فئة</h2>
@@ -1249,7 +1249,7 @@ function renderCatBudgets(){
     <button class="primary-btn" onclick="showMsg('تم الحفظ ✓',this)">حفظ الميزانيات</button>
   </div></div>`;
 }
- 
+
 // ════════════════════════════════════════════
 // NAVIGATION
 // ════════════════════════════════════════════
@@ -1262,7 +1262,7 @@ function nav(screen){
   render();
   document.getElementById('content').scrollTop=0;
 }
- 
+
 function render(){
   const content=document.getElementById('content');
   switch(currentScreen){
@@ -1280,7 +1280,7 @@ function render(){
   document.getElementById('pts-badge').textContent='🏆 '+S.points;
   applyAccent(S.accentColor||'#4ade80', S.accentDim||'#052e16');
 }
- 
+
 // ════════════════════════════════════════════
 // ADD SCREEN
 // ════════════════════════════════════════════
@@ -1331,7 +1331,7 @@ function submitAdd(){
   if(btn){ btn.textContent='✓ تمت الإضافة!'; btn.classList.add('success'); }
   setTimeout(()=>nav('dashboard'),1400);
 }
- 
+
 // ════════════════════════════════════════════
 // HISTORY
 // ════════════════════════════════════════════
@@ -1379,7 +1379,7 @@ function exportCSV(){
   a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));
   a.download=`mali_${new Date().toISOString().slice(0,10)}.csv`; a.click();
 }
- 
+
 // ════════════════════════════════════════════
 // TRANSFER
 // ════════════════════════════════════════════
@@ -1394,7 +1394,7 @@ function submitTransfer(){
   msg.style.color='var(--accent)'; msg.textContent='✓ تم التحويل';
   setTimeout(()=>nav('dashboard'),1400);
 }
- 
+
 // ════════════════════════════════════════════
 // DEBTS
 // ════════════════════════════════════════════
@@ -1430,7 +1430,7 @@ function submitDebt(){
   S.debts.push({id:Date.now(),name,amount,type:debtType,note,date:new Date().toISOString().slice(0,10),color});
   save(); nav('debts');
 }
- 
+
 // ════════════════════════════════════════════
 // GOALS
 // ════════════════════════════════════════════
@@ -1458,7 +1458,7 @@ function submitGoal(){
   S.goals.push({id:Date.now(),name,target,saved:+document.getElementById('g-saved')?.value||0,icon:goalIcon,color:S.accentColor||'#4ade80',deadline:document.getElementById('g-deadline')?.value||''});
   save(); nav('goals');
 }
- 
+
 // ════════════════════════════════════════════
 // BILLS
 // ════════════════════════════════════════════
@@ -1485,7 +1485,7 @@ function submitBill(){
   S.bills.push({id:Date.now(),name,amount,dueDay,wallet:'bank',category:billCat||'سكن',recurring:true});
   save(); nav('bills');
 }
- 
+
 // ════════════════════════════════════════════
 // SETTINGS ACTIONS
 // ════════════════════════════════════════════
@@ -1493,7 +1493,7 @@ function setCurrency(id){ S.currency=id; save(); render(); }
 function setTheme(t){ S.theme=t; applyTheme(); save(); render(); }
 function resetApp(){ if(confirm('هل أنت متأكد؟')){ localStorage.removeItem(SCHEMA); location.reload(); } }
 function showMsg(m,btn){ const orig=btn.textContent; btn.textContent=m; btn.classList.add('success'); setTimeout(()=>{btn.textContent=orig;btn.classList.remove('success');},1500); }
- 
+
 function setAccentPreset(color, dim){
   S.accentColor=color; S.accentDim=dim; S.accentRgb=hexToRgb(color); save();
   applyAccent(color, dim); render();
@@ -1510,7 +1510,7 @@ function saveAppBranding(){
   save(); applyAppBranding();
   showMsg('✓ تم الحفظ', document.querySelector('.primary-btn'));
 }
- 
+
 // PIN SETTINGS
 let pinSetBuffer='';
 function startSetPin(){
@@ -1538,7 +1538,7 @@ function finalizePin(){
 }
 function disablePin(){ S.pin=null; S.pinEnabled=false; save(); render(); }
 function showPinMsg(m){ const el=document.getElementById('pin-set-msg'); if(el){el.textContent=m;el.style.display='block';} }
- 
+
 // ════════════════════════════════════════════
 // BUDGET QUICK EDIT (on dashboard)
 // ════════════════════════════════════════════
@@ -1557,7 +1557,7 @@ function saveBudgetQuick(){
   if(v>0){S.budget=v;save();}
   render();
 }
- 
+
 // ════════════════════════════════════════════
 // DAILY SUMMARY
 // ════════════════════════════════════════════
@@ -1581,17 +1581,17 @@ function renderDailySummary(){
   const thisWeekTotal=weekTxs.reduce((s,tx)=>s+tx.amount,0);
   const prevWeekTotal=prevWeekTxs.reduce((s,tx)=>s+tx.amount,0);
   const weekDiff=thisWeekTotal-prevWeekTotal;
- 
+
   // Best financial decisions
   const monthTxs=S.transactions.filter(tx=>gm(tx.date)===THIS_MONTH);
   const catTots=EXPENSE_CATS.map(c=>({c,total:monthTxs.filter(tx=>tx.type==='expense'&&tx.category===c).reduce((s,tx)=>s+tx.amount,0),budget:S.categoryBudgets[c]||0}));
   const bestDecisions=catTots.filter(x=>x.budget>0&&x.total<x.budget*0.7).sort((a,b)=>(b.budget-b.total)-(a.budget-a.total)).slice(0,3);
- 
+
   // Reminder notification banner
   const lastLog=S.lastLogDate||'';
   const todayDate=new Date().toISOString().slice(0,10);
   const needsReminder=lastLog!==todayDate;
- 
+
   return `<div class="screen">
     ${needsReminder?`<div style="background:linear-gradient(135deg,#1a0f00,#2d1a00);border:1px solid #92400e;border-radius:18px;padding:16px 14px;margin-bottom:14px;display:flex;align-items:center;gap:12px">
       <span style="font-size:28px">🔔</span>
@@ -1601,7 +1601,7 @@ function renderDailySummary(){
       </div>
       <button onclick="nav('add')" style="background:#f59e0b;border:none;border-radius:10px;color:#fff;font-size:13px;font-weight:700;padding:8px 14px;cursor:pointer;font-family:inherit;white-space:nowrap">سجّل الآن</button>
     </div>`:''}
- 
+
     <!-- Daily Summary -->
     <div class="card" style="background:linear-gradient(135deg,#0f2040,#0c1a30)">
       <div style="color:#7dd3fc;font-size:12px;font-weight:700;margin-bottom:12px;letter-spacing:1px">📅 ملخص اليوم — ${new Date().toLocaleDateString('ar-SA',{weekday:'long',day:'numeric',month:'long'})}</div>
@@ -1635,7 +1635,7 @@ function renderDailySummary(){
         </div>
       </div>`:`<p style="color:rgba(125,211,252,.5);font-size:13px;text-align:center;margin:0">لا توجد عمليات اليوم بعد</p>`}
     </div>
- 
+
     <!-- Week vs Week -->
     <div class="card">
       <div class="sec-title"><h3>هذا الأسبوع vs الماضي</h3></div>
@@ -1658,7 +1658,7 @@ function renderDailySummary(){
         :`<div style="background:rgba(74,222,128,.1);border:1px solid rgba(74,222,128,.3);border-radius:12px;padding:10px 14px"><p style="color:#4ade80;font-size:13px;margin:0">✅ أداء ممتاز! أنفقت ${fmt(Math.abs(weekDiff))} أقل من الأسبوع الماضي.</p></div>`
       }
     </div>
- 
+
     <!-- Best Decisions -->
     ${bestDecisions.length>0?`<div class="card">
       <div class="sec-title"><h3>🏆 أفضل 3 قرارات مالية هذا الشهر</h3></div>
@@ -1671,12 +1671,12 @@ function renderDailySummary(){
         <span style="color:#4ade80;font-weight:700;font-size:13px">${Math.round(((d.budget-d.total)/d.budget)*100)}% توفير</span>
       </div>`).join('')}
     </div>`:''}
- 
+
     <!-- Financial Health Score -->
     ${renderHealthScore()}
   </div>`;
 }
- 
+
 // ════════════════════════════════════════════
 // FINANCIAL HEALTH SCORE
 // ════════════════════════════════════════════
@@ -1688,7 +1688,7 @@ function renderHealthScore(){
   const budPct=S.budget>0?(totalExp/S.budget)*100:0;
   const goalsProgress=S.goals.length>0?S.goals.reduce((s,g)=>s+(g.saved/g.target),0)/S.goals.length*100:50;
   const debtScore=S.debts.filter(d=>d.type==='owed').length===0?100:Math.max(0,100-S.debts.filter(d=>d.type==='owed').reduce((s,d)=>s+d.amount,0)/10);
- 
+
   let score=Math.round(
     Math.min(savePct*0.4,40)+           // 40% weight: savings rate
     Math.max(0,(100-budPct)*0.3)+       // 30% weight: budget adherence
@@ -1696,11 +1696,11 @@ function renderHealthScore(){
     Math.min(debtScore*0.1,10)           // 10% weight: debt situation
   );
   score=Math.max(0,Math.min(100,score));
- 
+
   const level=score>=80?{label:'ممتاز 🌟',color:'#4ade80'}:score>=60?{label:'جيد 👍',color:'#fbbf24'}:score>=40?{label:'متوسط 📈',color:'#fb923c'}:{label:'يحتاج تحسين ⚠️',color:'#f87171'};
   const circumference=2*Math.PI*54;
   const dashOffset=circumference-(score/100)*circumference;
- 
+
   return `<div class="card">
     <div class="sec-title"><h3>مؤشر الصحة المالية</h3></div>
     <div style="display:flex;align-items:center;gap:20px">
@@ -1737,7 +1737,7 @@ function renderHealthScore(){
     </div>
   </div>`;
 }
- 
+
 // ════════════════════════════════════════════
 // LEVELS SYSTEM
 // ════════════════════════════════════════════
@@ -1748,7 +1748,7 @@ function getLevel(pts){
   if(pts>=100)return{name:'متوسط',icon:'🥉',next:200,color:'#fb923c'};
   return{name:'مبتدئ',icon:'🌱',next:100,color:'#4ade80'};
 }
- 
+
 // ════════════════════════════════════════════
 // PROFESSIONAL TABLE VIEW
 // ════════════════════════════════════════════
@@ -1802,7 +1802,7 @@ function renderTable(){
     </div>
   </div>`;
 }
- 
+
 // ════════════════════════════════════════════
 // SLEEP MODE (hide numbers)
 // ════════════════════════════════════════════
@@ -1815,7 +1815,7 @@ function toggleSleep(){
   const btn=document.getElementById('sleep-btn');
   if(btn)btn.textContent=sleepMode?'👁️':'🙈';
 }
- 
+
 // ════════════════════════════════════════════
 // DAILY REMINDER (local notification mock)
 // ════════════════════════════════════════════
@@ -1830,7 +1830,7 @@ function requestNotificationPermission(){
     });
   } else { alert('المتصفح لا يدعم الإشعارات. استخدم Safari على iPhone وأضف التطبيق للشاشة الرئيسية أولاً.'); }
 }
- 
+
 // ════════════════════════════════════════════
 // SMART SEARCH
 // ════════════════════════════════════════════
@@ -1851,7 +1851,7 @@ function smartSearch(query){
     return tx.note?.toLowerCase().includes(q)||tx.category.includes(q)||tx.date.includes(q);
   });
 }
- 
+
 // ════════════════════════════════════════════
 // BACKUP & RESTORE
 // ════════════════════════════════════════════
@@ -1884,7 +1884,7 @@ function importBackup(){
   };
   inp.click();
 }
- 
+
 // ════════════════════════════════════════════
 // PATCH: ENHANCED DASHBOARD with budget edit
 // ════════════════════════════════════════════
@@ -1901,7 +1901,7 @@ renderDashboard=function(){
     `</div><div id="budget-edit-wrap"></div>`
   );
 };
- 
+
 // ════════════════════════════════════════════
 // PATCH: ENHANCED HISTORY with smart search
 // ════════════════════════════════════════════
@@ -1927,7 +1927,7 @@ filterHistory=function(){
       </div>`).join('');
   }
 };
- 
+
 // ════════════════════════════════════════════
 // PATCH: ENHANCED SETTINGS with new features
 // ════════════════════════════════════════════
@@ -1951,14 +1951,14 @@ renderSettings=function(){
         </div>
       </div>
     </div>
- 
+
     <!-- NOTIFICATIONS -->
     <div class="card">
       <div class="sec-title"><h3>🔔 التذكير اليومي</h3></div>
       <p style="color:var(--muted);font-size:13px;margin-bottom:12px">احصل على تذكير يومي لتسجيل مصاريفك</p>
       <button onclick="requestNotificationPermission()" style="background:var(--accent-dim);border:1.5px solid var(--accent);border-radius:12px;color:var(--accent);font-size:13px;padding:10px 16px;cursor:pointer;font-family:inherit">تفعيل التذكير اليومي 🔔</button>
     </div>
- 
+
     <!-- BACKUP -->
     <div class="card">
       <div class="sec-title"><h3>💾 النسخ الاحتياطي</h3></div>
@@ -1967,7 +1967,7 @@ renderSettings=function(){
         <button onclick="importBackup()" style="flex:1;background:var(--subtle);border:1.5px solid var(--border);border-radius:12px;color:var(--muted);font-size:13px;padding:10px;cursor:pointer;font-family:inherit">📥 استيراد</button>
       </div>
     </div>
- 
+
     <!-- SLEEP MODE -->
     <div class="card">
       <div class="sec-title"><h3>🙈 وضع الخصوصية</h3></div>
@@ -1977,7 +1977,7 @@ renderSettings=function(){
   // Insert extra before reset card
   return base.replace('<div class="card">\n      <div class="sec-title"><h3>⚠️ إعادة الضبط</h3></div>', extra+'<div class="card"><div class="sec-title"><h3>⚠️ إعادة الضبط</h3></div>');
 };
- 
+
 // ════════════════════════════════════════════
 // PATCH: ENHANCED NAV with new screens
 // ════════════════════════════════════════════
@@ -1987,30 +1987,459 @@ render=function(){
   if(currentScreen==='table'){ document.getElementById('content').innerHTML=renderTable(); document.getElementById('pts-badge').textContent='🏆 '+S.points; return; }
   _origRender();
 };
- 
+
 // ════════════════════════════════════════════
-// PATCH: HEADER with new buttons
+// 1. EDIT & DELETE TRANSACTION
+// ════════════════════════════════════════════
+let editingTxId = null;
+
+function openEditTx(id) {
+  const tx = S.transactions.find(t => t.id === id);
+  if (!tx) return;
+  editingTxId = id;
+
+  const overlay = document.createElement('div');
+  overlay.id = 'edit-overlay';
+  overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:300;display:flex;align-items:flex-end;justify-content:center';
+  overlay.innerHTML = `
+    <div style="background:var(--card);border-radius:24px 24px 0 0;padding:24px 20px 40px;width:100%;max-width:430px;max-height:85dvh;overflow-y:auto">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px">
+        <h3 style="color:var(--text);font-weight:800;font-size:18px;margin:0">تعديل العملية</h3>
+        <button onclick="closeEditTx()" style="background:var(--subtle);border:none;border-radius:50%;width:32px;height:32px;cursor:pointer;color:var(--muted);font-size:16px">✕</button>
+      </div>
+      <label class="lbl">المبلغ</label>
+      <input type="number" id="edit-amount" value="${tx.amount}" style="width:100%;background:var(--subtle);border:1.5px solid var(--border);border-radius:12px;color:var(--text);font-size:16px;padding:12px 14px;margin-bottom:14px;box-sizing:border-box;font-family:inherit;outline:none;direction:ltr;text-align:center"/>
+      <label class="lbl">الفئة</label>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px" id="edit-cat-pills">
+        ${(tx.type==='income'?INCOME_CATS:EXPENSE_CATS).map(c=>`
+          <button onclick="selectEditCat('${c}',this)" style="border-radius:99px;padding:7px 14px;font-size:13px;cursor:pointer;font-family:inherit;border:1.5px solid ${c===tx.category?'var(--accent)':'var(--border)'};background:${c===tx.category?'var(--accent-dim)':'var(--subtle)'};color:${c===tx.category?'var(--accent)':'var(--muted)'}">${CAT_ICONS[c]} ${c}</button>
+        `).join('')}
+      </div>
+      <label class="lbl">ملاحظة</label>
+      <input type="text" id="edit-note" value="${tx.note||''}" placeholder="ملاحظة" style="width:100%;background:var(--subtle);border:1.5px solid var(--border);border-radius:12px;color:var(--text);font-size:15px;padding:11px 14px;margin-bottom:14px;box-sizing:border-box;font-family:inherit;outline:none;direction:rtl"/>
+      <label class="lbl">التاريخ</label>
+      <input type="date" id="edit-date" value="${tx.date}" style="width:100%;background:var(--subtle);border:1.5px solid var(--border);border-radius:12px;color:var(--text);font-size:15px;padding:11px 14px;margin-bottom:20px;box-sizing:border-box;font-family:inherit;outline:none;direction:rtl"/>
+      <button onclick="saveEditTx()" style="width:100%;background:linear-gradient(135deg,var(--accent),var(--accent));border:none;border-radius:14px;padding:14px;font-size:16px;font-weight:700;cursor:pointer;font-family:inherit;color:#fff;margin-bottom:10px">حفظ التعديل ✓</button>
+      <button onclick="deleteTx(${id})" style="width:100%;background:#1f0505;border:1.5px solid #7f1d1d;border-radius:14px;padding:12px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit;color:#f87171">🗑️ حذف العملية</button>
+    </div>`;
+  document.body.appendChild(overlay);
+  overlay.addEventListener('click', e => { if(e.target===overlay) closeEditTx(); });
+}
+
+let editCat = null;
+function selectEditCat(c, btn) {
+  editCat = c;
+  document.querySelectorAll('#edit-cat-pills button').forEach(b => {
+    b.style.borderColor = 'var(--border)'; b.style.background = 'var(--subtle)'; b.style.color = 'var(--muted)';
+  });
+  btn.style.borderColor = 'var(--accent)'; btn.style.background = 'var(--accent-dim)'; btn.style.color = 'var(--accent)';
+}
+
+function saveEditTx() {
+  const tx = S.transactions.find(t => t.id === editingTxId);
+  if (!tx) return;
+  const newAmount = +document.getElementById('edit-amount').value;
+  const diff = newAmount - tx.amount;
+  const delta = tx.type === 'income' ? diff : -diff;
+  S.wallets[tx.wallet] += delta;
+  tx.amount = newAmount;
+  if (editCat) tx.category = editCat;
+  tx.note = document.getElementById('edit-note').value;
+  tx.date = document.getElementById('edit-date').value;
+  save();
+  closeEditTx();
+  render();
+}
+
+function deleteTx(id) {
+  if (!confirm('حذف هذه العملية؟')) return;
+  const tx = S.transactions.find(t => t.id === id);
+  if (tx) { const delta = tx.type==='income' ? -tx.amount : tx.amount; S.wallets[tx.wallet] += delta; }
+  S.transactions = S.transactions.filter(t => t.id !== id);
+  save(); closeEditTx(); render();
+}
+
+function closeEditTx() {
+  editCat = null; editingTxId = null;
+  const el = document.getElementById('edit-overlay');
+  if (el) el.remove();
+}
+
+// ════════════════════════════════════════════
+// 2. AUTO-RECURRING TRANSACTIONS
+// ════════════════════════════════════════════
+function runAutoRecurring() {
+  const today = new Date().toISOString().slice(0,10);
+  const lastRun = S.lastRecurringRun || '';
+  if (lastRun === today) return; // already ran today
+  S.lastRecurringRun = today;
+
+  const todayDay = new Date().getDate();
+  let added = 0;
+
+  // Bills auto-execute on their due day
+  S.bills.forEach(bill => {
+    if (bill.dueDay !== todayDay) return;
+    const alreadyAdded = S.transactions.some(tx =>
+      tx.note === bill.name && tx.date === today && tx.recurring === true
+    );
+    if (!alreadyAdded) {
+      const tx = {
+        id: Date.now() + Math.random(),
+        type: 'expense', amount: bill.amount,
+        category: bill.category, wallet: bill.wallet,
+        date: today, note: bill.name, recurring: true, receipt: null,
+        autoAdded: true
+      };
+      S.wallets[bill.wallet] = (S.wallets[bill.wallet] || 0) - bill.amount;
+      S.transactions.unshift(tx);
+      added++;
+    }
+  });
+
+  // Recurring transactions from history
+  S.transactions
+    .filter(tx => tx.recurring && !tx.autoAdded)
+    .forEach(tx => {
+      const txDay = parseInt(tx.date.slice(8));
+      if (txDay !== todayDay) return;
+      const alreadyAdded = S.transactions.some(t =>
+        t.date === today && t.note === tx.note && t.amount === tx.amount && t.autoAdded
+      );
+      if (!alreadyAdded) {
+        const newTx = { ...tx, id: Date.now() + Math.random(), date: today, autoAdded: true };
+        const delta = tx.type === 'income' ? tx.amount : -tx.amount;
+        S.wallets[tx.wallet] = (S.wallets[tx.wallet] || 0) + delta;
+        S.transactions.unshift(newTx);
+        added++;
+      }
+    });
+
+  if (added > 0) {
+    save();
+    setTimeout(() => {
+      showRecurringBanner(added);
+    }, 800);
+  } else {
+    save();
+  }
+}
+
+function showRecurringBanner(count) {
+  const banner = document.createElement('div');
+  banner.style.cssText = 'position:fixed;top:70px;left:50%;transform:translateX(-50%);background:#052e16;border:1px solid var(--accent);border-radius:14px;padding:12px 20px;z-index:200;display:flex;align-items:center;gap:10px;max-width:380px;width:90%;animation:slideDown .4s ease';
+  banner.innerHTML = `
+    <span style="font-size:22px">🔄</span>
+    <div style="flex:1">
+      <p style="color:#4ade80;font-weight:700;font-size:14px;margin:0">تم تنفيذ ${count} مصروف متكرر تلقائياً</p>
+      <p style="color:#86efac;font-size:12px;margin:0">تُضاف المصاريف المتكررة في موعدها تلقائياً</p>
+    </div>
+    <button onclick="this.parentElement.remove()" style="background:none;border:none;color:#4ade80;cursor:pointer;font-size:18px">✕</button>`;
+  document.body.appendChild(banner);
+  setTimeout(() => banner.remove(), 5000);
+}
+
+// ════════════════════════════════════════════
+// 3. QUICK FAVORITES (pinned transactions)
+// ════════════════════════════════════════════
+function renderQuickFavorites() {
+  if (!S.favorites || !S.favorites.length) return '';
+  return `
+    <div class="card">
+      <div class="sec-title"><h3>📌 مصاريف سريعة</h3><button onclick="nav('manageFavorites')">إدارة ←</button></div>
+      <div style="display:flex;gap:8px;overflow-x:auto;padding-bottom:4px">
+        ${S.favorites.map(f => `
+          <button onclick="addFavoriteQuick(${f.id})" style="flex-shrink:0;background:var(--subtle);border:1.5px solid var(--border);border-radius:14px;padding:10px 14px;cursor:pointer;font-family:inherit;display:flex;flex-direction:column;align-items:center;gap:4px;min-width:72px;transition:all .15s">
+            <span style="font-size:22px">${CAT_ICONS[f.category]||'💰'}</span>
+            <span style="color:var(--text);font-size:11px;font-weight:600;text-align:center;max-width:64px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis">${f.name}</span>
+            <span style="color:var(--accent);font-size:12px;font-weight:700">${fmt(f.amount)}</span>
+          </button>`).join('')}
+        <button onclick="nav('manageFavorites')" style="flex-shrink:0;background:var(--subtle);border:1.5px dashed var(--border);border-radius:14px;padding:10px 14px;cursor:pointer;font-family:inherit;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-width:56px;color:var(--muted)">
+          <span style="font-size:22px">＋</span>
+          <span style="font-size:10px">جديد</span>
+        </button>
+      </div>
+    </div>`;
+}
+
+function addFavoriteQuick(id) {
+  const fav = S.favorites.find(f => f.id === id);
+  if (!fav) return;
+  const tx = {
+    id: Date.now(), type: fav.type || 'expense',
+    amount: fav.amount, category: fav.category,
+    wallet: fav.wallet || 'cash',
+    date: new Date().toISOString().slice(0,10),
+    note: fav.name, recurring: false, receipt: null
+  };
+  const delta = tx.type === 'income' ? tx.amount : -tx.amount;
+  S.wallets[tx.wallet] += delta;
+  S.transactions.unshift(tx);
+  S.points += 5;
+  save();
+
+  // Flash feedback
+  const btn = event.currentTarget;
+  const orig = btn.style.background;
+  btn.style.background = 'var(--accent-dim)';
+  btn.style.borderColor = 'var(--accent)';
+  setTimeout(() => { btn.style.background = orig; btn.style.borderColor = 'var(--border)'; render(); }, 600);
+}
+
+function renderManageFavorites() {
+  if (!S.favorites) S.favorites = [];
+  return `<div class="screen">
+    <div class="card">
+      <div class="sec-title"><h3>📌 إدارة المصاريف السريعة</h3></div>
+      <p style="color:var(--muted);font-size:13px;margin-bottom:16px">اضغط مرة واحدة لإضافة مصروف متكرر بدون إدخال يدوي</p>
+      ${(S.favorites||[]).map(f => `
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid var(--border)">
+          <div class="tx-icon" style="background:${S.catColors[f.category]||'#6b7280'}22;color:${S.catColors[f.category]||'#6b7280'}">${CAT_ICONS[f.category]||'💰'}</div>
+          <div style="flex:1">
+            <div style="color:var(--text);font-size:14px;font-weight:600">${f.name}</div>
+            <div style="color:var(--muted);font-size:12px">${f.category} · ${wl(f.wallet||'cash').label}</div>
+          </div>
+          <span style="color:var(--accent);font-weight:700;font-size:15px">${fmt(f.amount)}</span>
+          <button onclick="deleteFavorite(${f.id})" style="background:none;border:none;cursor:pointer;color:var(--muted);font-size:16px">🗑️</button>
+        </div>`).join('')}
+      <div id="fav-form-wrap">
+        <button class="dashed-btn" onclick="showFavForm()">＋ إضافة مصروف سريع</button>
+      </div>
+    </div>
+  </div>`;
+}
+
+function deleteFavorite(id) {
+  S.favorites = (S.favorites||[]).filter(f => f.id !== id);
+  save(); nav('manageFavorites');
+}
+
+let favCat = 'طعام', favWallet = 'cash', favType = 'expense';
+function showFavForm() {
+  document.getElementById('fav-form-wrap').innerHTML = `
+    <div style="border-top:1px solid var(--border);padding-top:16px;margin-top:4px">
+      <h4 style="color:var(--text);font-weight:700;font-size:15px;margin:0 0 14px">مصروف سريع جديد</h4>
+      <div style="display:flex;background:var(--subtle);border-radius:14px;padding:4px;margin-bottom:16px">
+        <button onclick="favType='expense';this.className='toggle-btn exp active';document.getElementById('fav-tb-inc').className='toggle-btn inc'" class="toggle-btn exp active">➖ مصروف</button>
+        <button id="fav-tb-inc" onclick="favType='income';this.className='toggle-btn inc active';document.querySelector('.toggle-btn.exp').className='toggle-btn exp'" class="toggle-btn inc">➕ مدخول</button>
+      </div>
+      <label class="lbl">الاسم</label>
+      <input type="text" id="fav-name" placeholder="مثال: قهوة الصباح" style="width:100%;background:var(--subtle);border:1.5px solid var(--border);border-radius:12px;color:var(--text);font-size:15px;padding:11px 14px;margin-bottom:14px;box-sizing:border-box;font-family:inherit;outline:none;direction:rtl"/>
+      <label class="lbl">المبلغ الافتراضي</label>
+      <input type="number" id="fav-amount" placeholder="0.00" style="width:100%;background:var(--subtle);border:1.5px solid var(--border);border-radius:12px;color:var(--text);font-size:15px;padding:11px 14px;margin-bottom:14px;box-sizing:border-box;font-family:inherit;outline:none;direction:ltr;text-align:center"/>
+      <label class="lbl">الفئة</label>
+      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px">
+        ${EXPENSE_CATS.map(c=>`<button onclick="favCat='${c}';document.querySelectorAll('.fav-cat-btn').forEach(b=>{b.style.borderColor='var(--border)';b.style.background='var(--subtle)';b.style.color='var(--muted)'});this.style.borderColor='var(--accent)';this.style.background='var(--accent-dim)';this.style.color='var(--accent)'" class="fav-cat-btn" style="border-radius:99px;padding:7px 12px;font-size:12px;cursor:pointer;font-family:inherit;border:1.5px solid var(--border);background:var(--subtle);color:var(--muted)">${CAT_ICONS[c]} ${c}</button>`).join('')}
+      </div>
+      <label class="lbl">المحفظة</label>
+      <div style="display:flex;gap:8px;margin-bottom:16px">
+        ${WALLETS.map(w=>`<button onclick="favWallet='${w.id}';document.querySelectorAll('.fav-wall-btn').forEach(b=>{b.style.borderColor='var(--border)';b.style.background='var(--subtle)';b.style.color='var(--muted)'});this.style.borderColor='var(--accent)';this.style.background='var(--accent-dim)';this.style.color='var(--accent)'" class="fav-wall-btn" style="flex:1;border-radius:99px;padding:8px;font-size:12px;cursor:pointer;font-family:inherit;border:1.5px solid var(--border);background:var(--subtle);color:var(--muted)">${w.icon} ${w.label}</button>`).join('')}
+      </div>
+      <button onclick="submitFavorite()" style="width:100%;background:linear-gradient(135deg,var(--accent),var(--accent));border:none;border-radius:14px;padding:13px;font-size:15px;font-weight:700;cursor:pointer;font-family:inherit;color:#fff">حفظ المصروف السريع 📌</button>
+    </div>`;
+  favCat = 'طعام'; favWallet = 'cash'; favType = 'expense';
+}
+
+function submitFavorite() {
+  const name = document.getElementById('fav-name')?.value;
+  const amount = +document.getElementById('fav-amount')?.value;
+  if (!name || !amount) return;
+  if (!S.favorites) S.favorites = [];
+  S.favorites.push({ id: Date.now(), name, amount, category: favCat, wallet: favWallet, type: favType });
+  save(); nav('manageFavorites');
+}
+
+// ════════════════════════════════════════════
+// 4. EXPENSE CALENDAR
+// ════════════════════════════════════════════
+let calYear = new Date().getFullYear(), calMonth = new Date().getMonth();
+
+function renderCalendar() {
+  const firstDay = new Date(calYear, calMonth, 1).getDay();
+  const daysInMonth = new Date(calYear, calMonth + 1, 0).getDate();
+  const monthStr = `${calYear}-${String(calMonth+1).padStart(2,'0')}`;
+  const monthName = new Date(calYear, calMonth).toLocaleDateString('ar-SA', { month: 'long', year: 'numeric' });
+
+  // Build day totals
+  const dayTotals = {};
+  S.transactions.filter(tx => gm(tx.date) === monthStr).forEach(tx => {
+    const day = parseInt(tx.date.slice(8));
+    if (!dayTotals[day]) dayTotals[day] = { exp: 0, inc: 0 };
+    if (tx.type === 'expense') dayTotals[day].exp += tx.amount;
+    else dayTotals[day].inc += tx.amount;
+  });
+
+  const maxDay = Math.max(...Object.values(dayTotals).map(d => d.exp), 1);
+  const today = new Date();
+  const todayDay = today.getFullYear() === calYear && today.getMonth() === calMonth ? today.getDate() : -1;
+
+  // Adjust for RTL (Sunday=0 → in Arabic Sunday is last)
+  const arabicFirstDay = (firstDay + 6) % 7; // Monday=0
+  const dayNames = ['إث','ثل','أر','خم','جم','سب','أح'];
+
+  let cells = '';
+  // Empty cells before first day
+  for (let i = 0; i < arabicFirstDay; i++) {
+    cells += '<div></div>';
+  }
+  for (let d = 1; d <= daysInMonth; d++) {
+    const dt = dayTotals[d];
+    const intensity = dt ? Math.min((dt.exp / maxDay) * 100, 100) : 0;
+    const isToday = d === todayDay;
+    const hasIncome = dt?.inc > 0;
+    cells += `
+      <div onclick="showCalDay(${d},'${monthStr}')" style="aspect-ratio:1;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:${dt?'pointer':'default'};position:relative;
+        background:${isToday?'var(--accent)':dt?`rgba(248,113,113,${intensity/100*0.6})`:'var(--subtle)'};
+        border:${isToday?'none':'1.5px solid var(--border)'};transition:transform .15s" ${dt?'onmousedown="this.style.transform=\'scale(.92)\'" onmouseup="this.style.transform=\'scale(1)\'"':''}>
+        <span style="color:${isToday?'#fff':dt?'#e2e8f0':'var(--muted)'};font-size:13px;font-weight:${isToday||dt?700:400}">${d}</span>
+        ${dt?.exp>0?`<span style="color:${isToday?'rgba(255,255,255,.8)':'#f87171'};font-size:8px;font-weight:600;margin-top:1px">${fmt(dt.exp).replace(/[€$£]/,'')}</span>`:''}
+        ${hasIncome?`<div style="position:absolute;top:3px;right:3px;width:5px;height:5px;border-radius:50%;background:#4ade80"></div>`:''}
+      </div>`;
+  }
+
+  // Monthly totals
+  const monthTxs = S.transactions.filter(tx => gm(tx.date) === monthStr);
+  const monthExp = monthTxs.filter(tx=>tx.type==='expense').reduce((s,tx)=>s+tx.amount,0);
+  const monthInc = monthTxs.filter(tx=>tx.type==='income').reduce((s,tx)=>s+tx.amount,0);
+  const busiest = Object.entries(dayTotals).sort((a,b)=>b[1].exp-a[1].exp)[0];
+
+  return `<div class="screen">
+    <div class="card">
+      <!-- Navigation -->
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+        <button onclick="changeCalMonth(-1)" style="background:var(--subtle);border:none;border-radius:10px;width:36px;height:36px;cursor:pointer;color:var(--text);font-size:18px">‹</button>
+        <h3 style="color:var(--text);font-weight:800;font-size:17px;margin:0">${monthName}</h3>
+        <button onclick="changeCalMonth(1)" style="background:var(--subtle);border:none;border-radius:10px;width:36px;height:36px;cursor:pointer;color:var(--text);font-size:18px">›</button>
+      </div>
+      <!-- Day names -->
+      <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-bottom:4px">
+        ${dayNames.map(d=>`<div style="text-align:center;color:var(--muted);font-size:11px;font-weight:600;padding:4px 0">${d}</div>`).join('')}
+      </div>
+      <!-- Calendar grid -->
+      <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:4px">
+        ${cells}
+      </div>
+      <!-- Legend -->
+      <div style="display:flex;gap:12px;margin-top:12px;padding-top:12px;border-top:1px solid var(--border)">
+        <div style="display:flex;align-items:center;gap:4px"><div style="width:10px;height:10px;border-radius:2px;background:rgba(248,113,113,.6)"></div><span style="color:var(--muted);font-size:11px">مصروف</span></div>
+        <div style="display:flex;align-items:center;gap:4px"><div style="width:8px;height:8px;border-radius:50%;background:#4ade80"></div><span style="color:var(--muted);font-size:11px">مدخول</span></div>
+        <div style="display:flex;align-items:center;gap:4px"><div style="width:10px;height:10px;border-radius:2px;background:var(--accent)"></div><span style="color:var(--muted);font-size:11px">اليوم</span></div>
+      </div>
+    </div>
+
+    <!-- Monthly stats -->
+    <div class="card">
+      <div class="sec-title"><h3>ملخص ${monthName}</h3></div>
+      <div style="display:flex;gap:10px;margin-bottom:12px">
+        <div style="flex:1;background:#1f0505;border-radius:12px;padding:12px;text-align:center">
+          <p style="color:#fca5a5;font-size:11px;margin:0 0 4px">إجمالي المصاريف</p>
+          <p style="color:#f87171;font-weight:800;font-size:16px;margin:0">${fmt(monthExp)}</p>
+        </div>
+        <div style="flex:1;background:#052e16;border-radius:12px;padding:12px;text-align:center">
+          <p style="color:#86efac;font-size:11px;margin:0 0 4px">إجمالي المداخيل</p>
+          <p style="color:#4ade80;font-weight:800;font-size:16px;margin:0">${fmt(monthInc)}</p>
+        </div>
+      </div>
+      ${busiest?`<div style="background:var(--subtle);border-radius:12px;padding:10px 14px;display:flex;align-items:center;gap:10px">
+        <span style="font-size:20px">🔥</span>
+        <div>
+          <p style="color:var(--text);font-size:13px;font-weight:600;margin:0">أعلى يوم إنفاقاً</p>
+          <p style="color:var(--muted);font-size:12px;margin:0">يوم ${busiest[0]} — ${fmt(busiest[1].exp)}</p>
+        </div>
+      </div>`:''}
+    </div>
+
+    <!-- Day detail panel -->
+    <div id="cal-day-panel"></div>
+  </div>`;
+}
+
+function changeCalMonth(dir) {
+  calMonth += dir;
+  if (calMonth > 11) { calMonth = 0; calYear++; }
+  if (calMonth < 0)  { calMonth = 11; calYear--; }
+  nav('calendar');
+}
+
+function showCalDay(day, monthStr) {
+  const dateStr = `${monthStr}-${String(day).padStart(2,'0')}`;
+  const dayTxs = S.transactions.filter(tx => tx.date === dateStr);
+  if (!dayTxs.length) return;
+  const panel = document.getElementById('cal-day-panel');
+  if (!panel) return;
+  const dayExp = dayTxs.filter(tx=>tx.type==='expense').reduce((s,tx)=>s+tx.amount,0);
+  panel.innerHTML = `<div class="card">
+    <div class="sec-title"><h3>📅 ${new Date(dateStr).toLocaleDateString('ar-SA',{weekday:'long',day:'numeric',month:'long'})}</h3></div>
+    ${dayExp>0?`<div style="background:#1f0505;border-radius:10px;padding:8px 14px;margin-bottom:12px;display:flex;justify-content:space-between">
+      <span style="color:#fca5a5;font-size:13px">إجمالي اليوم</span>
+      <span style="color:#f87171;font-weight:700;font-size:14px">${fmt(dayExp)}</span>
+    </div>`:''}
+    <div style="display:flex;flex-direction:column;gap:10px">
+      ${dayTxs.map(tx=>`<div style="cursor:pointer" onclick="openEditTx(${tx.id})">${txRow(tx,true)}</div>`).join('')}
+    </div>
+    <p style="color:var(--muted);font-size:11px;margin-top:10px;margin-bottom:0;text-align:center">اضغط على عملية لتعديلها أو حذفها</p>
+  </div>`;
+  panel.scrollIntoView({ behavior: 'smooth' });
+}
+
+// ════════════════════════════════════════════
+// PATCH: INJECT QUICK FAVORITES INTO DASHBOARD
+// ════════════════════════════════════════════
+const _origRenderDashboard2 = renderDashboard;
+renderDashboard = function() {
+  const html = _origRenderDashboard2();
+  // Inject favorites after hero
+  const heroEnd = html.indexOf('</div>\n\n  <!-- SMART HINTS');
+  if (heroEnd === -1) return html;
+  const favHtml = renderQuickFavorites();
+  return html.slice(0, heroEnd + 6) + '\n' + favHtml + html.slice(heroEnd + 6);
+};
+
+// ════════════════════════════════════════════
+// PATCH: TX ROWS CLICKABLE FOR EDIT
+// ════════════════════════════════════════════
+const _origTxRow = txRow;
+txRow = function(tx, showWallet=false) {
+  const base = _origTxRow(tx, showWallet);
+  return `<div onclick="openEditTx(${tx.id})" style="cursor:pointer">${base}</div>`;
+};
+
+// ════════════════════════════════════════════
+// PATCH: RENDER — add new screens
+// ════════════════════════════════════════════
+const _origRender2 = render;
+render = function() {
+  if (currentScreen === 'calendar')        { document.getElementById('content').innerHTML = renderCalendar(); document.getElementById('pts-badge').textContent='🏆 '+S.points; applyAccent(S.accentColor||'#4ade80',S.accentDim||'#052e16'); return; }
+  if (currentScreen === 'manageFavorites') { document.getElementById('content').innerHTML = renderManageFavorites(); document.getElementById('pts-badge').textContent='🏆 '+S.points; return; }
+  _origRender2();
+};
+
+// ════════════════════════════════════════════
+// PATCH: HEADER with calendar & favorites
 // ════════════════════════════════════════════
 document.querySelector('header').innerHTML=`
   <span id="app-logo">💶</span>
   <h1 id="app-title">مالي <span>PRO</span></h1>
   <span class="pts-badge" id="pts-badge">🏆 0</span>
   <button class="hdr-btn" onclick="nav('daily')" title="ملخص اليوم">📅</button>
-  <button class="hdr-btn" onclick="nav('table')" title="جدول العمليات">📋</button>
+  <button class="hdr-btn" onclick="nav('calendar')" title="تقويم المصاريف">🗓️</button>
+  <button class="hdr-btn" onclick="nav('manageFavorites')" title="مصاريف سريعة">📌</button>
   <button class="hdr-btn" onclick="nav('bills')">🧾</button>
   <button class="hdr-btn" onclick="nav('transfer')">🔄</button>
   <button class="hdr-btn" id="theme-btn" onclick="toggleTheme()">☀️</button>`;
- 
+
 // ════════════════════════════════════════════
 // INIT
 // ════════════════════════════════════════════
+if (!S.favorites) S.favorites = [];
 applyTheme();
 applyAppBranding();
-if(!S.onboardingDone){
+if (!S.onboardingDone) {
   document.getElementById('onboarding').style.display='flex';
 } else {
   document.getElementById('onboarding').style.display='none';
-  if(S.pinEnabled) document.getElementById('pin-screen').style.display='flex';
+  if (S.pinEnabled) document.getElementById('pin-screen').style.display='flex';
+  runAutoRecurring(); // ← تشغيل المصاريف المتكررة تلقائياً
   nav('dashboard');
 }
 </script>
