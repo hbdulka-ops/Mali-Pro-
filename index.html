@@ -82,7 +82,7 @@ textarea{resize:none;min-height:80px}
 .icon-btn.active{background:var(--accent-dim);border-color:var(--accent)}
 .receipt-drop{background:var(--subtle);border:1.5px dashed var(--border);border-radius:12px;padding:14px;text-align:center;cursor:pointer;margin-bottom:14px;color:var(--muted);font-size:13px}
 ::-webkit-scrollbar{width:0}
- 
+
 /* ── ONBOARDING ── */
 #onboarding{position:fixed;inset:0;background:#070d1a;z-index:200;display:flex;flex-direction:column;overflow:hidden}
 .ob-slide{display:none;flex-direction:column;align-items:center;justify-content:center;flex:1;padding:32px 28px;text-align:center;gap:20px;animation:fadeUp .5s ease}
@@ -101,7 +101,7 @@ textarea{resize:none;min-height:80px}
 .ob-color-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}
 .ob-color-btn{width:40px;height:40px;border-radius:50%;border:3px solid transparent;cursor:pointer;transition:transform .2s}
 .ob-color-btn.selected{border-color:#fff;transform:scale(1.15)}
- 
+
 /* ── VOICE INPUT ── */
 #voice-overlay{position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:150;display:none;flex-direction:column;align-items:center;justify-content:center;gap:24px}
 .voice-ring{width:120px;height:120px;border-radius:50%;background:rgba(var(--accent-rgb),.15);display:flex;align-items:center;justify-content:center;position:relative}
@@ -112,7 +112,7 @@ textarea{resize:none;min-height:80px}
 .voice-text{color:#e2e8f0;font-size:16px;font-weight:600;text-align:center;max-width:280px}
 .voice-result{color:var(--accent);font-size:18px;font-weight:700;text-align:center;min-height:28px}
 .voice-close{background:#1a2d47;border:none;border-radius:99px;color:#e2e8f0;padding:10px 24px;font-size:14px;cursor:pointer;font-family:inherit}
- 
+
 /* ── QR SCANNER ── */
 #qr-overlay{position:fixed;inset:0;background:#000;z-index:150;display:none;flex-direction:column}
 #qr-video{width:100%;flex:1;object-fit:cover}
@@ -121,14 +121,14 @@ textarea{resize:none;min-height:80px}
 @keyframes scan{0%{top:0}100%{top:100%}}
 .qr-close{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);background:#1a2d47;border:none;border-radius:99px;color:#e2e8f0;padding:12px 32px;font-size:15px;cursor:pointer;font-family:inherit}
 .qr-label{position:absolute;top:16px;left:0;right:0;text-align:center;color:#fff;font-size:14px;font-weight:600}
- 
+
 /* ── SMART HINTS ── */
 .hint-card{border-radius:14px;padding:12px 14px;margin-bottom:12px;display:flex;align-items:flex-start;gap:10px}
 .hint-icon{font-size:22px;flex-shrink:0;margin-top:2px}
 .hint-text{flex:1}
 .hint-text p:first-child{color:var(--text);font-size:13px;font-weight:600;margin-bottom:2px}
 .hint-text p:last-child{color:var(--muted);font-size:12px;line-height:1.5}
- 
+
 /* ── DEBTS ── */
 .debt-row{display:flex;align-items:center;gap:12px;margin-bottom:14px}
 .debt-avatar{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;color:#fff;flex-shrink:0}
@@ -137,7 +137,7 @@ textarea{resize:none;min-height:80px}
 .debt-note{color:var(--muted);font-size:12px}
 .debt-amount{font-weight:700;font-size:15px}
 .debt-pay-btn{background:var(--accent-dim);border:1px solid var(--accent);border-radius:10px;color:var(--accent);font-size:12px;padding:6px 12px;cursor:pointer;font-family:inherit}
- 
+
 /* ── PIN ── */
 #pin-screen{position:fixed;inset:0;background:#070d1a;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;z-index:100;font-family:'Cairo',sans-serif;display:none}
 .pin-dots{display:flex;gap:16px}
@@ -154,34 +154,10 @@ textarea{resize:none;min-height:80px}
 .goal-add-btns{display:flex;gap:6px;margin-top:10px}
 .goal-add-btn{flex:1;background:var(--subtle);border:1px solid var(--border);border-radius:10px;color:var(--accent);font-size:12px;font-weight:600;padding:8px 0;cursor:pointer;font-family:inherit}
 .receipt-drop img{max-height:80px;border-radius:8px;max-width:100%}
-.sarf-hero{background:linear-gradient(135deg,#07101e,#0c1828);border:1px solid #112240;border-radius:20px;padding:20px;margin-bottom:12px;position:relative;overflow:hidden}
-.sarf-label{color:#4a6fa5;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px}
-.sarf-row{display:flex;align-items:center;gap:10px;margin-bottom:14px}
-.sarf-curr-btn{background:#0d1f35;border:1.5px solid #112240;border-radius:12px;padding:10px 14px;display:flex;align-items:center;gap:8px;cursor:pointer;flex-shrink:0;min-width:100px}
-.sarf-amount{flex:1;background:transparent;border:none;color:var(--text);font-size:26px;font-weight:900;font-family:inherit;outline:none;text-align:left;direction:ltr;min-width:0}
-.sarf-swap{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#f5c842,#f09d1a);border:none;cursor:pointer;font-size:18px;margin:0 auto;transition:transform .3s;flex-shrink:0}
-.sarf-swap:active{transform:rotate(180deg)}
-.sarf-result{font-size:26px;font-weight:900;color:#f5c842;flex:1;text-align:left;direction:ltr}
-.rate-tab{flex:1;padding:10px;border-radius:12px;border:1.5px solid var(--border);background:var(--subtle);color:var(--muted);font-size:12px;font-weight:700;cursor:pointer;font-family:inherit;text-align:center;transition:all .2s}
-.rate-tab.ag{background:rgba(245,200,66,.15);border-color:rgba(245,200,66,.5);color:#f5c842}
-.rate-tab.ab{background:rgba(96,165,250,.15);border-color:rgba(96,165,250,.4);color:#60a5fa}
-.sarf-result-box{background:rgba(245,200,66,.08);border:1px solid rgba(245,200,66,.25);border-radius:16px;padding:14px;text-align:center;margin-bottom:12px}
-.sarf-chip{border-radius:99px;padding:6px 14px;font-size:12px;font-weight:600;border:none;cursor:pointer;font-family:inherit}
-.svc-card{background:var(--card);border-radius:16px;border:1px solid var(--border);padding:14px;margin-bottom:10px}
-.svc-logo{width:40px;height:40px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
-.svc-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-top:12px}
-.svc-stat{background:var(--subtle);border-radius:10px;padding:8px;text-align:center}
-.market-row-s{display:flex;align-items:center;gap:10px;padding:11px 0;border-bottom:1px solid var(--border)}
-.market-row-s:last-child{border-bottom:none}
-.sarf-modal{position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:200;display:none;align-items:flex-end;justify-content:center}
-.sarf-sheet{background:var(--card);border-radius:24px 24px 0 0;padding:20px 16px 40px;width:100%;max-width:430px;max-height:75dvh;overflow-y:auto}
-.curr-opt{display:flex;align-items:center;gap:12px;padding:11px;border-radius:12px;cursor:pointer}
-.curr-opt:active{background:var(--subtle)}
-.curr-opt.sel{background:rgba(245,200,66,.1);border:1px solid rgba(245,200,66,.3)}
 </style>
 </head>
 <body>
- 
+
 <!-- ONBOARDING -->
 <div id="onboarding">
   <div class="ob-slide active" id="ob0">
@@ -222,7 +198,7 @@ textarea{resize:none;min-height:80px}
     <button class="ob-btn" onclick="finishOnboarding()">ابدأ الاستخدام 🚀</button>
   </div>
 </div>
- 
+
 <!-- PIN SCREEN -->
 <div id="pin-screen">
   <div style="font-size:52px">🔐</div>
@@ -238,7 +214,7 @@ textarea{resize:none;min-height:80px}
     <button class="pin-key empty"></button><button class="pin-key" onclick="pinPress('0')">0</button><button class="pin-key" onclick="pinBack()" style="font-size:22px">⌫</button>
   </div>
 </div>
- 
+
 <!-- VOICE OVERLAY -->
 <div id="voice-overlay">
   <div class="voice-ring"><div class="voice-mic">🎙️</div></div>
@@ -246,7 +222,7 @@ textarea{resize:none;min-height:80px}
   <div class="voice-result" id="voice-result">جاري الاستماع...</div>
   <button class="voice-close" onclick="stopVoice()">إلغاء</button>
 </div>
- 
+
 <!-- QR OVERLAY -->
 <div id="qr-overlay">
   <div class="qr-label">وجّه الكاميرا نحو QR code الإيصال</div>
@@ -254,25 +230,17 @@ textarea{resize:none;min-height:80px}
   <div class="qr-frame"><div class="qr-bar"></div></div>
   <button class="qr-close" onclick="stopQR()">إغلاق</button>
 </div>
- 
+
 <!-- MAIN APP -->
-<!-- SARF CURRENCY MODAL -->
-<div class="sarf-modal" id="sarf-modal">
-  <div class="sarf-sheet" id="sarf-sheet">
-    <div style="text-align:center;color:var(--text);font-weight:800;font-size:17px;margin-bottom:14px">اختر العملة</div>
-    <div id="sarf-modal-list"></div>
-  </div>
-</div>
- 
 <div id="app">
   <header>
     <span id="app-logo">💶</span>
     <h1 id="app-title">مالي <span>PRO</span></h1>
     <span class="pts-badge" id="pts-badge">🏆 0</span>
-    <button class="hdr-btn" onclick="nav('daily')" title="ملخص اليوم">📅</button>
+    <button class="hdr-btn" onclick="nav('daily')" title="اليوم">📅</button>
     <button class="hdr-btn" onclick="nav('calendar')" title="تقويم">🗓️</button>
-    <button class="hdr-btn" onclick="nav('manageFavorites')" title="سريع">📌</button>
     <button class="hdr-btn" onclick="nav('bills')">🧾</button>
+    <button class="hdr-btn" onclick="nav('history')">📋</button>
     <button class="hdr-btn" onclick="nav('transfer')">🔄</button>
     <button class="hdr-btn" id="theme-btn" onclick="toggleTheme()">☀️</button>
   </header>
@@ -285,7 +253,7 @@ textarea{resize:none;min-height:80px}
     <button onclick="nav('settings')"  id="nb-settings" ><span>⚙️</span><span>إعدادات</span></button>
   </nav>
 </div>
- 
+
 <script>
 // ════════════════════════════════════════════
 // STATE
@@ -314,7 +282,7 @@ const WALLETS = [
   {id:'bank',label:'بطاقة بنكية',icon:'💳'},
   {id:'savings',label:'ادخار',icon:'🏦'},
 ];
- 
+
 function seedData(){
   return {
     budget:3000, theme:'dark', currency:'EUR',
@@ -356,10 +324,10 @@ function seedData(){
     ],
   };
 }
- 
+
 let S = (() => { try { const r=localStorage.getItem(SCHEMA); return r?JSON.parse(r):seedData(); } catch{ return seedData(); } })();
 const save = () => { try { localStorage.setItem(SCHEMA,JSON.stringify(S)); } catch{} };
- 
+
 // ════════════════════════════════════════════
 // THEME & ACCENT
 // ════════════════════════════════════════════
@@ -409,7 +377,7 @@ function applyAppBranding(){
   document.title=S.appName||'مالي PRO';
 }
 function toggleTheme(){ S.theme=S.theme==='dark'?'light':'dark'; save(); applyTheme(); render(); }
- 
+
 // ════════════════════════════════════════════
 // ONBOARDING
 // ════════════════════════════════════════════
@@ -437,7 +405,7 @@ function finishOnboarding(){
   if(S.pinEnabled) document.getElementById('pin-screen').style.display='flex';
   render();
 }
- 
+
 // ════════════════════════════════════════════
 // PIN
 // ════════════════════════════════════════════
@@ -460,7 +428,7 @@ function renderPinDots(err){
     d.className='pin-dot'+(pinEntered.length>i?(err?' err':' filled'):'');
   });
 }
- 
+
 // ════════════════════════════════════════════
 // VOICE INPUT
 // ════════════════════════════════════════════
@@ -522,7 +490,7 @@ function parseVoiceInput(text){
     },300);
   }
 }
- 
+
 // ════════════════════════════════════════════
 // QR SCANNER
 // ════════════════════════════════════════════
@@ -560,7 +528,7 @@ function processQR(data){
     },300);
   }
 }
- 
+
 // ════════════════════════════════════════════
 // SMART HINTS ENGINE
 // ════════════════════════════════════════════
@@ -570,10 +538,10 @@ function generateHints(){
   const today=new Date();
   const THIS_MONTH=`${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,'0')}`;
   const PREV_MONTH=`${today.getMonth()===0?today.getFullYear()-1:today.getFullYear()}-${String(today.getMonth()===0?12:today.getMonth()).padStart(2,'0')}`;
- 
+
   const thisMonthExp=txs.filter(t=>gm(t.date)===THIS_MONTH&&t.type==='expense');
   const prevMonthExp=txs.filter(t=>gm(t.date)===PREV_MONTH&&t.type==='expense');
- 
+
   // Compare by category
   EXPENSE_CATS.forEach(cat=>{
     const thisTotal=thisMonthExp.filter(t=>t.category===cat).reduce((s,t)=>s+t.amount,0);
@@ -587,7 +555,7 @@ function generateHints(){
       });
     }
   });
- 
+
   // Budget warning
   const totalExp=thisMonthExp.reduce((s,t)=>s+t.amount,0);
   const budPct=S.budget>0?(totalExp/S.budget)*100:0;
@@ -599,7 +567,7 @@ function generateHints(){
       desc:`أنفقت ${Math.round(budPct)}% من ميزانيتك الشهرية. تبقى لك ${fmt(S.budget-totalExp)} فقط.`,
     });
   }
- 
+
   // Savings encouragement
   const totalInc=txs.filter(t=>gm(t.date)===THIS_MONTH&&t.type==='income').reduce((s,t)=>s+t.amount,0);
   const savePct=totalInc>0?Math.round(((totalInc-totalExp)/totalInc)*100):0;
@@ -611,7 +579,7 @@ function generateHints(){
       desc:`وفّرت ${savePct}% من دخلك هذا الشهر. استمر على هذا النهج!`,
     });
   }
- 
+
   // Recurring reminder
   const upcoming=S.bills.filter(b=>{const d=b.dueDay-today.getDate();return d>=0&&d<=3;});
   if(upcoming.length>0){
@@ -622,17 +590,17 @@ function generateHints(){
       desc:upcoming.map(b=>`${b.name}: ${fmt(b.amount)}`).join(' · '),
     });
   }
- 
+
   if(!hints.length) hints.push({
     icon:'✅', type:'success',
     bg:'rgba(74,222,128,.08)', border:'rgba(74,222,128,.2)',
     title:'كل شيء على ما يرام',
     desc:'لا تنبيهات حالياً. استمر في تتبع مصاريفك يومياً.',
   });
- 
+
   return hints;
 }
- 
+
 // ════════════════════════════════════════════
 // HELPERS
 // ════════════════════════════════════════════
@@ -678,7 +646,7 @@ function walletChips(){
     <span style="color:var(--text);font-weight:700;font-size:14px">${fmt(S.wallets[w.id])}</span>
   </div>`).join('');
 }
- 
+
 // ════════════════════════════════════════════
 // SCREENS
 // ════════════════════════════════════════════
@@ -691,12 +659,12 @@ function renderDashboard(){
   const budPct=S.budget>0?Math.min((totalExp/S.budget)*100,100):0;
   const daysPassed=todayD.getDate(), daysTotal=getDays(todayD.getFullYear(),todayD.getMonth()+1);
   const projected=daysPassed>0?Math.round((totalExp/daysPassed)*daysTotal):0;
- 
+
   const catTots=EXPENSE_CATS.map(c=>({id:c,total:exp.filter(tx=>tx.category===c).reduce((s,tx)=>s+tx.amount,0),color:S.catColors[c]||'#6b7280'}));
   const donutData=catTots.filter(c=>c.total>0);
   const topCat=[...catTots].sort((a,b)=>b.total-a.total)[0];
   const upcomingBills=S.bills.filter(b=>{const d=b.dueDay-todayD.getDate();return d>=0&&d<=7;});
- 
+
   const monthMap=groupByMonth(txs);
   const sortedM=Object.keys(monthMap).sort().slice(-6);
   let running=Object.values(S.wallets).reduce((s,v)=>s+v,0);
@@ -705,7 +673,7 @@ function renderDashboard(){
     if(i===sortedM.length-1)return{x:i,y:running};
     running=running-income+expense; return{x:i,y:running};
   }).reverse().map((p,i)=>({x:i,y:p.y}));
- 
+
   const W=300,H=80,pad=8; let lineChartSVG='';
   if(linePoints.length>=2){
     const vals=linePoints.map(p=>p.y),min=Math.min(...vals),max=Math.max(...vals),range=max-min||1;
@@ -723,7 +691,7 @@ function renderDashboard(){
     </svg>
     <div class="line-labels">${sortedM.map(m=>`<span>${arMonth(m)}</span>`).join('')}</div>`;
   }
- 
+
   const mbKeys=Object.keys(monthMap).sort().slice(-4);
   const mbMax=Math.max(...mbKeys.flatMap(k=>[monthMap[k].income,monthMap[k].expense]),1);
   const miniBar=mbKeys.map(k=>{
@@ -736,7 +704,7 @@ function renderDashboard(){
       <span style="color:var(--muted);font-size:10px">${arMonth(k)}</span>
     </div>`;
   }).join('');
- 
+
   // Smart hints
   const hints=generateHints();
   const hintsHTML=hints.slice(0,2).map(h=>`
@@ -747,11 +715,11 @@ function renderDashboard(){
         <p>${h.desc}</p>
       </div>
     </div>`).join('');
- 
+
   // Debts preview
   const totalOwed=S.debts.filter(d=>d.type==='owed').reduce((s,d)=>s+d.amount,0);
   const totalLent=S.debts.filter(d=>d.type==='lent').reduce((s,d)=>s+d.amount,0);
- 
+
   // Donut
   let donutSVG='';
   if(donutData.length>0){
@@ -762,7 +730,7 @@ function renderDashboard(){
       ${segs.map(s=>`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${s.color}" stroke-width="${sw}" stroke-dasharray="${s.dash} ${circ-s.dash}" stroke-dashoffset="${-s.off}" style="transition:all .6s"/>`).join('')}
     </svg>`;
   }
- 
+
   return `<div class="screen">
   <!-- HERO -->
   <div class="hero">
@@ -790,13 +758,13 @@ function renderDashboard(){
       <div class="hero-stat" style="border-right:none"><p>التوقع</p><p style="color:#fbbf24;font-weight:700;font-size:13px">${fmt(projected)}</p></div>
     </div>
   </div>
- 
+
   <!-- SMART HINTS -->
   <div class="card">
     <div class="sec-title"><h3>تلميحات ذكية 🤖</h3><button onclick="nav('analytics')">المزيد ←</button></div>
     ${hintsHTML}
   </div>
- 
+
   ${upcomingBills.length>0?`
   <div class="warn-card">
     <div class="sec-title"><h3 style="color:#fbbf24">فواتير قادمة هذا الأسبوع</h3><button onclick="nav('bills')">إدارة ←</button></div>
@@ -807,7 +775,7 @@ function renderDashboard(){
       <span style="color:#f59e0b;font-size:11px">يوم ${b.dueDay}</span>
     </div>`).join('')}
   </div>`:''}
- 
+
   <!-- DEBTS SUMMARY -->
   <div class="card">
     <div class="sec-title"><h3>نمط الديون</h3><button onclick="nav('debts')">إدارة ←</button></div>
@@ -822,13 +790,13 @@ function renderDashboard(){
       </div>
     </div>
   </div>
- 
+
   <!-- LINE CHART -->
   <div class="card">
     <div class="sec-title"><h3>الرصيد عبر الزمن</h3></div>
     ${lineChartSVG}
   </div>
- 
+
   <!-- BAR CHART -->
   <div class="card">
     <div class="sec-title"><h3>مقارنة الأشهر</h3><button onclick="nav('analytics')">تفاصيل ←</button></div>
@@ -839,7 +807,7 @@ function renderDashboard(){
       </div>
     </div>
   </div>
- 
+
   ${donutData.length>0?`
   <div class="card">
     <div class="sec-title"><h3>توزيع الإنفاق</h3></div>
@@ -863,7 +831,7 @@ function renderDashboard(){
       <span style="color:var(--text);font-weight:700;font-size:13px">${topCat.id} — ${fmt(topCat.total)}</span>
     </div>`:''}
   </div>`:''}
- 
+
   <!-- CAT BUDGETS -->
   <div class="card">
     <div class="sec-title"><h3>ميزانية الفئات</h3><button onclick="nav('catBudgets')">تعديل ←</button></div>
@@ -879,7 +847,7 @@ function renderDashboard(){
       </div>`;
     }).join('')}
   </div>
- 
+
   <!-- GOALS -->
   <div class="card">
     <div class="sec-title"><h3>أهداف الادخار</h3><button onclick="nav('goals')">إدارة ←</button></div>
@@ -899,13 +867,13 @@ function renderDashboard(){
       </div>`;
     }).join('')}
   </div>
- 
+
   <!-- WALLETS -->
   <div class="card">
     <div class="sec-title"><h3>محافظي</h3><button onclick="nav('transfer')">تحويل ←</button></div>
     <div style="display:flex;gap:10px">${walletChips()}</div>
   </div>
- 
+
   <!-- RECENT -->
   <div class="card">
     <div class="sec-title"><h3>آخر العمليات</h3><button onclick="nav('history')">عرض الكل ←</button></div>
@@ -915,7 +883,7 @@ function renderDashboard(){
   </div>
   </div>`;
 }
- 
+
 function renderAdd(){
   return `<div class="screen"><div class="card" id="add-card">
     <!-- Voice & QR buttons -->
@@ -960,7 +928,7 @@ function renderAdd(){
     <button class="primary-btn" onclick="submitAdd()">حفظ المصروف</button>
   </div></div>`;
 }
- 
+
 function renderDebts(){
   const owed=S.debts.filter(d=>d.type==='owed');
   const lent=S.debts.filter(d=>d.type==='lent');
@@ -978,7 +946,7 @@ function renderDebts(){
         <p style="color:var(--income);font-weight:800;font-size:22px;margin:0">${fmt(totalLent)}</p>
       </div>
     </div>
- 
+
     ${owed.length>0?`<div class="card">
       <div class="sec-title"><h3 style="color:#f87171">أنا مدين</h3></div>
       ${owed.map(d=>`<div class="debt-row">
@@ -993,7 +961,7 @@ function renderDebts(){
         </div>
       </div>`).join('')}
     </div>`:''}
- 
+
     ${lent.length>0?`<div class="card">
       <div class="sec-title"><h3 style="color:var(--income)">يديّنون لي</h3></div>
       ${lent.map(d=>`<div class="debt-row">
@@ -1008,13 +976,13 @@ function renderDebts(){
         </div>
       </div>`).join('')}
     </div>`:''}
- 
+
     <div id="debt-form-wrap">
       <button class="dashed-btn" onclick="showDebtForm()">＋ إضافة دين جديد</button>
     </div>
   </div>`;
 }
- 
+
 function renderAnalytics(){
   const monthMap=groupByMonth(S.transactions);
   const months=Object.keys(monthMap).sort();
@@ -1092,7 +1060,7 @@ function renderAnalytics(){
     </div>
   </div>`;
 }
- 
+
 function renderGoals(){
   return `<div class="screen">
     ${S.goals.map(g=>{
@@ -1124,7 +1092,7 @@ function renderGoals(){
     <div id="goal-form-wrap"><button class="dashed-btn" onclick="showGoalForm()">＋ إضافة هدف جديد</button></div>
   </div>`;
 }
- 
+
 function renderBills(){
   return `<div class="screen">
     ${S.bills.map(b=>{
@@ -1149,7 +1117,7 @@ function renderBills(){
     <div id="bill-form-wrap"><button class="dashed-btn" onclick="showBillForm()">＋ إضافة فاتورة جديدة</button></div>
   </div>`;
 }
- 
+
 function renderHistory(){
   return `<div class="screen">
     <div class="card">
@@ -1166,7 +1134,7 @@ function renderHistory(){
     <div class="card" id="hist-list"></div>
   </div>`;
 }
- 
+
 function renderTransfer(){
   return `<div class="screen"><div class="card">
     <h2 style="color:var(--text);font-weight:800;font-size:20px;margin-bottom:20px">التحويل بين المحافظ</h2>
@@ -1181,7 +1149,7 @@ function renderTransfer(){
     <button class="primary-btn" onclick="submitTransfer()">تحويل الآن 🔄</button>
   </div></div>`;
 }
- 
+
 function renderSettings(){
   const ACCENT_PRESETS=[
     {color:'#4ade80',dim:'#052e16',label:'أخضر'},
@@ -1205,7 +1173,7 @@ function renderSettings(){
       </div>
       <button class="primary-btn" onclick="saveAppBranding()">حفظ الهوية</button>
     </div>
- 
+
     <!-- Accent Color -->
     <div class="card">
       <div class="sec-title"><h3>🎨 اللون الرئيسي</h3></div>
@@ -1221,7 +1189,7 @@ function renderSettings(){
         <span style="color:var(--muted);font-size:13px">اختر أي لون تريده</span>
       </div>
     </div>
- 
+
     <div class="card">
       <div class="sec-title"><h3>العملة</h3></div>
       <div style="display:flex;gap:8px;flex-wrap:wrap">
@@ -1272,7 +1240,7 @@ function renderSettings(){
     </div>
   </div>`;
 }
- 
+
 function renderCatBudgets(){
   return `<div class="screen"><div class="card">
     <h2 style="color:var(--text);font-weight:800;font-size:20px;margin-bottom:20px">ميزانية كل فئة</h2>
@@ -1283,7 +1251,7 @@ function renderCatBudgets(){
     <button class="primary-btn" onclick="showMsg('تم الحفظ ✓',this)">حفظ الميزانيات</button>
   </div></div>`;
 }
- 
+
 // ════════════════════════════════════════════
 // NAVIGATION
 // ════════════════════════════════════════════
@@ -1296,25 +1264,38 @@ function nav(screen){
   render();
   document.getElementById('content').scrollTop=0;
 }
- 
+
 function render(){
-  const content=document.getElementById('content');
-  switch(currentScreen){
-    case 'dashboard':  content.innerHTML=renderDashboard(); break;
-    case 'add':        content.innerHTML=renderAdd(); initAddScreen(); break;
-    case 'history':    content.innerHTML=renderHistory(); initHistory(); break;
-    case 'transfer':   content.innerHTML=renderTransfer(); break;
-    case 'analytics':  content.innerHTML=renderAnalytics(); break;
-    case 'goals':      content.innerHTML=renderGoals(); break;
-    case 'bills':      content.innerHTML=renderBills(); break;
-    case 'debts':      content.innerHTML=renderDebts(); break;
-    case 'settings':   content.innerHTML=renderSettings(); break;
-    case 'catBudgets': content.innerHTML=renderCatBudgets(); break;
-  }
-  document.getElementById('pts-badge').textContent='🏆 '+S.points;
+  const c = document.getElementById('content');
+  const pts = document.getElementById('pts-badge');
+  if(pts) pts.textContent = '🏆 ' + S.points;
   applyAccent(S.accentColor||'#4ade80', S.accentDim||'#052e16');
+  switch(currentScreen){
+    case 'dashboard':        c.innerHTML=renderDashboard(); break;
+    case 'add':              c.innerHTML=renderAdd(); initAddScreen(); break;
+    case 'history':          c.innerHTML=renderHistory(); initHistory(); break;
+    case 'transfer':         c.innerHTML=renderTransfer(); break;
+    case 'analytics':        c.innerHTML=renderAnalytics(); break;
+    case 'goals':            c.innerHTML=renderGoals(); break;
+    case 'bills':            c.innerHTML=renderBills(); break;
+    case 'debts':            c.innerHTML=renderDebts(); break;
+    case 'settings':         c.innerHTML=renderSettings(); break;
+    case 'catBudgets':       c.innerHTML=renderCatBudgets(); break;
+    case 'daily':            c.innerHTML=renderDailySummary(); break;
+    case 'table':            c.innerHTML=renderTable(); break;
+    case 'calendar':         c.innerHTML=renderCalendar(); break;
+    case 'manageFavorites':  c.innerHTML=renderManageFavorites(); break;
+    case 'sarf':            c.innerHTML=renderSarf(); break;
+    case 'yearcompare':     c.innerHTML=renderYearCompare(); break;
+    case 'loans':           c.innerHTML=renderLoans(); break;
+    case 'investments':     c.innerHTML=renderInvestments(); break;
+    case 'travel':          c.innerHTML=renderTravel(); break;
+    case 'shared':          c.innerHTML=renderShared(); break;
+    case 'zakat':           c.innerHTML=renderZakat(); break;
+    default: break;
+  }
 }
- 
+
 // ════════════════════════════════════════════
 // ADD SCREEN
 // ════════════════════════════════════════════
@@ -1365,7 +1346,7 @@ function submitAdd(){
   if(btn){ btn.textContent='✓ تمت الإضافة!'; btn.classList.add('success'); }
   setTimeout(()=>nav('dashboard'),1400);
 }
- 
+
 // ════════════════════════════════════════════
 // HISTORY
 // ════════════════════════════════════════════
@@ -1413,7 +1394,7 @@ function exportCSV(){
   a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));
   a.download=`mali_${new Date().toISOString().slice(0,10)}.csv`; a.click();
 }
- 
+
 // ════════════════════════════════════════════
 // TRANSFER
 // ════════════════════════════════════════════
@@ -1428,7 +1409,7 @@ function submitTransfer(){
   msg.style.color='var(--accent)'; msg.textContent='✓ تم التحويل';
   setTimeout(()=>nav('dashboard'),1400);
 }
- 
+
 // ════════════════════════════════════════════
 // DEBTS
 // ════════════════════════════════════════════
@@ -1464,7 +1445,7 @@ function submitDebt(){
   S.debts.push({id:Date.now(),name,amount,type:debtType,note,date:new Date().toISOString().slice(0,10),color});
   save(); nav('debts');
 }
- 
+
 // ════════════════════════════════════════════
 // GOALS
 // ════════════════════════════════════════════
@@ -1492,7 +1473,7 @@ function submitGoal(){
   S.goals.push({id:Date.now(),name,target,saved:+document.getElementById('g-saved')?.value||0,icon:goalIcon,color:S.accentColor||'#4ade80',deadline:document.getElementById('g-deadline')?.value||''});
   save(); nav('goals');
 }
- 
+
 // ════════════════════════════════════════════
 // BILLS
 // ════════════════════════════════════════════
@@ -1519,7 +1500,7 @@ function submitBill(){
   S.bills.push({id:Date.now(),name,amount,dueDay,wallet:'bank',category:billCat||'سكن',recurring:true});
   save(); nav('bills');
 }
- 
+
 // ════════════════════════════════════════════
 // SETTINGS ACTIONS
 // ════════════════════════════════════════════
@@ -1527,7 +1508,7 @@ function setCurrency(id){ S.currency=id; save(); render(); }
 function setTheme(t){ S.theme=t; applyTheme(); save(); render(); }
 function resetApp(){ if(confirm('هل أنت متأكد؟')){ localStorage.removeItem(SCHEMA); location.reload(); } }
 function showMsg(m,btn){ const orig=btn.textContent; btn.textContent=m; btn.classList.add('success'); setTimeout(()=>{btn.textContent=orig;btn.classList.remove('success');},1500); }
- 
+
 function setAccentPreset(color, dim){
   S.accentColor=color; S.accentDim=dim; S.accentRgb=hexToRgb(color); save();
   applyAccent(color, dim); render();
@@ -1544,7 +1525,7 @@ function saveAppBranding(){
   save(); applyAppBranding();
   showMsg('✓ تم الحفظ', document.querySelector('.primary-btn'));
 }
- 
+
 // PIN SETTINGS
 let pinSetBuffer='';
 function startSetPin(){
@@ -1572,7 +1553,7 @@ function finalizePin(){
 }
 function disablePin(){ S.pin=null; S.pinEnabled=false; save(); render(); }
 function showPinMsg(m){ const el=document.getElementById('pin-set-msg'); if(el){el.textContent=m;el.style.display='block';} }
- 
+
 // ════════════════════════════════════════════
 // BUDGET QUICK EDIT (on dashboard)
 // ════════════════════════════════════════════
@@ -1591,7 +1572,7 @@ function saveBudgetQuick(){
   if(v>0){S.budget=v;save();}
   render();
 }
- 
+
 // ════════════════════════════════════════════
 // DAILY SUMMARY
 // ════════════════════════════════════════════
@@ -1615,17 +1596,17 @@ function renderDailySummary(){
   const thisWeekTotal=weekTxs.reduce((s,tx)=>s+tx.amount,0);
   const prevWeekTotal=prevWeekTxs.reduce((s,tx)=>s+tx.amount,0);
   const weekDiff=thisWeekTotal-prevWeekTotal;
- 
+
   // Best financial decisions
   const monthTxs=S.transactions.filter(tx=>gm(tx.date)===THIS_MONTH);
   const catTots=EXPENSE_CATS.map(c=>({c,total:monthTxs.filter(tx=>tx.type==='expense'&&tx.category===c).reduce((s,tx)=>s+tx.amount,0),budget:S.categoryBudgets[c]||0}));
   const bestDecisions=catTots.filter(x=>x.budget>0&&x.total<x.budget*0.7).sort((a,b)=>(b.budget-b.total)-(a.budget-a.total)).slice(0,3);
- 
+
   // Reminder notification banner
   const lastLog=S.lastLogDate||'';
   const todayDate=new Date().toISOString().slice(0,10);
   const needsReminder=lastLog!==todayDate;
- 
+
   return `<div class="screen">
     ${needsReminder?`<div style="background:linear-gradient(135deg,#1a0f00,#2d1a00);border:1px solid #92400e;border-radius:18px;padding:16px 14px;margin-bottom:14px;display:flex;align-items:center;gap:12px">
       <span style="font-size:28px">🔔</span>
@@ -1635,7 +1616,7 @@ function renderDailySummary(){
       </div>
       <button onclick="nav('add')" style="background:#f59e0b;border:none;border-radius:10px;color:#fff;font-size:13px;font-weight:700;padding:8px 14px;cursor:pointer;font-family:inherit;white-space:nowrap">سجّل الآن</button>
     </div>`:''}
- 
+
     <!-- Daily Summary -->
     <div class="card" style="background:linear-gradient(135deg,#0f2040,#0c1a30)">
       <div style="color:#7dd3fc;font-size:12px;font-weight:700;margin-bottom:12px;letter-spacing:1px">📅 ملخص اليوم — ${new Date().toLocaleDateString('ar-SA',{weekday:'long',day:'numeric',month:'long'})}</div>
@@ -1669,7 +1650,7 @@ function renderDailySummary(){
         </div>
       </div>`:`<p style="color:rgba(125,211,252,.5);font-size:13px;text-align:center;margin:0">لا توجد عمليات اليوم بعد</p>`}
     </div>
- 
+
     <!-- Week vs Week -->
     <div class="card">
       <div class="sec-title"><h3>هذا الأسبوع vs الماضي</h3></div>
@@ -1692,7 +1673,7 @@ function renderDailySummary(){
         :`<div style="background:rgba(74,222,128,.1);border:1px solid rgba(74,222,128,.3);border-radius:12px;padding:10px 14px"><p style="color:#4ade80;font-size:13px;margin:0">✅ أداء ممتاز! أنفقت ${fmt(Math.abs(weekDiff))} أقل من الأسبوع الماضي.</p></div>`
       }
     </div>
- 
+
     <!-- Best Decisions -->
     ${bestDecisions.length>0?`<div class="card">
       <div class="sec-title"><h3>🏆 أفضل 3 قرارات مالية هذا الشهر</h3></div>
@@ -1705,12 +1686,12 @@ function renderDailySummary(){
         <span style="color:#4ade80;font-weight:700;font-size:13px">${Math.round(((d.budget-d.total)/d.budget)*100)}% توفير</span>
       </div>`).join('')}
     </div>`:''}
- 
+
     <!-- Financial Health Score -->
     ${renderHealthScore()}
   </div>`;
 }
- 
+
 // ════════════════════════════════════════════
 // FINANCIAL HEALTH SCORE
 // ════════════════════════════════════════════
@@ -1722,7 +1703,7 @@ function renderHealthScore(){
   const budPct=S.budget>0?(totalExp/S.budget)*100:0;
   const goalsProgress=S.goals.length>0?S.goals.reduce((s,g)=>s+(g.saved/g.target),0)/S.goals.length*100:50;
   const debtScore=S.debts.filter(d=>d.type==='owed').length===0?100:Math.max(0,100-S.debts.filter(d=>d.type==='owed').reduce((s,d)=>s+d.amount,0)/10);
- 
+
   let score=Math.round(
     Math.min(savePct*0.4,40)+           // 40% weight: savings rate
     Math.max(0,(100-budPct)*0.3)+       // 30% weight: budget adherence
@@ -1730,11 +1711,11 @@ function renderHealthScore(){
     Math.min(debtScore*0.1,10)           // 10% weight: debt situation
   );
   score=Math.max(0,Math.min(100,score));
- 
+
   const level=score>=80?{label:'ممتاز 🌟',color:'#4ade80'}:score>=60?{label:'جيد 👍',color:'#fbbf24'}:score>=40?{label:'متوسط 📈',color:'#fb923c'}:{label:'يحتاج تحسين ⚠️',color:'#f87171'};
   const circumference=2*Math.PI*54;
   const dashOffset=circumference-(score/100)*circumference;
- 
+
   return `<div class="card">
     <div class="sec-title"><h3>مؤشر الصحة المالية</h3></div>
     <div style="display:flex;align-items:center;gap:20px">
@@ -1771,7 +1752,7 @@ function renderHealthScore(){
     </div>
   </div>`;
 }
- 
+
 // ════════════════════════════════════════════
 // LEVELS SYSTEM
 // ════════════════════════════════════════════
@@ -1782,7 +1763,7 @@ function getLevel(pts){
   if(pts>=100)return{name:'متوسط',icon:'🥉',next:200,color:'#fb923c'};
   return{name:'مبتدئ',icon:'🌱',next:100,color:'#4ade80'};
 }
- 
+
 // ════════════════════════════════════════════
 // PROFESSIONAL TABLE VIEW
 // ════════════════════════════════════════════
@@ -1836,7 +1817,7 @@ function renderTable(){
     </div>
   </div>`;
 }
- 
+
 // ════════════════════════════════════════════
 // SLEEP MODE (hide numbers)
 // ════════════════════════════════════════════
@@ -1849,7 +1830,7 @@ function toggleSleep(){
   const btn=document.getElementById('sleep-btn');
   if(btn)btn.textContent=sleepMode?'👁️':'🙈';
 }
- 
+
 // ════════════════════════════════════════════
 // DAILY REMINDER (local notification mock)
 // ════════════════════════════════════════════
@@ -1864,7 +1845,7 @@ function requestNotificationPermission(){
     });
   } else { alert('المتصفح لا يدعم الإشعارات. استخدم Safari على iPhone وأضف التطبيق للشاشة الرئيسية أولاً.'); }
 }
- 
+
 // ════════════════════════════════════════════
 // SMART SEARCH
 // ════════════════════════════════════════════
@@ -1885,7 +1866,7 @@ function smartSearch(query){
     return tx.note?.toLowerCase().includes(q)||tx.category.includes(q)||tx.date.includes(q);
   });
 }
- 
+
 // ════════════════════════════════════════════
 // BACKUP & RESTORE
 // ════════════════════════════════════════════
@@ -1918,7 +1899,7 @@ function importBackup(){
   };
   inp.click();
 }
- 
+
 // ════════════════════════════════════════════
 // PATCH: ENHANCED DASHBOARD with budget edit
 // ════════════════════════════════════════════
@@ -1935,7 +1916,7 @@ renderDashboard=function(){
     `</div><div id="budget-edit-wrap"></div>`
   );
 };
- 
+
 // ════════════════════════════════════════════
 // PATCH: ENHANCED HISTORY with smart search
 // ════════════════════════════════════════════
@@ -1961,7 +1942,7 @@ filterHistory=function(){
       </div>`).join('');
   }
 };
- 
+
 // ════════════════════════════════════════════
 // PATCH: ENHANCED SETTINGS with new features
 // ════════════════════════════════════════════
@@ -1985,14 +1966,14 @@ renderSettings=function(){
         </div>
       </div>
     </div>
- 
+
     <!-- NOTIFICATIONS -->
     <div class="card">
       <div class="sec-title"><h3>🔔 التذكير اليومي</h3></div>
       <p style="color:var(--muted);font-size:13px;margin-bottom:12px">احصل على تذكير يومي لتسجيل مصاريفك</p>
       <button onclick="requestNotificationPermission()" style="background:var(--accent-dim);border:1.5px solid var(--accent);border-radius:12px;color:var(--accent);font-size:13px;padding:10px 16px;cursor:pointer;font-family:inherit">تفعيل التذكير اليومي 🔔</button>
     </div>
- 
+
     <!-- BACKUP -->
     <div class="card">
       <div class="sec-title"><h3>💾 النسخ الاحتياطي</h3></div>
@@ -2001,7 +1982,7 @@ renderSettings=function(){
         <button onclick="importBackup()" style="flex:1;background:var(--subtle);border:1.5px solid var(--border);border-radius:12px;color:var(--muted);font-size:13px;padding:10px;cursor:pointer;font-family:inherit">📥 استيراد</button>
       </div>
     </div>
- 
+
     <!-- SLEEP MODE -->
     <div class="card">
       <div class="sec-title"><h3>🙈 وضع الخصوصية</h3></div>
@@ -2011,19 +1992,27 @@ renderSettings=function(){
   // Insert extra before reset card
   return base.replace('<div class="card">\n      <div class="sec-title"><h3>⚠️ إعادة الضبط</h3></div>', extra+'<div class="card"><div class="sec-title"><h3>⚠️ إعادة الضبط</h3></div>');
 };
- 
-// [render patch 1 merged]
- 
+
+// ════════════════════════════════════════════
+// PATCH: ENHANCED NAV with new screens
+// ════════════════════════════════════════════
+const _origRender=render;
+render=function(){
+  if(currentScreen==='daily'){ document.getElementById('content').innerHTML=renderDailySummary(); document.getElementById('pts-badge').textContent='🏆 '+S.points; applyAccent(S.accentColor||'#4ade80',S.accentDim||'#052e16'); return; }
+  if(currentScreen==='table'){ document.getElementById('content').innerHTML=renderTable(); document.getElementById('pts-badge').textContent='🏆 '+S.points; return; }
+  _origRender();
+};
+
 // ════════════════════════════════════════════
 // 1. EDIT & DELETE TRANSACTION
 // ════════════════════════════════════════════
 let editingTxId = null;
- 
+
 function openEditTx(id) {
   const tx = S.transactions.find(t => t.id === id);
   if (!tx) return;
   editingTxId = id;
- 
+
   const overlay = document.createElement('div');
   overlay.id = 'edit-overlay';
   overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:300;display:flex;align-items:flex-end;justify-content:center';
@@ -2051,7 +2040,7 @@ function openEditTx(id) {
   document.body.appendChild(overlay);
   overlay.addEventListener('click', e => { if(e.target===overlay) closeEditTx(); });
 }
- 
+
 let editCat = null;
 function selectEditCat(c, btn) {
   editCat = c;
@@ -2060,7 +2049,7 @@ function selectEditCat(c, btn) {
   });
   btn.style.borderColor = 'var(--accent)'; btn.style.background = 'var(--accent-dim)'; btn.style.color = 'var(--accent)';
 }
- 
+
 function saveEditTx() {
   const tx = S.transactions.find(t => t.id === editingTxId);
   if (!tx) return;
@@ -2076,7 +2065,7 @@ function saveEditTx() {
   closeEditTx();
   render();
 }
- 
+
 function deleteTx(id) {
   if (!confirm('حذف هذه العملية؟')) return;
   const tx = S.transactions.find(t => t.id === id);
@@ -2084,13 +2073,13 @@ function deleteTx(id) {
   S.transactions = S.transactions.filter(t => t.id !== id);
   save(); closeEditTx(); render();
 }
- 
+
 function closeEditTx() {
   editCat = null; editingTxId = null;
   const el = document.getElementById('edit-overlay');
   if (el) el.remove();
 }
- 
+
 // ════════════════════════════════════════════
 // 2. AUTO-RECURRING TRANSACTIONS
 // ════════════════════════════════════════════
@@ -2099,10 +2088,10 @@ function runAutoRecurring() {
   const lastRun = S.lastRecurringRun || '';
   if (lastRun === today) return; // already ran today
   S.lastRecurringRun = today;
- 
+
   const todayDay = new Date().getDate();
   let added = 0;
- 
+
   // Bills auto-execute on their due day
   S.bills.forEach(bill => {
     if (bill.dueDay !== todayDay) return;
@@ -2122,7 +2111,7 @@ function runAutoRecurring() {
       added++;
     }
   });
- 
+
   // Recurring transactions from history
   S.transactions
     .filter(tx => tx.recurring && !tx.autoAdded)
@@ -2140,7 +2129,7 @@ function runAutoRecurring() {
         added++;
       }
     });
- 
+
   if (added > 0) {
     save();
     setTimeout(() => {
@@ -2150,7 +2139,7 @@ function runAutoRecurring() {
     save();
   }
 }
- 
+
 function showRecurringBanner(count) {
   const banner = document.createElement('div');
   banner.style.cssText = 'position:fixed;top:70px;left:50%;transform:translateX(-50%);background:#052e16;border:1px solid var(--accent);border-radius:14px;padding:12px 20px;z-index:200;display:flex;align-items:center;gap:10px;max-width:380px;width:90%;animation:slideDown .4s ease';
@@ -2164,7 +2153,7 @@ function showRecurringBanner(count) {
   document.body.appendChild(banner);
   setTimeout(() => banner.remove(), 5000);
 }
- 
+
 // ════════════════════════════════════════════
 // 3. QUICK FAVORITES (pinned transactions)
 // ════════════════════════════════════════════
@@ -2187,7 +2176,7 @@ function renderQuickFavorites() {
       </div>
     </div>`;
 }
- 
+
 function addFavoriteQuick(id) {
   const fav = S.favorites.find(f => f.id === id);
   if (!fav) return;
@@ -2203,7 +2192,7 @@ function addFavoriteQuick(id) {
   S.transactions.unshift(tx);
   S.points += 5;
   save();
- 
+
   // Flash feedback
   const btn = event.currentTarget;
   const orig = btn.style.background;
@@ -2211,7 +2200,7 @@ function addFavoriteQuick(id) {
   btn.style.borderColor = 'var(--accent)';
   setTimeout(() => { btn.style.background = orig; btn.style.borderColor = 'var(--border)'; render(); }, 600);
 }
- 
+
 function renderManageFavorites() {
   if (!S.favorites) S.favorites = [];
   return `<div class="screen">
@@ -2234,12 +2223,12 @@ function renderManageFavorites() {
     </div>
   </div>`;
 }
- 
+
 function deleteFavorite(id) {
   S.favorites = (S.favorites||[]).filter(f => f.id !== id);
   save(); nav('manageFavorites');
 }
- 
+
 let favCat = 'طعام', favWallet = 'cash', favType = 'expense';
 function showFavForm() {
   document.getElementById('fav-form-wrap').innerHTML = `
@@ -2265,7 +2254,7 @@ function showFavForm() {
     </div>`;
   favCat = 'طعام'; favWallet = 'cash'; favType = 'expense';
 }
- 
+
 function submitFavorite() {
   const name = document.getElementById('fav-name')?.value;
   const amount = +document.getElementById('fav-amount')?.value;
@@ -2274,18 +2263,18 @@ function submitFavorite() {
   S.favorites.push({ id: Date.now(), name, amount, category: favCat, wallet: favWallet, type: favType });
   save(); nav('manageFavorites');
 }
- 
+
 // ════════════════════════════════════════════
 // 4. EXPENSE CALENDAR
 // ════════════════════════════════════════════
 let calYear = new Date().getFullYear(), calMonth = new Date().getMonth();
- 
+
 function renderCalendar() {
   const firstDay = new Date(calYear, calMonth, 1).getDay();
   const daysInMonth = new Date(calYear, calMonth + 1, 0).getDate();
   const monthStr = `${calYear}-${String(calMonth+1).padStart(2,'0')}`;
   const monthName = new Date(calYear, calMonth).toLocaleDateString('ar-SA', { month: 'long', year: 'numeric' });
- 
+
   // Build day totals
   const dayTotals = {};
   S.transactions.filter(tx => gm(tx.date) === monthStr).forEach(tx => {
@@ -2294,15 +2283,15 @@ function renderCalendar() {
     if (tx.type === 'expense') dayTotals[day].exp += tx.amount;
     else dayTotals[day].inc += tx.amount;
   });
- 
+
   const maxDay = Math.max(...Object.values(dayTotals).map(d => d.exp), 1);
   const today = new Date();
   const todayDay = today.getFullYear() === calYear && today.getMonth() === calMonth ? today.getDate() : -1;
- 
+
   // Adjust for RTL (Sunday=0 → in Arabic Sunday is last)
   const arabicFirstDay = (firstDay + 6) % 7; // Monday=0
   const dayNames = ['إث','ثل','أر','خم','جم','سب','أح'];
- 
+
   let cells = '';
   // Empty cells before first day
   for (let i = 0; i < arabicFirstDay; i++) {
@@ -2322,13 +2311,13 @@ function renderCalendar() {
         ${hasIncome?`<div style="position:absolute;top:3px;right:3px;width:5px;height:5px;border-radius:50%;background:#4ade80"></div>`:''}
       </div>`;
   }
- 
+
   // Monthly totals
   const monthTxs = S.transactions.filter(tx => gm(tx.date) === monthStr);
   const monthExp = monthTxs.filter(tx=>tx.type==='expense').reduce((s,tx)=>s+tx.amount,0);
   const monthInc = monthTxs.filter(tx=>tx.type==='income').reduce((s,tx)=>s+tx.amount,0);
   const busiest = Object.entries(dayTotals).sort((a,b)=>b[1].exp-a[1].exp)[0];
- 
+
   return `<div class="screen">
     <div class="card">
       <!-- Navigation -->
@@ -2352,7 +2341,7 @@ function renderCalendar() {
         <div style="display:flex;align-items:center;gap:4px"><div style="width:10px;height:10px;border-radius:2px;background:var(--accent)"></div><span style="color:var(--muted);font-size:11px">اليوم</span></div>
       </div>
     </div>
- 
+
     <!-- Monthly stats -->
     <div class="card">
       <div class="sec-title"><h3>ملخص ${monthName}</h3></div>
@@ -2374,19 +2363,19 @@ function renderCalendar() {
         </div>
       </div>`:''}
     </div>
- 
+
     <!-- Day detail panel -->
     <div id="cal-day-panel"></div>
   </div>`;
 }
- 
+
 function changeCalMonth(dir) {
   calMonth += dir;
   if (calMonth > 11) { calMonth = 0; calYear++; }
   if (calMonth < 0)  { calMonth = 11; calYear--; }
   nav('calendar');
 }
- 
+
 function showCalDay(day, monthStr) {
   const dateStr = `${monthStr}-${String(day).padStart(2,'0')}`;
   const dayTxs = S.transactions.filter(tx => tx.date === dateStr);
@@ -2407,7 +2396,7 @@ function showCalDay(day, monthStr) {
   </div>`;
   panel.scrollIntoView({ behavior: 'smooth' });
 }
- 
+
 // ════════════════════════════════════════════
 // PATCH: INJECT QUICK FAVORITES INTO DASHBOARD
 // ════════════════════════════════════════════
@@ -2420,7 +2409,7 @@ renderDashboard = function() {
   const favHtml = renderQuickFavorites();
   return html.slice(0, heroEnd + 6) + '\n' + favHtml + html.slice(heroEnd + 6);
 };
- 
+
 // ════════════════════════════════════════════
 // PATCH: TX ROWS CLICKABLE FOR EDIT
 // ════════════════════════════════════════════
@@ -2429,394 +2418,857 @@ txRow = function(tx, showWallet=false) {
   const base = _origTxRow(tx, showWallet);
   return `<div onclick="openEditTx(${tx.id})" style="cursor:pointer">${base}</div>`;
 };
- 
-// [render patch 2 merged]
- 
-// [header patch merged]
- 
+
 // ════════════════════════════════════════════
-// UNIFIED RENDER — all screens in one place
+// PATCH: RENDER — add new screens
 // ════════════════════════════════════════════
-const _coreRender = render;
+const _origRender2 = render;
 render = function() {
-  const pts = document.getElementById('pts-badge');
-  if(pts) pts.textContent = '🏆 ' + S.points;
-  const ac = S.accentColor||'#4ade80', ad = S.accentDim||'#052e16';
-  const c = document.getElementById('content');
-  if(!c) return;
-  switch(currentScreen){
-    case 'daily':          c.innerHTML = renderDailySummary(); applyAccent(ac,ad); break;
-    case 'table':          c.innerHTML = renderTable(); break;
-    case 'calendar':       c.innerHTML = renderCalendar(); applyAccent(ac,ad); break;
-    case 'manageFavorites':c.innerHTML = renderManageFavorites(); break;
-    case 'sarf':           c.innerHTML = renderSarf(); applyAccent(ac,ad); break;
-    default:               _coreRender(); break;
-  }
+  if (currentScreen === 'calendar')        { document.getElementById('content').innerHTML = renderCalendar(); document.getElementById('pts-badge').textContent='🏆 '+S.points; applyAccent(S.accentColor||'#4ade80',S.accentDim||'#052e16'); return; }
+  if (currentScreen === 'manageFavorites') { document.getElementById('content').innerHTML = renderManageFavorites(); document.getElementById('pts-badge').textContent='🏆 '+S.points; return; }
+  _origRender2();
 };
- 
+
 // ════════════════════════════════════════════
-// ADD SDG — الجنيه السوداني
+// PATCH: HEADER with calendar & favorites
 // ════════════════════════════════════════════
-// Inject SDG into SARF_CURRENCIES after init
-function injectSDG(){
-  if(!SARF_CURRENCIES.find(c=>c.id==='SDG')){
-    SARF_CURRENCIES.push({id:'SDG',flag:'🇸🇩',name:'جنيه سوداني',full:'Sudanese Pound — السودان'});
-  }
-  // Official rate: 1 EUR ≈ 3150 SDG (Central Bank of Sudan, May 2026)
-  // Parallel market: 1 EUR ≈ 5800 SDG (السوق الموازي الخرطوم)
-  SARF_OFFICIAL['SDG'] = 3150;
-  SARF_PARALLEL['SDG'] = 5800;
-  HAS_PARALLEL.push('SDG');
-  // Add to transfer services rates
-  TRANSFER_SVCS.forEach(s=>{
-    if(!s.rates['SDG']){
-      if(s.id==='altras')     s.rates['SDG'] = 3100;
-      else if(s.id==='wise')  s.rates['SDG'] = 3140;
-      else if(s.id==='ria')   s.rates['SDG'] = 3080;
-      else if(s.id==='moneygram') s.rates['SDG'] = 3050;
-      else                    s.rates['SDG'] = 3020;
-    }
-  });
-}
- 
+document.querySelector('header').innerHTML=`
+  <span id="app-logo">💶</span>
+  <h1 id="app-title">مالي <span>PRO</span></h1>
+  <span class="pts-badge" id="pts-badge">🏆 0</span>
+  <button class="hdr-btn" onclick="nav('daily')" title="ملخص اليوم">📅</button>
+  <button class="hdr-btn" onclick="nav('calendar')" title="تقويم المصاريف">🗓️</button>
+  <button class="hdr-btn" onclick="nav('manageFavorites')" title="مصاريف سريعة">📌</button>
+  <button class="hdr-btn" onclick="nav('bills')">🧾</button>
+  <button class="hdr-btn" onclick="nav('transfer')">🔄</button>
+  <button class="hdr-btn" id="theme-btn" onclick="toggleTheme()">☀️</button>`;
+
 // ════════════════════════════════════════════
 // INIT
 // ════════════════════════════════════════════
-if (!S.favorites) S.favorites = [];
+if (!S.favorites)   S.favorites   = [];
+if (!S.loans)       S.loans       = [
+  {id:1,name:'قرض السيارة',principal:15000,rate:3.5,months:48,paid:12,start:'2025-05-01'},
+  {id:2,name:'قرض شخصي',principal:5000,rate:5.0,months:24,paid:6,start:'2025-11-01'}
+];
+if (!S.investments) S.investments = [
+  {id:1,name:'Apple AAPL',type:'stock',qty:10,buyPrice:165,currentPrice:211,currency:'USD',date:'2024-01-15'},
+  {id:2,name:'Bitcoin BTC',type:'crypto',qty:0.05,buyPrice:42000,currentPrice:67000,currency:'USD',date:'2024-03-01'},
+  {id:3,name:'صندوق سعودي',type:'fund',qty:100,buyPrice:12.5,currentPrice:14.2,currency:'SAR',date:'2024-06-01'}
+];
+if (!S.travels) S.travels = [
+  {id:1,name:'إجازة باريس',budget:2000,currency:'EUR',date:'2026-08-01',duration:7,
+   expenses:[{cat:'طيران',amount:450,icon:'✈️'},{cat:'فندق',amount:700,icon:'🏨'},{cat:'طعام',amount:200,icon:'🍽️'}]}
+];
+if (!S.shared) S.shared = {
+  members:['أنا','شريك/ة'],
+  expenses:[
+    {id:1,desc:'إيجار',amount:1200,paidBy:'أنا',date:'2026-05-01'},
+    {id:2,desc:'بقالة',amount:150,paidBy:'شريك/ة',date:'2026-05-05'}
+  ]
+};
 applyTheme();
 applyAppBranding();
-injectSDG();
 if (!S.onboardingDone) {
   document.getElementById('onboarding').style.display='flex';
 } else {
   document.getElementById('onboarding').style.display='none';
   if (S.pinEnabled) document.getElementById('pin-screen').style.display='flex';
-  runAutoRecurring();
+  runAutoRecurring(); // ← تشغيل المصاريف المتكررة تلقائياً
   nav('dashboard');
 }
- 
-// ════════════════════════════════════════════
-// 💱 CURRENCY CONVERTER MODULE
-// ════════════════════════════════════════════
-const SARF_CURRENCIES = [
+
+// ════════════════════════════════════════════════════════
+// 💱 CURRENCY CONVERTER MODULE — Clean & Standalone
+// ════════════════════════════════════════════════════════
+
+var SARF_CURRENCIES = [
   {id:'EUR',flag:'🇪🇺',name:'يورو',full:'Euro — الاتحاد الأوروبي'},
   {id:'USD',flag:'🇺🇸',name:'دولار أمريكي',full:'US Dollar — أمريكا'},
   {id:'GBP',flag:'🇬🇧',name:'جنيه إسترليني',full:'Pound Sterling — بريطانيا'},
   {id:'DZD',flag:'🇩🇿',name:'دينار جزائري',full:'Algerian Dinar — الجزائر'},
   {id:'MAD',flag:'🇲🇦',name:'درهم مغربي',full:'Moroccan Dirham — المغرب'},
   {id:'TND',flag:'🇹🇳',name:'دينار تونسي',full:'Tunisian Dinar — تونس'},
+  {id:'SDG',flag:'🇸🇩',name:'جنيه سوداني',full:'Sudanese Pound — السودان'},
   {id:'SAR',flag:'🇸🇦',name:'ريال سعودي',full:'Saudi Riyal — السعودية'},
   {id:'AED',flag:'🇦🇪',name:'درهم إماراتي',full:'UAE Dirham — الإمارات'},
-  {id:'TRY',flag:'🇹🇷',name:'ليرة تركية',full:'Turkish Lira — تركيا'},
   {id:'EGP',flag:'🇪🇬',name:'جنيه مصري',full:'Egyptian Pound — مصر'},
+  {id:'TRY',flag:'🇹🇷',name:'ليرة تركية',full:'Turkish Lira — تركيا'},
 ];
- 
-// Rates base EUR — May 2026 (real data)
-const SARF_OFFICIAL = {EUR:1,USD:1.12,GBP:0.86,DZD:149.6,MAD:10.95,TND:3.38,SAR:4.20,AED:4.11,TRY:42.8,EGP:55.2};
-const SARF_PARALLEL = {EUR:1,USD:1.12,GBP:0.86,DZD:280,MAD:11.40,TND:3.55,SAR:4.20,AED:4.11,TRY:42.8,EGP:55.2};
-const HAS_PARALLEL  = ['DZD','MAD','TND'];
- 
-const TRANSFER_SVCS = [
-  {id:'altras',name:'Altras Money Transfer',logo:'🟣',color:'#8b5cf6',tag:'الأرخص',rating:4.5,speed:'1-2 يوم',minFee:0.99,feePct:1.0,
-   rates:{DZD:149.0,MAD:10.88,TND:3.35,SAR:4.18,AED:4.08,EGP:54.8},url:'https://www.altras.de',
-   pros:['رسوم منخفضة جداً','سعر تنافسي','للجالية العربية'],cons:['شبكة أصغر']},
-  {id:'wise',name:'Wise',logo:'🟢',color:'#22d3a0',tag:'أفضل سعر',rating:4.8,speed:'1-2 يوم',minFee:0,feePct:0.5,
-   rates:{DZD:149.5,MAD:10.92,TND:3.37,SAR:4.19,AED:4.10,EGP:55.0},url:'https://wise.com',
-   pros:['سعر السوق المتوسط','شفافية تامة','تطبيق ممتاز'],cons:['لا يدعم DZD مباشرة']},
-  {id:'ria',name:'Ria Money Transfer',logo:'🟠',color:'#f97316',tag:'الأسرع',rating:4.7,speed:'دقائق',minFee:1.99,feePct:1.5,
-   rates:{DZD:148.2,MAD:10.80,TND:3.31,SAR:4.15,AED:4.05,EGP:54.1},url:'https://www.riamoneytransfer.com',
-   pros:['شبكة واسعة جداً','سريع للغاية','تطبيق ممتاز'],cons:['هامش تبادل أعلى قليلاً']},
-  {id:'moneygram',name:'MoneyGram',logo:'🔵',color:'#3b82f6',tag:'موثوق',rating:4.3,speed:'ساعات',minFee:3.99,feePct:2.0,
-   rates:{DZD:147.0,MAD:10.75,TND:3.29,SAR:4.13,AED:4.02,EGP:53.8},url:'https://www.moneygram.com',
-   pros:['440,000+ موقع','استلام نقدي سريع','80+ سنة خبرة'],cons:['رسوم أعلى للمبالغ الكبيرة']},
-  {id:'wu',name:'Western Union',logo:'🟡',color:'#f5c842',tag:'الأوسع',rating:4.1,speed:'دقائق',minFee:4.90,feePct:2.5,
-   rates:{DZD:146.5,MAD:10.70,TND:3.27,SAR:4.10,AED:4.00,EGP:53.5},url:'https://www.westernunion.com',
-   pros:['500,000+ موقع','الأوسع انتشاراً','موثوق منذ 1851'],cons:['رسوم أعلى','سعر أقل تنافسية']},
+
+var SARF_OFF = {EUR:1,USD:1.12,GBP:0.86,DZD:149.6,MAD:10.95,TND:3.38,SDG:3150,SAR:4.20,AED:4.11,EGP:55.2,TRY:42.8};
+var SARF_PAR = {EUR:1,USD:1.12,GBP:0.86,DZD:280,  MAD:11.40,TND:3.55,SDG:5800,SAR:4.20,AED:4.11,EGP:55.2,TRY:42.8};
+var HAS_PAR  = ['DZD','MAD','TND','SDG'];
+
+var SVCS = [
+  {id:'none',  name:'بنك/موازي',      logo:'🏦', color:'#4ade80', tag:'رسمي',     rating:null, speed:'فوري',    fee:'0',   feePct:0,   url:'',
+   rates:{DZD:149.6,MAD:10.95,TND:3.38,SDG:3150,SAR:4.20,AED:4.11,EGP:55.2}},
+  {id:'altras',name:'Altras Money Transfer', logo:'🟣', color:'#8b5cf6', tag:'الأرخص', rating:4.5, speed:'1-2 يوم',fee:'0.99€',feePct:1.0,url:'https://altras.co.uk',
+   rates:{DZD:149.0,MAD:10.88,TND:3.35,SDG:3100,SAR:4.18,AED:4.08,EGP:54.8}},
+  {id:'wise',  name:'Wise',            logo:'🟢', color:'#22d3a0', tag:'أفضل سعر',rating:4.8, speed:'1-2 يوم',fee:'0.5%', feePct:0.5,url:'https://wise.com',
+   rates:{DZD:149.5,MAD:10.92,TND:3.37,SDG:3140,SAR:4.19,AED:4.10,EGP:55.0}},
+  {id:'ria',   name:'Ria',             logo:'🟠', color:'#f97316', tag:'الأسرع',  rating:4.7, speed:'دقائق',   fee:'1.99€',feePct:1.5,url:'https://www.riamoneytransfer.com',
+   rates:{DZD:148.2,MAD:10.80,TND:3.31,SDG:3080,SAR:4.15,AED:4.05,EGP:54.1}},
+  {id:'mg',    name:'MoneyGram',       logo:'🔵', color:'#3b82f6', tag:'موثوق',   rating:4.3, speed:'ساعات',   fee:'3.99€',feePct:2.0,url:'https://www.moneygram.com',
+   rates:{DZD:147.0,MAD:10.75,TND:3.29,SDG:3050,SAR:4.13,AED:4.02,EGP:53.8}},
+  {id:'wu',    name:'Western Union',   logo:'🟡', color:'#f5c842', tag:'الأوسع',  rating:4.1, speed:'دقائق',   fee:'4.90€',feePct:2.5,url:'https://www.westernunion.com',
+   rates:{DZD:146.5,MAD:10.70,TND:3.27,SDG:3020,SAR:4.10,AED:4.00,EGP:53.5}},
 ];
- 
-// Sarf state
-let sarfFrom='EUR', sarfTo='DZD', sarfAmt=100, sarfMode='parallel', sarfFor='from', sarfSubTab='convert';
- 
-function sarfRate(from,to,mode){
-  const r=mode==='parallel'?SARF_PARALLEL:SARF_OFFICIAL;
-  return (r[to]||SARF_OFFICIAL[to]||1)/(r[from]||SARF_OFFICIAL[from]||1);
+
+var sarfFrom = 'EUR';
+var sarfTo   = 'DZD';
+var sarfAmt  = 100;
+var sarfMode = 'parallel';
+var sarfFor  = 'from';
+var sarfTab  = 'convert';
+var sarfSvc  = 'none';
+
+function sarfGetRate(f, t, mode) {
+  var r = (mode === 'parallel') ? SARF_PAR : SARF_OFF;
+  var fromR = r[f] || SARF_OFF[f] || 1;
+  var toR   = r[t] || SARF_OFF[t] || 1;
+  return toR / fromR;
 }
-function sarfFmt(n,d=2){ return n>=1000?new Intl.NumberFormat('ar-SA',{maximumFractionDigits:d}).format(n):parseFloat(n.toFixed(d)).toString(); }
-function sarfCurr(id){ return SARF_CURRENCIES.find(c=>c.id===id)||SARF_CURRENCIES[0]; }
- 
-function renderSarf(){
-  const from=sarfCurr(sarfFrom), to=sarfCurr(sarfTo);
-  const offRate=sarfRate(sarfFrom,sarfTo,'official');
-  const parRate=sarfRate(sarfFrom,sarfTo,'parallel');
-  const hasP=HAS_PARALLEL.includes(sarfTo)||HAS_PARALLEL.includes(sarfFrom);
-  const activeRate=sarfMode==='parallel'&&hasP?parRate:offRate;
-  const result=sarfAmt*activeRate;
-  const offResult=sarfAmt*offRate;
-  const gain=result-offResult;
- 
-  const subTabs=[
-    {id:'convert',label:'🔄 تحويل'},
-    {id:'services',label:'📤 خدمات'},
-    {id:'market',label:'📊 السوق'},
-  ];
- 
-  let body='';
-  if(sarfSubTab==='convert'){
-    body=`
-    <!-- CONVERTER BOX -->
-    <div class="sarf-hero">
-      <div class="sarf-label">من</div>
-      <div class="sarf-row">
-        <div class="sarf-curr-btn" onclick="sarfOpenModal('from')">
-          <span style="font-size:20px">${from.flag}</span>
-          <span style="color:var(--text);font-weight:700;font-size:14px">${from.id}</span>
-          <span style="color:var(--muted);font-size:11px">▼</span>
-        </div>
-        <input class="sarf-amount" type="number" id="sarf-inp" value="${sarfAmt}" placeholder="0"
-          oninput="sarfAmt=parseFloat(this.value)||0;renderSarfContent()"/>
-      </div>
-      <div style="display:flex;justify-content:center;margin:2px 0">
-        <button class="sarf-swap" onclick="sarfSwap()">⇅</button>
-      </div>
-      <div class="sarf-label" style="margin-top:6px">إلى</div>
-      <div class="sarf-row" style="margin-bottom:0">
-        <div class="sarf-curr-btn" onclick="sarfOpenModal('to')">
-          <span style="font-size:20px">${to.flag}</span>
-          <span style="color:var(--text);font-weight:700;font-size:14px">${to.id}</span>
-          <span style="color:var(--muted);font-size:11px">▼</span>
-        </div>
-        <div class="sarf-result">${sarfFmt(result,0)}</div>
-      </div>
-    </div>
- 
-    <!-- RATE MODE -->
-    ${hasP?`<div style="display:flex;gap:6px;margin-bottom:12px">
-      <button class="rate-tab${sarfMode==='parallel'?' ag':''}" onclick="sarfMode='parallel';renderSarfContent()">🏪 سوق موازي — ${sarfFmt(parRate,2)}</button>
-      <button class="rate-tab${sarfMode==='official'?' ab':''}" onclick="sarfMode='official';renderSarfContent()">🏦 بنك — ${sarfFmt(offRate,2)}</button>
-    </div>`:`<div class="card" style="padding:10px 14px;margin-bottom:12px;display:flex;justify-content:space-between;align-items:center">
-      <span style="color:var(--muted);font-size:12px">🏦 سعر الصرف</span>
-      <span style="color:#60a5fa;font-weight:700">1 ${from.id} = ${sarfFmt(offRate,4)} ${to.id}</span>
-    </div>`}
- 
-    <!-- RESULT BOX -->
-    <div class="sarf-result-box">
-      <div style="font-size:32px;font-weight:900;color:#f5c842;letter-spacing:-1px">${sarfFmt(result,0)} ${to.id}</div>
-      <div style="color:var(--muted);font-size:12px;margin-top:4px">مقابل ${sarfFmt(sarfAmt)} ${from.id} ${sarfMode==='parallel'&&hasP?'(سوق موازي)':'(رسمي)'}</div>
-      ${hasP&&sarfMode==='parallel'&&gain>0?`<div style="color:#22d3a0;font-size:12px;margin-top:6px">✓ تكسب ${sarfFmt(gain,0)} ${to.id} أكثر من البنك</div>`:''}
-    </div>
- 
-    <!-- QUICK AMOUNTS -->
-    <div class="card" style="padding:12px 14px;margin-bottom:12px">
-      <div style="color:var(--muted);font-size:11px;font-weight:700;letter-spacing:1px;margin-bottom:8px">مبالغ سريعة</div>
-      <div style="display:flex;gap:6px;flex-wrap:wrap">
-        ${[50,100,200,500,1000,2000].map(v=>`<button class="sarf-chip" onclick="sarfSetAmt(${v})" style="background:${sarfAmt==v?'#f5c842':'var(--subtle)'};color:${sarfAmt==v?'#000':'var(--muted)'}">${v}</button>`).join('')}
-      </div>
-    </div>
- 
-    <!-- RATE DETAIL -->
-    <div class="card">
-      <div style="color:var(--muted);font-size:11px;font-weight:700;letter-spacing:1px;margin-bottom:12px">تفاصيل الأسعار — مايو 2026</div>
-      <div style="display:flex;justify-content:space-between;margin-bottom:10px">
-        <span style="color:var(--muted);font-size:13px">🏦 بنك رسمي</span>
-        <span style="color:#60a5fa;font-weight:700">1 ${from.id} = ${sarfFmt(offRate,3)} ${to.id}</span>
-      </div>
-      ${hasP?`<div style="display:flex;justify-content:space-between;margin-bottom:10px">
-        <span style="color:var(--muted);font-size:13px">🏪 سوق موازي</span>
-        <span style="color:#f5c842;font-weight:700">1 ${from.id} = ${sarfFmt(parRate,3)} ${to.id}</span>
-      </div>
-      <div style="display:flex;justify-content:space-between;padding-top:10px;border-top:1px solid var(--border)">
-        <span style="color:var(--muted);font-size:13px">📊 فرق السعر</span>
-        <span style="color:#f87171;font-weight:700">+${sarfFmt(((parRate/offRate-1)*100),1)}% فوق الرسمي</span>
-      </div>`:'<div style="color:var(--muted);font-size:12px;text-align:center;padding:6px 0">لا يوجد سوق موازي لهذه العملة</div>'}
-    </div>`;
+
+function sarfN(n, d) {
+  d = d || 0;
+  if (n >= 1000) return new Intl.NumberFormat('ar-SA', {maximumFractionDigits: d}).format(n);
+  return parseFloat(n.toFixed(d > 0 ? d : 2)).toString();
+}
+
+function sarfGetCurr(id) {
+  for (var i = 0; i < SARF_CURRENCIES.length; i++) {
+    if (SARF_CURRENCIES[i].id === id) return SARF_CURRENCIES[i];
   }
- 
-  else if(sarfSubTab==='services'){
-    const dest=TRANSFER_SVCS[0].rates[sarfTo]?sarfTo:'DZD';
-    const destC=sarfCurr(dest);
-    const sorted=[...TRANSFER_SVCS].sort((a,b)=>(b.rates[dest]||0)-(a.rates[dest]||0));
-    const bestRate=sorted[0].rates[dest];
-    body=`
-    <div class="card" style="padding:10px 14px;margin-bottom:12px;background:rgba(34,211,160,.06);border-color:rgba(34,211,160,.2)">
-      <div style="display:flex;align-items:center;gap:8px">
-        <span style="font-size:18px">ℹ️</span>
-        <div>
-          <p style="color:#22d3a0;font-size:13px;font-weight:700;margin:0">مقارنة خدمات التحويل الدولي</p>
-          <p style="color:var(--muted);font-size:11px;margin:0">${sarfFmt(sarfAmt)} ${sarfFrom} → ${destC.flag} ${dest}</p>
-        </div>
-      </div>
-    </div>
-    ${sorted.map((s,i)=>{
-      const recv=(sarfAmt*(s.rates[dest]||0)).toFixed(0);
-      const fee=(sarfAmt>=1000?(sarfAmt*s.feePct/100):s.minFee).toFixed(2);
-      const isBest=i===0;
-      const diff=((s.rates[dest]||0)-bestRate)*sarfAmt;
-      return `<div class="svc-card">
-        <div style="display:flex;align-items:center;gap:10px">
-          <div class="svc-logo" style="background:${s.color}22;color:${s.color}">${s.logo}</div>
-          <div style="flex:1">
-            <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap">
-              <span style="color:var(--text);font-weight:700;font-size:14px">${s.name}</span>
-              ${isBest?`<span style="background:rgba(34,211,160,.15);border:1px solid rgba(34,211,160,.4);border-radius:99px;padding:2px 8px;color:#22d3a0;font-size:10px;font-weight:700">⭐ الأفضل</span>`:''}
-            </div>
-            <div style="display:flex;gap:8px;margin-top:3px">
-              <span style="color:var(--muted);font-size:11px">⏱️ ${s.speed}</span>
-              <span style="color:#f5c842;font-size:11px">★ ${s.rating}</span>
-              <span style="background:${s.color}22;color:${s.color};border-radius:99px;padding:1px 8px;font-size:10px;font-weight:700">${s.tag}</span>
-            </div>
-          </div>
-          <button onclick="window.open('${s.url}')" style="background:var(--subtle);border:none;border-radius:10px;padding:7px 12px;color:#f5c842;font-size:12px;cursor:pointer;font-family:inherit;font-weight:600">فتح ↗</button>
-        </div>
-        <div class="svc-stats">
-          <div class="svc-stat">
-            <div style="color:var(--muted);font-size:10px;margin-bottom:2px">يصل</div>
-            <div style="color:${isBest?'#22d3a0':'var(--text)'};font-weight:700;font-size:13px">${parseInt(recv).toLocaleString('ar-SA')}</div>
-            <div style="color:var(--muted);font-size:9px">${dest}</div>
-          </div>
-          <div class="svc-stat">
-            <div style="color:var(--muted);font-size:10px;margin-bottom:2px">رسوم</div>
-            <div style="color:#f87171;font-weight:700;font-size:13px">${fee}€</div>
-            <div style="color:var(--muted);font-size:9px">${s.feePct}%</div>
-          </div>
-          <div class="svc-stat">
-            <div style="color:var(--muted);font-size:10px;margin-bottom:2px">السعر</div>
-            <div style="color:#f5c842;font-weight:700;font-size:13px">${s.rates[dest]||'—'}</div>
-            <div style="color:var(--muted);font-size:9px">${sarfFrom}/${dest}</div>
-          </div>
-        </div>
-        ${!isBest&&diff<0?`<div style="margin-top:8px;background:rgba(248,113,113,.08);border-radius:10px;padding:6px 12px;font-size:11px;color:#f87171">📉 تخسر ${Math.abs(diff).toFixed(0)} ${dest} مقارنةً بالأفضل</div>`:''}
-        ${isBest?`<div style="margin-top:8px;background:rgba(34,211,160,.08);border-radius:10px;padding:6px 12px;font-size:11px;color:#22d3a0">✅ أفضل سعر للمستلم لهذه الوجهة</div>`:''}
-      </div>`;
-    }).join('')}
-    <div class="card" style="background:rgba(245,200,66,.05);border-color:rgba(245,200,66,.2)">
-      <p style="color:#f5c842;font-size:12px;font-weight:700;margin-bottom:4px">⚠️ تنبيه</p>
-      <p style="color:var(--muted);font-size:11px;line-height:1.6">الأسعار تقريبية وتتغير يومياً. تحقق من السعر الفعلي قبل الإرسال.</p>
-    </div>`;
+  return SARF_CURRENCIES[0];
+}
+
+function sarfGetSvc(id) {
+  for (var i = 0; i < SVCS.length; i++) {
+    if (SVCS[i].id === id) return SVCS[i];
   }
- 
-  else if(sarfSubTab==='market'){
-    const mktData=[
-      {id:'DZD',flag:'🇩🇿',name:'دينار جزائري',country:'الجزائر',off:149.6,par:280,src:'السكوار'},
-      {id:'MAD',flag:'🇲🇦',name:'درهم مغربي',country:'المغرب',off:10.95,par:11.40,src:'السوق الموازي'},
-      {id:'TND',flag:'🇹🇳',name:'دينار تونسي',country:'تونس',off:3.38,par:3.55,src:'السوق الموازي'},
-      {id:'SDG',flag:'🇸🇩',name:'جنيه سوداني',country:'السودان',off:3150,par:5800,src:'السوق الموازي الخرطوم'},
-      {id:'SAR',flag:'🇸🇦',name:'ريال سعودي',country:'السعودية',off:4.20,par:null},
-      {id:'AED',flag:'🇦🇪',name:'درهم إماراتي',country:'الإمارات',off:4.11,par:null},
-      {id:'EGP',flag:'🇪🇬',name:'جنيه مصري',country:'مصر',off:55.2,par:null},
-      {id:'TRY',flag:'🇹🇷',name:'ليرة تركية',country:'تركيا',off:42.8,par:null},
+  return SVCS[0];
+}
+
+function renderSarf() {
+  var from   = sarfGetCurr(sarfFrom);
+  var to     = sarfGetCurr(sarfTo);
+  var offR   = sarfGetRate(sarfFrom, sarfTo, 'official');
+  var parR   = sarfGetRate(sarfFrom, sarfTo, 'parallel');
+  var hasP   = HAS_PAR.indexOf(sarfTo) >= 0 || HAS_PAR.indexOf(sarfFrom) >= 0;
+  var actR   = (sarfMode === 'parallel' && hasP) ? parR : offR;
+  var svc    = sarfGetSvc(sarfSvc);
+  var svcR   = (svc && svc.rates[sarfTo] !== undefined) ? svc.rates[sarfTo] / (SARF_OFF[sarfFrom] || 1) : actR;
+  var useR   = (sarfSvc !== 'none' && svc) ? svcR : actR;
+  var res    = sarfAmt * useR;
+  var offRes = sarfAmt * offR;
+  var gain   = res - offRes;
+
+  var html = '<div style="padding:14px 14px 80px">';
+
+  // ── SUB TABS ──
+  html += '<div style="display:flex;gap:6px;margin-bottom:14px">';
+  var tabs = [{id:'convert',l:'🔄 تحويل'},{id:'services',l:'📤 خدمات'},{id:'market',l:'📊 السوق'}];
+  for (var ti = 0; ti < tabs.length; ti++) {
+    var t = tabs[ti];
+    var isAct = sarfTab === t.id;
+    html += '<button onclick="sarfTab=\'' + t.id + '\';sarfRefresh()" style="flex:1;padding:9px 0;border-radius:11px;border:1.5px solid ' + (isAct?'#f5c842':'var(--border)') + ';background:' + (isAct?'rgba(245,200,66,.12)':'var(--subtle)') + ';color:' + (isAct?'#f5c842':'var(--muted)') + ';font-size:12px;font-weight:700;cursor:pointer;font-family:inherit">' + t.l + '</button>';
+  }
+  html += '</div>';
+
+  // ══ CONVERT TAB ══
+  if (sarfTab === 'convert') {
+
+    // Converter box
+    html += '<div style="background:linear-gradient(135deg,#07101e,#0c1828);border:1px solid var(--border);border-radius:20px;padding:18px;margin-bottom:12px">';
+    html += '<div style="color:var(--muted);font-size:11px;font-weight:700;letter-spacing:1px;margin-bottom:8px">من</div>';
+    html += '<div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">';
+    html += '<div onclick="sarfOpen(\'from\')" style="background:var(--subtle);border:1.5px solid var(--border);border-radius:12px;padding:10px 14px;display:flex;align-items:center;gap:8px;cursor:pointer;flex-shrink:0">';
+    html += '<span style="font-size:20px">' + from.flag + '</span>';
+    html += '<span style="color:var(--text);font-weight:700;font-size:14px">' + from.id + '</span>';
+    html += '<span style="color:var(--muted);font-size:11px">▼</span></div>';
+    html += '<input id="sarf-inp" type="number" value="' + sarfAmt + '" placeholder="0" oninput="sarfAmt=parseFloat(this.value)||0;sarfRefresh()" style="flex:1;background:transparent;border:none;color:var(--text);font-size:26px;font-weight:900;font-family:inherit;outline:none;text-align:left;direction:ltr;min-width:0"/>';
+    html += '</div>';
+
+    // Swap button
+    html += '<div style="display:flex;justify-content:center;margin:2px 0">';
+    html += '<button onclick="sarfSwap()" style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#f5c842,#f09d1a);border:none;cursor:pointer;font-size:20px">⇅</button>';
+    html += '</div>';
+
+    html += '<div style="color:var(--muted);font-size:11px;font-weight:700;letter-spacing:1px;margin:8px 0">إلى</div>';
+    html += '<div style="display:flex;align-items:center;gap:10px">';
+    html += '<div onclick="sarfOpen(\'to\')" style="background:var(--subtle);border:1.5px solid var(--border);border-radius:12px;padding:10px 14px;display:flex;align-items:center;gap:8px;cursor:pointer;flex-shrink:0">';
+    html += '<span style="font-size:20px">' + to.flag + '</span>';
+    html += '<span style="color:var(--text);font-weight:700;font-size:14px">' + to.id + '</span>';
+    html += '<span style="color:var(--muted);font-size:11px">▼</span></div>';
+    html += '<div style="font-size:26px;font-weight:900;color:#f5c842;flex:1;text-align:left;direction:ltr">' + sarfN(res, 0) + '</div>';
+    html += '</div>';
+    html += '</div>'; // end converter box
+
+    // Rate mode selector
+    if (hasP) {
+      html += '<div style="display:flex;gap:6px;margin-bottom:12px">';
+      html += '<button onclick="sarfMode=\'parallel\';sarfRefresh()" style="flex:1;padding:10px;border-radius:12px;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit;border:1.5px solid ' + (sarfMode==='parallel'?'rgba(245,200,66,.5)':'var(--border)') + ';background:' + (sarfMode==='parallel'?'rgba(245,200,66,.12)':'var(--subtle)') + ';color:' + (sarfMode==='parallel'?'#f5c842':'var(--muted)') + '">🏪 سوق موازي — ' + sarfN(parR, 2) + '</button>';
+      html += '<button onclick="sarfMode=\'official\';sarfRefresh()" style="flex:1;padding:10px;border-radius:12px;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit;border:1.5px solid ' + (sarfMode==='official'?'rgba(96,165,250,.5)':'var(--border)') + ';background:' + (sarfMode==='official'?'rgba(96,165,250,.12)':'var(--subtle)') + ';color:' + (sarfMode==='official'?'#60a5fa':'var(--muted)') + '">🏦 بنك — ' + sarfN(offR, 2) + '</button>';
+      html += '</div>';
+    } else {
+      html += '<div class="card" style="padding:10px 14px;margin-bottom:12px;display:flex;justify-content:space-between;align-items:center">';
+      html += '<span style="color:var(--muted);font-size:12px">🏦 سعر الصرف الرسمي</span>';
+      html += '<span style="color:#60a5fa;font-weight:700">1 ' + from.id + ' = ' + sarfN(offR, 4) + ' ' + to.id + '</span>';
+      html += '</div>';
+    }
+
+    // Result box
+    html += '<div style="background:rgba(245,200,66,.08);border:1px solid rgba(245,200,66,.25);border-radius:16px;padding:14px;text-align:center;margin-bottom:12px">';
+    html += '<div style="font-size:32px;font-weight:900;color:#f5c842;letter-spacing:-1px">' + sarfN(res, 0) + ' ' + to.id + '</div>';
+    html += '<div style="color:var(--muted);font-size:12px;margin-top:4px">مقابل ' + sarfN(sarfAmt, 0) + ' ' + from.id;
+    if (sarfSvc !== 'none' && svc) html += ' عبر ' + svc.name;
+    else if (sarfMode === 'parallel' && hasP) html += ' (سوق موازي)';
+    else html += ' (رسمي)';
+    html += '</div>';
+    if (hasP && sarfMode === 'parallel' && gain > 0 && sarfSvc === 'none') {
+      html += '<div style="color:#22d3a0;font-size:12px;margin-top:6px">✓ تكسب ' + sarfN(gain, 0) + ' ' + to.id + ' أكثر من البنك الرسمي</div>';
+    }
+    html += '</div>';
+
+    // Free amount input + quick amounts
+    html += '<div class="card" style="padding:14px;margin-bottom:12px">';
+    html += '<div style="color:var(--muted);font-size:11px;font-weight:700;letter-spacing:1px;margin-bottom:10px">المبلغ</div>';
+    html += '<div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">';
+    html += '<input type="number" id="sarf-free-inp" value="' + sarfAmt + '" placeholder="أدخل أي مبلغ" oninput="sarfAmt=parseFloat(this.value)||0;var si=document.getElementById(\'sarf-inp\');if(si)si.value=this.value;sarfRefresh()" style="flex:1;background:var(--subtle);border:1.5px solid var(--border);border-radius:12px;color:var(--text);font-size:18px;font-weight:700;padding:12px 14px;font-family:inherit;outline:none;direction:ltr;text-align:center"/>';
+    html += '<span style="color:var(--muted);font-size:14px;font-weight:700;flex-shrink:0">' + from.id + '</span>';
+    html += '</div>';
+    html += '<div style="display:flex;gap:6px;flex-wrap:wrap">';
+    var quickAmts = [50, 100, 200, 500, 1000, 2000, 5000];
+    for (var qi = 0; qi < quickAmts.length; qi++) {
+      var qa = quickAmts[qi];
+      var isQ = sarfAmt === qa;
+      html += '<button onclick="sarfSetAmt(' + qa + ')" style="border-radius:99px;padding:6px 14px;font-size:12px;font-weight:600;border:none;cursor:pointer;font-family:inherit;background:' + (isQ?'#f5c842':'var(--subtle)') + ';color:' + (isQ?'#000':'var(--muted)') + '">' + qa + '</button>';
+    }
+    html += '</div></div>';
+
+    // Service selector
+    html += '<div class="card" style="padding:14px;margin-bottom:12px">';
+    html += '<div style="color:var(--muted);font-size:11px;font-weight:700;letter-spacing:1px;margin-bottom:10px">🏢 اختر خدمة التحويل</div>';
+    html += '<div style="display:flex;gap:6px;overflow-x:auto;padding-bottom:6px">';
+    for (var si2 = 0; si2 < SVCS.length; si2++) {
+      var sv = SVCS[si2];
+      var isSel = sarfSvc === sv.id;
+      html += '<button onclick="sarfSvc=\'' + sv.id + '\';sarfRefresh()" style="flex-shrink:0;border-radius:12px;padding:8px 12px;font-size:12px;font-weight:700;border:1.5px solid ' + (isSel?sv.color:'var(--border)') + ';background:' + (isSel?sv.color+'22':'var(--subtle)') + ';color:' + (isSel?sv.color:'var(--muted)') + ';cursor:pointer;font-family:inherit;white-space:nowrap">' + sv.logo + ' ' + sv.name.split(' ')[0] + '</button>';
+    }
+    html += '</div>';
+
+    // Selected service detail
+    if (sarfSvc !== 'none' && svc) {
+      var dest  = (svc.rates[sarfTo] !== undefined) ? sarfTo : 'DZD';
+      var recv  = Math.round(sarfAmt * (svc.rates[dest] || 0));
+      var feeN  = parseFloat(svc.fee) > 0 ? svc.fee : sarfN(sarfAmt * svc.feePct / 100, 2) + '€';
+      html += '<div style="margin-top:12px;background:' + svc.color + '11;border:1px solid ' + svc.color + '44;border-radius:14px;padding:14px">';
+      html += '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">';
+      html += '<span style="color:' + svc.color + ';font-weight:700;font-size:15px">' + svc.logo + ' ' + svc.name + '</span>';
+      if (svc.url) {
+        html += '<button onclick="window.open(\'' + svc.url + '\')" style="background:' + svc.color + '22;border:none;border-radius:8px;color:' + svc.color + ';font-size:12px;padding:6px 12px;cursor:pointer;font-family:inherit;font-weight:700">فتح الموقع ↗</button>';
+      }
+      html += '</div>';
+      html += '<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px">';
+      html += '<div style="background:rgba(0,0,0,.25);border-radius:10px;padding:10px;text-align:center"><div style="color:#94a3b8;font-size:10px;margin-bottom:3px">يصل</div><div style="color:#22d3a0;font-weight:800;font-size:16px">' + recv.toLocaleString('ar-SA') + '</div><div style="color:#64748b;font-size:9px">' + dest + '</div></div>';
+      html += '<div style="background:rgba(0,0,0,.25);border-radius:10px;padding:10px;text-align:center"><div style="color:#94a3b8;font-size:10px;margin-bottom:3px">رسوم</div><div style="color:#f87171;font-weight:800;font-size:16px">' + feeN + '</div></div>';
+      html += '<div style="background:rgba(0,0,0,.25);border-radius:10px;padding:10px;text-align:center"><div style="color:#94a3b8;font-size:10px;margin-bottom:3px">السرعة</div><div style="color:#f5c842;font-weight:700;font-size:13px">' + svc.speed + '</div></div>';
+      html += '</div></div>';
+    }
+    html += '</div>'; // end service card
+
+    // Rate details
+    html += '<div class="card">';
+    html += '<div style="color:var(--muted);font-size:11px;font-weight:700;letter-spacing:1px;margin-bottom:12px">تفاصيل الأسعار — مايو 2026</div>';
+    html += '<div style="display:flex;justify-content:space-between;margin-bottom:10px"><span style="color:var(--muted);font-size:13px">🏦 بنك رسمي</span><span style="color:#60a5fa;font-weight:700">1 ' + from.id + ' = ' + sarfN(offR, 3) + ' ' + to.id + '</span></div>';
+    if (hasP) {
+      html += '<div style="display:flex;justify-content:space-between;margin-bottom:10px"><span style="color:var(--muted);font-size:13px">🏪 سوق موازي</span><span style="color:#f5c842;font-weight:700">1 ' + from.id + ' = ' + sarfN(parR, 3) + ' ' + to.id + '</span></div>';
+      html += '<div style="display:flex;justify-content:space-between;padding-top:10px;border-top:1px solid var(--border)"><span style="color:var(--muted);font-size:13px">📊 الفرق</span><span style="color:#f87171;font-weight:700">+' + sarfN(((parR/offR)-1)*100, 1) + '% فوق الرسمي</span></div>';
+    } else {
+      html += '<div style="color:var(--muted);font-size:12px;text-align:center;padding:6px 0">لا يوجد سوق موازي لهذه العملة</div>';
+    }
+    html += '</div>';
+  }
+
+  // ══ SERVICES TAB ══
+  else if (sarfTab === 'services') {
+    var dest2 = (SVCS[1].rates[sarfTo] !== undefined) ? sarfTo : 'DZD';
+    var sortedSvcs = SVCS.slice(1).sort(function(a,b){ return (b.rates[dest2]||0)-(a.rates[dest2]||0); });
+    var bestR2 = sortedSvcs[0].rates[dest2] || 0;
+
+    html += '<div class="card" style="padding:10px 14px;margin-bottom:12px;background:rgba(34,211,160,.06);border-color:rgba(34,211,160,.2)">';
+    html += '<div style="display:flex;align-items:center;gap:8px"><span style="font-size:18px">ℹ️</span><div>';
+    html += '<p style="color:#22d3a0;font-size:13px;font-weight:700;margin:0">مقارنة خدمات التحويل الدولي</p>';
+    html += '<p style="color:var(--muted);font-size:11px;margin:0">' + sarfN(sarfAmt) + ' ' + sarfFrom + ' → ' + sarfGetCurr(dest2).flag + ' ' + dest2 + '</p>';
+    html += '</div></div></div>';
+
+    for (var svi = 0; svi < sortedSvcs.length; svi++) {
+      var sv2 = sortedSvcs[svi];
+      var recv2 = Math.round(sarfAmt * (sv2.rates[dest2] || 0));
+      var isBest = svi === 0;
+      var diff2 = ((sv2.rates[dest2]||0) - bestR2) * sarfAmt;
+      html += '<div class="card" style="margin-bottom:10px">';
+      html += '<div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">';
+      html += '<div style="width:40px;height:40px;border-radius:11px;background:' + sv2.color + '22;color:' + sv2.color + ';display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0">' + sv2.logo + '</div>';
+      html += '<div style="flex:1"><div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap">';
+      html += '<span style="color:var(--text);font-weight:700;font-size:14px">' + sv2.name + '</span>';
+      if (isBest) html += '<span style="background:rgba(34,211,160,.15);border:1px solid rgba(34,211,160,.4);border-radius:99px;padding:2px 8px;color:#22d3a0;font-size:10px;font-weight:700">⭐ الأفضل</span>';
+      html += '<span style="background:' + sv2.color + '22;color:' + sv2.color + ';border-radius:99px;padding:1px 8px;font-size:10px;font-weight:700">' + sv2.tag + '</span>';
+      html += '</div><div style="display:flex;gap:8px;margin-top:3px">';
+      html += '<span style="color:var(--muted);font-size:11px">⏱️ ' + sv2.speed + '</span>';
+      html += '<span style="color:#f5c842;font-size:11px">★ ' + sv2.rating + '</span>';
+      html += '</div></div>';
+      html += '<button onclick="window.open(\'' + sv2.url + '\')" style="background:var(--subtle);border:none;border-radius:10px;padding:7px 12px;color:#f5c842;font-size:12px;cursor:pointer;font-family:inherit;font-weight:600">فتح ↗</button>';
+      html += '</div>';
+      html += '<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px">';
+      html += '<div style="background:var(--subtle);border-radius:10px;padding:8px;text-align:center"><div style="color:var(--muted);font-size:10px;margin-bottom:2px">يصل</div><div style="color:' + (isBest?'#22d3a0':'var(--text)') + ';font-weight:700;font-size:13px">' + recv2.toLocaleString('ar-SA') + '</div><div style="color:var(--muted);font-size:9px">' + dest2 + '</div></div>';
+      html += '<div style="background:var(--subtle);border-radius:10px;padding:8px;text-align:center"><div style="color:var(--muted);font-size:10px;margin-bottom:2px">رسوم</div><div style="color:#f87171;font-weight:700;font-size:13px">' + sv2.fee + '</div></div>';
+      html += '<div style="background:var(--subtle);border-radius:10px;padding:8px;text-align:center"><div style="color:var(--muted);font-size:10px;margin-bottom:2px">السعر</div><div style="color:#f5c842;font-weight:700;font-size:13px">' + (sv2.rates[dest2]||'—') + '</div></div>';
+      html += '</div>';
+      if (!isBest && diff2 < 0) html += '<div style="margin-top:8px;background:rgba(248,113,113,.08);border-radius:10px;padding:6px 12px;font-size:11px;color:#f87171">📉 تخسر ' + Math.abs(diff2).toFixed(0) + ' ' + dest2 + ' مقارنةً بالأفضل</div>';
+      if (isBest) html += '<div style="margin-top:8px;background:rgba(34,211,160,.08);border-radius:10px;padding:6px 12px;font-size:11px;color:#22d3a0">✅ أفضل سعر للمستلم</div>';
+      html += '</div>';
+    }
+    html += '<div class="card" style="background:rgba(245,200,66,.05);border-color:rgba(245,200,66,.2)"><p style="color:#f5c842;font-size:12px;font-weight:700;margin-bottom:4px">⚠️ تنبيه</p><p style="color:var(--muted);font-size:11px;line-height:1.6">الأسعار تقريبية وتتغير يومياً. تحقق من الموقع الرسمي قبل الإرسال.</p></div>';
+  }
+
+  // ══ MARKET TAB ══
+  else {
+    var mkt = [
+      {flag:'🇩🇿',name:'دينار جزائري',country:'الجزائر',off:149.6,par:280,src:'السكوار'},
+      {flag:'🇲🇦',name:'درهم مغربي',  country:'المغرب', off:10.95,par:11.40,src:'السوق الموازي'},
+      {flag:'🇹🇳',name:'دينار تونسي', country:'تونس',   off:3.38, par:3.55, src:'السوق الموازي'},
+      {flag:'🇸🇩',name:'جنيه سوداني', country:'السودان',off:3150, par:5800, src:'السوق الموازي الخرطوم'},
+      {flag:'🇸🇦',name:'ريال سعودي',  country:'السعودية',off:4.20,par:null},
+      {flag:'🇦🇪',name:'درهم إماراتي',country:'الإمارات',off:4.11,par:null},
+      {flag:'🇪🇬',name:'جنيه مصري',   country:'مصر',    off:55.2, par:null},
+      {flag:'🇹🇷',name:'ليرة تركية',  country:'تركيا',  off:42.8, par:null},
     ];
-    body=`
-    <!-- SUMMARY CARDS -->
-    <div style="display:flex;gap:8px;margin-bottom:12px">
-      <div style="flex:1;background:rgba(245,200,66,.08);border:1px solid rgba(245,200,66,.2);border-radius:16px;padding:12px;text-align:center">
-        <p style="color:#f5c842;font-size:11px;margin:0 0 4px">🏪 السكوار DZD</p>
-        <p style="color:#fff;font-weight:800;font-size:18px;margin:0">280</p>
-        <p style="color:rgba(245,200,66,.6);font-size:10px;margin:0">لكل 1 €</p>
-      </div>
-      <div style="flex:1;background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.2);border-radius:16px;padding:12px;text-align:center">
-        <p style="color:#60a5fa;font-size:11px;margin:0 0 4px">🏦 BEA رسمي</p>
-        <p style="color:#fff;font-weight:800;font-size:18px;margin:0">149.6</p>
-        <p style="color:rgba(96,165,250,.6);font-size:10px;margin:0">لكل 1 €</p>
-      </div>
-      <div style="flex:1;background:rgba(248,113,113,.08);border:1px solid rgba(248,113,113,.2);border-radius:16px;padding:12px;text-align:center">
-        <p style="color:#f87171;font-size:11px;margin:0 0 4px">📊 الفرق</p>
-        <p style="color:#fff;font-weight:800;font-size:18px;margin:0">+87%</p>
-        <p style="color:rgba(248,113,113,.6);font-size:10px;margin:0">فوق الرسمي</p>
-      </div>
-    </div>
- 
-    <!-- PARALLEL MARKET -->
-    <div style="color:var(--muted);font-size:11px;font-weight:700;letter-spacing:1px;margin-bottom:8px;padding:0 2px">🏪 السوق الموازي (مقابل 1 €)</div>
-    <div class="card" style="margin-bottom:12px">
-      ${mktData.filter(m=>m.par).map(m=>{
-        const diff=((m.par/m.off-1)*100).toFixed(1);
-        return `<div class="market-row-s">
-          <span style="font-size:22px;width:32px;text-align:center">${m.flag}</span>
-          <div style="flex:1">
-            <div style="color:var(--text);font-size:14px;font-weight:700">${m.name}</div>
-            <div style="color:var(--muted);font-size:11px">${m.country} · ${m.src||''}</div>
-          </div>
-          <div style="display:flex;flex-direction:column;align-items:flex-end;gap:2px">
-            <div style="color:#60a5fa;font-size:11px;font-weight:600">بنك: ${m.off}</div>
-            <div style="color:#f5c842;font-size:15px;font-weight:800">${m.par}</div>
-            <div style="color:#f87171;font-size:10px">+${diff}% فوق الرسمي</div>
-          </div>
-        </div>`;
-      }).join('')}
-    </div>
- 
-    <!-- OFFICIAL RATES -->
-    <div style="color:var(--muted);font-size:11px;font-weight:700;letter-spacing:1px;margin-bottom:8px;padding:0 2px">🏦 الأسعار الرسمية (مقابل 1 €)</div>
-    <div class="card">
-      ${mktData.map(m=>`<div class="market-row-s">
-        <span style="font-size:22px;width:32px;text-align:center">${m.flag}</span>
-        <div style="flex:1">
-          <div style="color:var(--text);font-size:14px;font-weight:700">${m.name}</div>
-          <div style="color:var(--muted);font-size:11px">${m.country}</div>
-        </div>
-        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:2px">
-          <div style="color:var(--text);font-size:15px;font-weight:700">${m.off}</div>
-          ${m.par?`<div style="color:#f5c842;font-size:11px">موازي: ${m.par}</div>`:''}
-        </div>
-      </div>`).join('')}
-    </div>
-    <div class="card" style="background:rgba(248,113,113,.05);border-color:rgba(248,113,113,.2)">
-      <p style="color:#f87171;font-size:12px;font-weight:700;margin-bottom:4px">⚠️ تنبيه قانوني</p>
-      <p style="color:var(--muted);font-size:11px;line-height:1.6">أسعار السوق الموازي للإشارة فقط. التعامل بها قد يكون مخالفاً للقانون. ننصح باستخدام القنوات الرسمية.</p>
-    </div>`;
+
+    html += '<div style="display:flex;gap:8px;margin-bottom:12px">';
+    html += '<div style="flex:1;background:rgba(245,200,66,.08);border:1px solid rgba(245,200,66,.2);border-radius:14px;padding:10px;text-align:center"><p style="color:#f5c842;font-size:10px;margin:0 0 3px">🏪 سكوار DZD</p><p style="color:#fff;font-weight:800;font-size:18px;margin:0">280</p><p style="color:rgba(245,200,66,.5);font-size:9px;margin:0">لكل 1€</p></div>';
+    html += '<div style="flex:1;background:rgba(34,211,160,.08);border:1px solid rgba(34,211,160,.2);border-radius:14px;padding:10px;text-align:center"><p style="color:#22d3a0;font-size:10px;margin:0 0 3px">🇸🇩 موازي SDG</p><p style="color:#fff;font-weight:800;font-size:18px;margin:0">5800</p><p style="color:rgba(34,211,160,.5);font-size:9px;margin:0">لكل 1€</p></div>';
+    html += '<div style="flex:1;background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.2);border-radius:14px;padding:10px;text-align:center"><p style="color:#60a5fa;font-size:10px;margin:0 0 3px">🏦 BEA رسمي</p><p style="color:#fff;font-weight:800;font-size:18px;margin:0">149.6</p><p style="color:rgba(96,165,250,.5);font-size:9px;margin:0">لكل 1€</p></div>';
+    html += '</div>';
+
+    html += '<div style="color:var(--muted);font-size:11px;font-weight:700;letter-spacing:1px;margin-bottom:8px">🏪 السوق الموازي (مقابل 1€)</div>';
+    html += '<div class="card" style="margin-bottom:12px">';
+    for (var mi = 0; mi < mkt.length; mi++) {
+      var m = mkt[mi];
+      if (!m.par) continue;
+      var diffPct = (((m.par/m.off)-1)*100).toFixed(1);
+      html += '<div style="display:flex;align-items:center;gap:10px;padding:11px 0;border-bottom:1px solid var(--border)">';
+      html += '<span style="font-size:22px;width:32px;text-align:center">' + m.flag + '</span>';
+      html += '<div style="flex:1"><div style="color:var(--text);font-size:14px;font-weight:700">' + m.name + '</div><div style="color:var(--muted);font-size:11px">' + m.country + (m.src?' · '+m.src:'') + '</div></div>';
+      html += '<div style="text-align:left"><div style="color:#60a5fa;font-size:11px;font-weight:600">بنك: ' + m.off + '</div><div style="color:#f5c842;font-size:15px;font-weight:800">' + m.par + '</div><div style="color:#f87171;font-size:10px">+' + diffPct + '%</div></div>';
+      html += '</div>';
+    }
+    html += '</div>';
+
+    html += '<div style="color:var(--muted);font-size:11px;font-weight:700;letter-spacing:1px;margin-bottom:8px">🏦 الأسعار الرسمية (مقابل 1€)</div>';
+    html += '<div class="card" style="margin-bottom:12px">';
+    for (var mi2 = 0; mi2 < mkt.length; mi2++) {
+      var m2 = mkt[mi2];
+      html += '<div style="display:flex;align-items:center;gap:10px;padding:11px 0;border-bottom:1px solid var(--border)">';
+      html += '<span style="font-size:22px;width:32px;text-align:center">' + m2.flag + '</span>';
+      html += '<div style="flex:1"><div style="color:var(--text);font-size:14px;font-weight:700">' + m2.name + '</div><div style="color:var(--muted);font-size:11px">' + m2.country + '</div></div>';
+      html += '<div style="text-align:left"><div style="color:var(--text);font-size:15px;font-weight:700">' + m2.off + '</div>';
+      if (m2.par) html += '<div style="color:#f5c842;font-size:11px">موازي: ' + m2.par + '</div>';
+      html += '</div></div>';
+    }
+    html += '</div>';
+
+    html += '<div class="card" style="background:rgba(248,113,113,.05);border-color:rgba(248,113,113,.2)"><p style="color:#f87171;font-size:12px;font-weight:700;margin-bottom:4px">⚠️ تنبيه قانوني</p><p style="color:var(--muted);font-size:11px;line-height:1.6">أسعار السوق الموازي للإشارة فقط. قد يكون التعامل بها مخالفاً للقانون.</p></div>';
   }
- 
-  return `<div style="padding:14px 14px 0">
-    <!-- SUB TABS -->
-    <div style="display:flex;gap:6px;margin-bottom:14px">
-      ${[{id:'convert',l:'🔄 تحويل'},{id:'services',l:'📤 خدمات'},{id:'market',l:'📊 السوق'}].map(t=>`
-        <button onclick="sarfSubTab='${t.id}';renderSarfContent()" style="flex:1;padding:9px 0;border-radius:11px;border:1.5px solid ${sarfSubTab===t.id?'#f5c842':'var(--border)'};background:${sarfSubTab===t.id?'rgba(245,200,66,.12)':'var(--subtle)'};color:${sarfSubTab===t.id?'#f5c842':'var(--muted)'};font-size:12px;font-weight:700;cursor:pointer;font-family:inherit">${t.l}</button>`).join('')}
-    </div>
-    ${body}
-    <div style="height:20px"></div>
-  </div>`;
+
+  html += '</div>'; // end screen padding
+  return html;
 }
- 
-function renderSarfContent(){
-  if(currentScreen==='sarf'){
-    document.getElementById('content').innerHTML=renderSarf();
+
+function sarfRefresh() {
+  if (currentScreen === 'sarf') render();
+}
+
+function sarfSetAmt(v) {
+  sarfAmt = v;
+  sarfRefresh();
+}
+
+function sarfSwap() {
+  var tmp = sarfFrom;
+  sarfFrom = sarfTo;
+  sarfTo   = tmp;
+  sarfRefresh();
+}
+
+function sarfOpen(forField) {
+  sarfFor = forField;
+  var cur = (forField === 'from') ? sarfFrom : sarfTo;
+  var overlay = document.createElement('div');
+  overlay.id  = 'sarf-modal';
+  overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:300;display:flex;align-items:flex-end;justify-content:center';
+  var sheetHtml = '<div style="background:var(--card);border-radius:24px 24px 0 0;padding:20px 16px 40px;width:100%;max-width:430px;max-height:75dvh;overflow-y:auto">';
+  sheetHtml += '<div style="text-align:center;color:var(--text);font-weight:800;font-size:17px;margin-bottom:14px">اختر العملة</div>';
+  for (var ci = 0; ci < SARF_CURRENCIES.length; ci++) {
+    var c = SARF_CURRENCIES[ci];
+    var offRate = SARF_OFF[c.id] || 1;
+    var isCur   = c.id === cur;
+    sheetHtml += '<div onclick="sarfPick(\'' + c.id + '\')" style="display:flex;align-items:center;gap:12px;padding:11px;border-radius:12px;cursor:pointer;background:' + (isCur?'rgba(245,200,66,.1)':'transparent') + ';border:' + (isCur?'1px solid rgba(245,200,66,.3)':'1px solid transparent') + '">';
+    sheetHtml += '<span style="font-size:24px">' + c.flag + '</span>';
+    sheetHtml += '<div style="flex:1"><div style="color:var(--text);font-size:14px;font-weight:700">' + c.id + ' — ' + c.name + '</div><div style="color:var(--muted);font-size:12px">' + c.full + '</div></div>';
+    var rateDisplay = offRate >= 100 ? Math.round(offRate).toString() : offRate.toFixed(2);
+    sheetHtml += '<span style="color:#f5c842;font-weight:700;font-size:13px">1€=' + rateDisplay + '</span>';
+    sheetHtml += '</div>';
   }
+  sheetHtml += '</div>';
+  overlay.innerHTML = sheetHtml;
+  overlay.addEventListener('click', function(e) { if (e.target === overlay) overlay.remove(); });
+  document.body.appendChild(overlay);
 }
- 
-function sarfSetAmt(v){
-  sarfAmt=v;
-  const inp=document.getElementById('sarf-inp');
-  if(inp) inp.value=v;
-  renderSarfContent();
+
+function sarfPick(id) {
+  if (sarfFor === 'from') sarfFrom = id;
+  else sarfTo = id;
+  var m = document.getElementById('sarf-modal');
+  if (m) m.remove();
+  sarfRefresh();
 }
-function sarfSwap(){ [sarfFrom,sarfTo]=[sarfTo,sarfFrom]; renderSarfContent(); }
- 
-function sarfOpenModal(forField){
-  sarfFor=forField;
-  const modal=document.getElementById('sarf-modal');
-  const list=document.getElementById('sarf-modal-list');
-  const cur=forField==='from'?sarfFrom:sarfTo;
-  list.innerHTML=SARF_CURRENCIES.map(c=>{
-    const rate=sarfRate('EUR',c.id,'official');
-    return `<div class="curr-opt${c.id===cur?' sel':''}" onclick="sarfSelectCurr('${c.id}')">
-      <span style="font-size:24px">${c.flag}</span>
-      <div style="flex:1">
-        <div style="color:var(--text);font-size:14px;font-weight:700">${c.id} — ${c.name}</div>
-        <div style="color:var(--muted);font-size:12px">${c.full}</div>
-      </div>
-      <span style="color:#f5c842;font-weight:700;font-size:13px">1€ = ${sarfFmt(rate,2)}</span>
-    </div>`;
-  }).join('');
-  modal.style.display='flex';
-  modal.onclick=e=>{ if(e.target===modal) sarfCloseModal(); };
+
+
+// ═══════════════════════════════════════
+// NEW FEATURES — v10
+// ═══════════════════════════════════════
+
+var MONTHS_AR = ['يناير','فبراير','مارس','أبريل','مايو','يونيو','يوليو','أغسطس','سبتمبر','أكتوبر','نوفمبر','ديسمبر'];
+
+// ─── YEAR COMPARE ───────────────────────
+function renderYearCompare() {
+  var txs = S.transactions || [];
+  var cy = new Date().getFullYear();
+  var py = cy - 1;
+  function yStats(y) {
+    var yt = txs.filter(function(t){ return t.date && t.date.indexOf(y+'') === 0; });
+    var exp = yt.filter(function(t){ return t.type==='expense'; }).reduce(function(s,t){ return s+t.amount; },0);
+    var inc = yt.filter(function(t){ return t.type==='income';  }).reduce(function(s,t){ return s+t.amount; },0);
+    var bm = {};
+    for(var m=1;m<=12;m++){
+      var ms = y+'-'+String(m).padStart(2,'0');
+      bm[m] = yt.filter(function(t){ return t.date&&t.date.indexOf(ms)===0&&t.type==='expense'; }).reduce(function(s,t){ return s+t.amount; },0);
+    }
+    var cm = {};
+    EXPENSE_CATS.forEach(function(c){
+      cm[c] = yt.filter(function(t){ return t.type==='expense'&&t.category===c; }).reduce(function(s,t){ return s+t.amount; },0);
+    });
+    return {exp:exp,inc:inc,net:inc-exp,bm:bm,cm:cm};
+  }
+  var cs = yStats(cy), ps = yStats(py);
+  var diff = cs.exp - ps.exp;
+  var maxM = 1;
+  for(var m=1;m<=12;m++) maxM = Math.max(maxM,cs.bm[m]||0,ps.bm[m]||0);
+
+  var h = '<div style="padding:14px 14px 80px">';
+
+  // Summary
+  h += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px">';
+  [{y:cy,st:cs,c:'var(--accent)'},{y:py,st:ps,c:'#60a5fa'}].forEach(function(x){
+    h += '<div class="card" style="padding:14px">';
+    h += '<div style="color:var(--muted);font-size:11px;font-weight:700;margin-bottom:8px">'+x.y+'</div>';
+    h += '<div style="color:'+x.c+';font-weight:900;font-size:20px;margin-bottom:6px">'+fmt(x.st.net)+'</div>';
+    h += '<div style="color:var(--income);font-size:12px">↑ '+fmt(x.st.inc)+'</div>';
+    h += '<div style="color:var(--expense);font-size:12px">↓ '+fmt(x.st.exp)+'</div>';
+    h += '</div>';
+  });
+  h += '</div>';
+
+  // Diff message
+  h += '<div class="card" style="padding:12px 14px;margin-bottom:14px;background:'+(diff<0?'rgba(74,222,128,.06)':'rgba(248,113,113,.06)')+';border-color:'+(diff<0?'rgba(74,222,128,.2)':'rgba(248,113,113,.2)')+';">';
+  h += '<p style="color:'+(diff<0?'var(--income)':'var(--expense)')+';font-size:14px;font-weight:700;margin:0">';
+  h += diff<0 ? '✅ أنفقت '+fmt(Math.abs(diff))+' أقل من '+py : '⚠️ أنفقت '+fmt(diff)+' أكثر من '+py;
+  h += '</p></div>';
+
+  // Bar chart
+  h += '<div class="card">';
+  h += '<div style="color:var(--muted);font-size:11px;font-weight:700;letter-spacing:1px;margin-bottom:12px">الإنفاق الشهري: '+cy+' vs '+py+'</div>';
+  h += '<div style="display:flex;gap:3px;align-items:flex-end;height:90px;margin-bottom:8px">';
+  for(var mi=1;mi<=12;mi++){
+    var cV=cs.bm[mi]||0, pV=ps.bm[mi]||0;
+    h += '<div style="flex:1;display:flex;gap:1px;align-items:flex-end;height:90px">';
+    h += '<div style="flex:1;background:var(--accent);border-radius:3px 3px 0 0;opacity:.8;height:'+Math.round((cV/maxM)*90)+'px;min-height:'+(cV>0?2:0)+'px"></div>';
+    h += '<div style="flex:1;background:#60a5fa;border-radius:3px 3px 0 0;opacity:.5;height:'+Math.round((pV/maxM)*90)+'px;min-height:'+(pV>0?2:0)+'px"></div>';
+    h += '</div>';
+  }
+  h += '</div><div style="display:flex;gap:3px">';
+  for(var mi2=1;mi2<=12;mi2++) h += '<div style="flex:1;text-align:center;color:var(--muted);font-size:8px">'+MONTHS_AR[mi2-1].slice(0,3)+'</div>';
+  h += '</div>';
+  h += '<div style="display:flex;gap:12px;margin-top:8px">';
+  h += '<div style="display:flex;align-items:center;gap:4px"><div style="width:10px;height:10px;border-radius:2px;background:var(--accent)"></div><span style="color:var(--muted);font-size:11px">'+cy+'</span></div>';
+  h += '<div style="display:flex;align-items:center;gap:4px"><div style="width:10px;height:10px;border-radius:2px;background:#60a5fa;opacity:.7"></div><span style="color:var(--muted);font-size:11px">'+py+'</span></div>';
+  h += '</div></div>';
+
+  // Category compare
+  h += '<div class="card">';
+  h += '<div style="color:var(--muted);font-size:11px;font-weight:700;letter-spacing:1px;margin-bottom:12px">مقارنة الفئات</div>';
+  EXPENSE_CATS.forEach(function(cat){
+    var cv=cs.cm[cat]||0, pv=ps.cm[cat]||0;
+    if(cv===0&&pv===0) return;
+    var mx=Math.max(cv,pv,1), color=S.catColors[cat]||'#6b7280';
+    h += '<div style="margin-bottom:12px">';
+    h += '<div style="display:flex;justify-content:space-between;margin-bottom:4px">';
+    h += '<span style="color:var(--text);font-size:13px">'+CAT_ICONS[cat]+' '+cat+'</span>';
+    h += '<span style="color:'+(cv>pv?'var(--expense)':'var(--income)')+';font-size:11px">'+(cv>pv?'↑':'↓')+' '+fmt(Math.abs(cv-pv))+'</span>';
+    h += '</div>';
+    [[cy,cv,'1'],[py,pv,'.4']].forEach(function(row){
+      h += '<div style="display:flex;gap:4px;align-items:center;margin-bottom:2px">';
+      h += '<span style="color:var(--muted);font-size:10px;width:28px">'+row[0]+'</span>';
+      h += '<div style="flex:1;background:var(--subtle);border-radius:99px;height:5px;overflow:hidden"><div style="width:'+Math.round((row[1]/mx)*100)+'%;height:100%;background:'+color+';border-radius:99px;opacity:'+row[2]+'"></div></div>';
+      h += '<span style="color:var(--muted);font-size:10px;width:50px;text-align:left">'+fmt(row[1])+'</span>';
+      h += '</div>';
+    });
+    h += '</div>';
+  });
+  h += '</div></div>';
+  return h;
 }
- 
-function sarfSelectCurr(id){
-  if(sarfFor==='from') sarfFrom=id; else sarfTo=id;
-  sarfCloseModal(); renderSarfContent();
+
+// ─── LOANS ──────────────────────────────
+function loanCalc(l) {
+  var r = (l.rate/100)/12, n = l.months;
+  var monthly = r>0 ? l.principal*(r*Math.pow(1+r,n))/(Math.pow(1+r,n)-1) : l.principal/n;
+  return {
+    monthly: monthly,
+    totalPay: monthly*n,
+    totalInt: monthly*n - l.principal,
+    remaining: monthly*(n-l.paid),
+    pct: Math.round((l.paid/n)*100)
+  };
 }
-function sarfCloseModal(){
-  document.getElementById('sarf-modal').style.display='none';
+
+function renderLoans() {
+  if(!S.loans) S.loans=[];
+  var totalDebt = S.loans.reduce(function(s,l){ return s+loanCalc(l).remaining; },0);
+  var h = '<div style="padding:14px 14px 80px">';
+  h += '<div class="card" style="background:linear-gradient(135deg,#1f0505,#2d0a0a);border-color:rgba(248,113,113,.3);margin-bottom:14px">';
+  h += '<div style="color:#fca5a5;font-size:12px;margin-bottom:4px">إجمالي القروض المتبقية</div>';
+  h += '<div style="color:#f87171;font-size:28px;font-weight:900">'+fmt(totalDebt)+'</div>';
+  h += '</div>';
+  S.loans.forEach(function(l){
+    var c = loanCalc(l);
+    h += '<div class="card" style="margin-bottom:12px">';
+    h += '<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px">';
+    h += '<div><div style="color:var(--text);font-size:15px;font-weight:700">'+l.name+'</div>';
+    h += '<div style="color:var(--muted);font-size:12px">'+l.rate+'% · '+l.months+' شهر</div></div>';
+    h += '<button onclick="deleteLoan('+l.id+')" style="background:none;border:none;cursor:pointer;color:var(--muted);font-size:16px">🗑️</button></div>';
+    h += '<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:12px">';
+    h += '<div style="background:var(--subtle);border-radius:10px;padding:10px;text-align:center"><div style="color:var(--muted);font-size:10px;margin-bottom:3px">القسط</div><div style="color:var(--accent);font-weight:800;font-size:14px">'+fmt(c.monthly)+'</div></div>';
+    h += '<div style="background:var(--subtle);border-radius:10px;padding:10px;text-align:center"><div style="color:var(--muted);font-size:10px;margin-bottom:3px">المتبقي</div><div style="color:var(--expense);font-weight:800;font-size:14px">'+fmt(c.remaining)+'</div></div>';
+    h += '<div style="background:var(--subtle);border-radius:10px;padding:10px;text-align:center"><div style="color:var(--muted);font-size:10px;margin-bottom:3px">الفوائد</div><div style="color:#fbbf24;font-weight:800;font-size:14px">'+fmt(c.totalInt)+'</div></div>';
+    h += '</div>';
+    h += '<div style="display:flex;justify-content:space-between;margin-bottom:6px">';
+    h += '<span style="color:var(--muted);font-size:12px">'+l.paid+'/'+l.months+' قسط</span>';
+    h += '<span style="color:var(--accent);font-size:12px;font-weight:700">'+c.pct+'%</span></div>';
+    h += '<div style="background:var(--subtle);border-radius:99px;height:8px;overflow:hidden"><div style="width:'+c.pct+'%;height:100%;background:var(--accent);border-radius:99px"></div></div>';
+    h += '<button onclick="addLoanPayment('+l.id+')" style="width:100%;margin-top:10px;background:var(--accent-dim);border:1.5px solid var(--accent);border-radius:10px;color:var(--accent);font-size:12px;font-weight:700;padding:8px;cursor:pointer;font-family:inherit">✓ دفعت قسط</button>';
+    h += '</div>';
+  });
+  h += '<div id="loan-form-wrap"><button class="dashed-btn" onclick="showLoanForm()">＋ إضافة قرض</button></div>';
+  h += '</div>';
+  return h;
 }
- 
-// [sarf render patch merged]
+function deleteLoan(id){ if(!confirm('حذف؟'))return; S.loans=S.loans.filter(function(l){return l.id!==id;}); save();render(); }
+function addLoanPayment(id){ S.loans=S.loans.map(function(l){return l.id===id?Object.assign({},l,{paid:Math.min(l.paid+1,l.months)}):l;}); save();render(); }
+function showLoanForm(){
+  var el=document.getElementById('loan-form-wrap'); if(!el)return;
+  el.innerHTML='<div class="card"><h3 style="color:var(--text);font-weight:700;font-size:16px;margin-bottom:14px">قرض جديد</h3>'+
+    '<label class="lbl">اسم القرض</label><input type="text" id="ln-name" style="width:100%;background:var(--subtle);border:1.5px solid var(--border);border-radius:12px;color:var(--text);font-size:15px;padding:11px 14px;margin-bottom:14px;box-sizing:border-box;font-family:inherit;outline:none;direction:rtl"/>'+
+    '<label class="lbl">المبلغ</label><input type="number" id="ln-amt" style="width:100%;background:var(--subtle);border:1.5px solid var(--border);border-radius:12px;color:var(--text);font-size:15px;padding:11px 14px;margin-bottom:14px;box-sizing:border-box;font-family:inherit;outline:none"/>'+
+    '<label class="lbl">الفائدة السنوية %</label><input type="number" id="ln-rate" step="0.1" style="width:100%;background:var(--subtle);border:1.5px solid var(--border);border-radius:12px;color:var(--text);font-size:15px;padding:11px 14px;margin-bottom:14px;box-sizing:border-box;font-family:inherit;outline:none"/>'+
+    '<label class="lbl">عدد الأشهر</label><input type="number" id="ln-months" style="width:100%;background:var(--subtle);border:1.5px solid var(--border);border-radius:12px;color:var(--text);font-size:15px;padding:11px 14px;margin-bottom:20px;box-sizing:border-box;font-family:inherit;outline:none"/>'+
+    '<button onclick="submitLoan()" style="width:100%;background:linear-gradient(135deg,var(--accent),var(--accent));border:none;border-radius:14px;padding:14px;font-size:16px;font-weight:700;cursor:pointer;font-family:inherit;color:#fff">حفظ</button>'+
+    '<button onclick="render()" style="width:100%;margin-top:8px;background:none;border:none;color:var(--muted);cursor:pointer;font-size:14px;font-family:inherit">إلغاء</button></div>';
+}
+function submitLoan(){
+  var n=document.getElementById('ln-name').value, a=+document.getElementById('ln-amt').value;
+  var r=+document.getElementById('ln-rate').value, m=+document.getElementById('ln-months').value;
+  if(!n||!a||!m)return;
+  S.loans.push({id:Date.now(),name:n,principal:a,rate:r||0,months:m,paid:0,start:new Date().toISOString().slice(0,10)});
+  save();render();
+}
+
+// ─── INVESTMENTS ───────────────────────
+function renderInvestments() {
+  if(!S.investments) S.investments=[];
+  var tc=0, tv=0;
+  S.investments.forEach(function(i){ tc+=i.qty*i.buyPrice; tv+=i.qty*i.currentPrice; });
+  var tpl=tv-tc, tpct=tc>0?((tpl/tc)*100):0;
+  var h='<div style="padding:14px 14px 80px">';
+  h+='<div class="card" style="background:linear-gradient(135deg,#0c1a3a,#0f2050);border-color:rgba(96,165,250,.2);margin-bottom:14px">';
+  h+='<div style="color:#7dd3fc;font-size:12px;margin-bottom:4px">إجمالي المحفظة</div>';
+  h+='<div style="color:#fff;font-size:28px;font-weight:900">$'+Math.round(tv).toLocaleString('ar-SA')+'</div>';
+  h+='<div style="color:'+(tpl>=0?'#4ade80':'#f87171')+';font-size:14px;font-weight:700;margin-top:6px">'+(tpl>=0?'↑ ربح: ':'↓ خسارة: ')+'$'+Math.abs(Math.round(tpl)).toLocaleString('ar-SA')+' ('+tpct.toFixed(1)+'%)</div>';
+  h+='</div>';
+  S.investments.forEach(function(inv){
+    var cost=inv.qty*inv.buyPrice, val=inv.qty*inv.currentPrice, pl=val-cost, pct=cost>0?(pl/cost)*100:0;
+    var icon=inv.type==='stock'?'📈':inv.type==='crypto'?'₿':'🏦';
+    h+='<div class="card" style="margin-bottom:10px">';
+    h+='<div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">';
+    h+='<div style="width:40px;height:40px;border-radius:11px;background:'+(pl>=0?'rgba(74,222,128,.15)':'rgba(248,113,113,.15)')+';display:flex;align-items:center;justify-content:center;font-size:20px">'+icon+'</div>';
+    h+='<div style="flex:1"><div style="color:var(--text);font-size:14px;font-weight:700">'+inv.name+'</div>';
+    h+='<div style="color:var(--muted);font-size:11px">'+inv.qty+' وحدة · '+inv.currency+'</div></div>';
+    h+='<button onclick="deleteInv('+inv.id+')" style="background:none;border:none;cursor:pointer;color:var(--muted)">🗑️</button></div>';
+    h+='<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px">';
+    h+='<div style="background:var(--subtle);border-radius:10px;padding:8px;text-align:center"><div style="color:var(--muted);font-size:9px;margin-bottom:2px">شراء</div><div style="color:var(--text);font-weight:700;font-size:12px">'+inv.buyPrice.toLocaleString()+'</div></div>';
+    h+='<div style="background:var(--subtle);border-radius:10px;padding:8px;text-align:center"><div style="color:var(--muted);font-size:9px;margin-bottom:2px">الحالي</div><div style="color:var(--text);font-weight:700;font-size:12px">'+inv.currentPrice.toLocaleString()+'</div></div>';
+    h+='<div style="background:'+(pl>=0?'rgba(74,222,128,.1)':'rgba(248,113,113,.1)')+';border-radius:10px;padding:8px;text-align:center"><div style="color:var(--muted);font-size:9px;margin-bottom:2px">ر/خ</div>';
+    h+='<div style="color:'+(pl>=0?'#4ade80':'#f87171')+';font-weight:800;font-size:12px">'+(pl>=0?'+':'')+Math.round(pl).toLocaleString()+'</div>';
+    h+='<div style="color:'+(pl>=0?'#4ade80':'#f87171')+';font-size:9px">'+pct.toFixed(1)+'%</div></div></div>';
+    h+='<button onclick="updateInvPrice('+inv.id+')" style="width:100%;margin-top:10px;background:var(--subtle);border:1.5px solid var(--border);border-radius:10px;color:var(--muted);font-size:12px;font-weight:600;padding:8px;cursor:pointer;font-family:inherit">📊 تحديث السعر</button>';
+    h+='</div>';
+  });
+  h+='<div id="inv-form-wrap"><button class="dashed-btn" onclick="showInvForm()">＋ إضافة استثمار</button></div>';
+  h+='</div>';
+  return h;
+}
+function deleteInv(id){if(!confirm('حذف؟'))return;S.investments=S.investments.filter(function(i){return i.id!==id;});save();render();}
+function updateInvPrice(id){
+  var inv=S.investments.find(function(i){return i.id===id;});if(!inv)return;
+  var np=prompt('السعر الحالي:',inv.currentPrice);
+  if(np&&!isNaN(+np)){S.investments=S.investments.map(function(i){return i.id===id?Object.assign({},i,{currentPrice:+np}):i;});save();render();}
+}
+function showInvForm(){
+  var el=document.getElementById('inv-form-wrap');if(!el)return;
+  el.innerHTML='<div class="card"><h3 style="color:var(--text);font-weight:700;font-size:16px;margin-bottom:14px">استثمار جديد</h3>'+
+    '<label class="lbl">الاسم</label><input type="text" id="inv-name" style="width:100%;background:var(--subtle);border:1.5px solid var(--border);border-radius:12px;color:var(--text);font-size:15px;padding:11px 14px;margin-bottom:14px;box-sizing:border-box;font-family:inherit;outline:none;direction:rtl"/>'+
+    '<label class="lbl">الكمية</label><input type="number" id="inv-qty" style="width:100%;background:var(--subtle);border:1.5px solid var(--border);border-radius:12px;color:var(--text);font-size:15px;padding:11px 14px;margin-bottom:14px;box-sizing:border-box;font-family:inherit;outline:none"/>'+
+    '<label class="lbl">سعر الشراء</label><input type="number" id="inv-buy" style="width:100%;background:var(--subtle);border:1.5px solid var(--border);border-radius:12px;color:var(--text);font-size:15px;padding:11px 14px;margin-bottom:14px;box-sizing:border-box;font-family:inherit;outline:none"/>'+
+    '<label class="lbl">السعر الحالي</label><input type="number" id="inv-now" style="width:100%;background:var(--subtle);border:1.5px solid var(--border);border-radius:12px;color:var(--text);font-size:15px;padding:11px 14px;margin-bottom:20px;box-sizing:border-box;font-family:inherit;outline:none"/>'+
+    '<button onclick="submitInv()" style="width:100%;background:linear-gradient(135deg,var(--accent),var(--accent));border:none;border-radius:14px;padding:14px;font-size:16px;font-weight:700;cursor:pointer;font-family:inherit;color:#fff">إضافة</button>'+
+    '<button onclick="render()" style="width:100%;margin-top:8px;background:none;border:none;color:var(--muted);cursor:pointer;font-size:14px;font-family:inherit">إلغاء</button></div>';
+}
+function submitInv(){
+  var n=document.getElementById('inv-name').value, q=+document.getElementById('inv-qty').value;
+  var b=+document.getElementById('inv-buy').value, c=+document.getElementById('inv-now').value;
+  if(!n||!q||!b)return;
+  S.investments.push({id:Date.now(),name:n,type:'stock',qty:q,buyPrice:b,currentPrice:c||b,currency:'USD',date:new Date().toISOString().slice(0,10)});
+  save();render();
+}
+
+// ─── TRAVEL ────────────────────────────
+function renderTravel() {
+  if(!S.travels) S.travels=[];
+  var h='<div style="padding:14px 14px 80px">';
+  S.travels.forEach(function(tr){
+    var te=tr.expenses.reduce(function(s,e){return s+e.amount;},0);
+    var rem=tr.budget-te, pct=tr.budget>0?Math.round((te/tr.budget)*100):0;
+    var dl=tr.date?Math.ceil((new Date(tr.date)-new Date())/86400000):null;
+    h+='<div class="card" style="margin-bottom:14px">';
+    h+='<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px">';
+    h+='<div><div style="color:var(--text);font-size:16px;font-weight:800">✈️ '+tr.name+'</div>';
+    h+='<div style="color:var(--muted);font-size:12px">'+tr.date+' · '+tr.duration+' أيام</div>';
+    if(dl!==null&&dl>0) h+='<div style="color:#fbbf24;font-size:11px">⏳ '+dl+' يوم</div>';
+    h+='</div><button onclick="deleteTravel('+tr.id+')" style="background:none;border:none;cursor:pointer;color:var(--muted)">🗑️</button></div>';
+    h+='<div style="display:flex;gap:8px;margin-bottom:10px">';
+    h+='<div style="flex:1;background:var(--subtle);border-radius:10px;padding:10px;text-align:center"><div style="color:var(--muted);font-size:10px;margin-bottom:2px">الميزانية</div><div style="color:var(--text);font-weight:800;font-size:14px">'+fmt(tr.budget)+'</div></div>';
+    h+='<div style="flex:1;background:rgba(248,113,113,.1);border-radius:10px;padding:10px;text-align:center"><div style="color:var(--muted);font-size:10px;margin-bottom:2px">المنفق</div><div style="color:var(--expense);font-weight:800;font-size:14px">'+fmt(te)+'</div></div>';
+    h+='<div style="flex:1;background:'+(rem>=0?'rgba(74,222,128,.1)':'rgba(248,113,113,.1)')+';border-radius:10px;padding:10px;text-align:center"><div style="color:var(--muted);font-size:10px;margin-bottom:2px">المتبقي</div><div style="color:'+(rem>=0?'var(--income)':'var(--expense)')+';font-weight:800;font-size:14px">'+fmt(rem)+'</div></div>';
+    h+='</div>';
+    h+='<div style="background:var(--subtle);border-radius:99px;height:7px;overflow:hidden;margin-bottom:12px"><div style="width:'+Math.min(pct,100)+'%;height:100%;background:'+(pct>=100?'#ef4444':pct>=80?'#f59e0b':'var(--accent)')+';border-radius:99px"></div></div>';
+    tr.expenses.forEach(function(e){ h+='<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><span>'+e.icon+'</span><span style="flex:1;color:var(--text);font-size:13px">'+e.cat+'</span><span style="color:var(--expense);font-size:13px;font-weight:600">'+fmt(e.amount)+'</span></div>'; });
+    h+='<div style="display:flex;gap:4px;margin-top:10px">';
+    h+='<input type="text" id="tr-cat-'+tr.id+'" placeholder="البند" style="flex:1;background:var(--subtle);border:1.5px solid var(--border);border-radius:10px;color:var(--text);font-size:13px;padding:8px 10px;font-family:inherit;outline:none;direction:rtl"/>';
+    h+='<input type="number" id="tr-amt-'+tr.id+'" placeholder="المبلغ" style="width:80px;background:var(--subtle);border:1.5px solid var(--border);border-radius:10px;color:var(--text);font-size:13px;padding:8px;font-family:inherit;outline:none"/>';
+    h+='<button onclick="addTravelExp('+tr.id+')" style="background:var(--accent-dim);border:1.5px solid var(--accent);border-radius:10px;color:var(--accent);font-size:13px;font-weight:700;padding:8px 10px;cursor:pointer;font-family:inherit">+</button>';
+    h+='</div></div>';
+  });
+  h+='<div id="travel-form-wrap"><button class="dashed-btn" onclick="showTravelForm()">＋ رحلة جديدة</button></div></div>';
+  return h;
+}
+function addTravelExp(id){
+  var cat=document.getElementById('tr-cat-'+id).value, amt=+document.getElementById('tr-amt-'+id).value;
+  if(!cat||!amt)return;
+  S.travels=S.travels.map(function(t){return t.id!==id?t:Object.assign({},t,{expenses:t.expenses.concat([{cat:cat,amount:amt,icon:'💸'}])});});
+  save();render();
+}
+function deleteTravel(id){if(confirm('حذف؟')){S.travels=S.travels.filter(function(t){return t.id!==id;});save();render();}}
+function showTravelForm(){
+  var el=document.getElementById('travel-form-wrap');if(!el)return;
+  el.innerHTML='<div class="card"><h3 style="color:var(--text);font-weight:700;font-size:16px;margin-bottom:14px">رحلة جديدة ✈️</h3>'+
+    '<label class="lbl">اسم الرحلة</label><input type="text" id="tv-name" style="width:100%;background:var(--subtle);border:1.5px solid var(--border);border-radius:12px;color:var(--text);font-size:15px;padding:11px 14px;margin-bottom:14px;box-sizing:border-box;font-family:inherit;outline:none;direction:rtl"/>'+
+    '<label class="lbl">الميزانية</label><input type="number" id="tv-bud" style="width:100%;background:var(--subtle);border:1.5px solid var(--border);border-radius:12px;color:var(--text);font-size:15px;padding:11px 14px;margin-bottom:14px;box-sizing:border-box;font-family:inherit;outline:none"/>'+
+    '<label class="lbl">تاريخ السفر</label><input type="date" id="tv-date" style="width:100%;background:var(--subtle);border:1.5px solid var(--border);border-radius:12px;color:var(--text);font-size:15px;padding:11px 14px;margin-bottom:14px;box-sizing:border-box;font-family:inherit;outline:none;direction:rtl"/>'+
+    '<label class="lbl">عدد الأيام</label><input type="number" id="tv-days" value="7" style="width:100%;background:var(--subtle);border:1.5px solid var(--border);border-radius:12px;color:var(--text);font-size:15px;padding:11px 14px;margin-bottom:20px;box-sizing:border-box;font-family:inherit;outline:none"/>'+
+    '<button onclick="submitTravel()" style="width:100%;background:linear-gradient(135deg,var(--accent),var(--accent));border:none;border-radius:14px;padding:14px;font-size:16px;font-weight:700;cursor:pointer;font-family:inherit;color:#fff">إضافة الرحلة</button>'+
+    '<button onclick="render()" style="width:100%;margin-top:8px;background:none;border:none;color:var(--muted);cursor:pointer;font-size:14px;font-family:inherit">إلغاء</button></div>';
+}
+function submitTravel(){
+  var n=document.getElementById('tv-name').value, b=+document.getElementById('tv-bud').value;
+  var d=document.getElementById('tv-date').value, days=+document.getElementById('tv-days').value||7;
+  if(!n||!b)return;
+  S.travels.push({id:Date.now(),name:n,budget:b,currency:S.currency||'EUR',date:d||'',duration:days,expenses:[]});
+  save();render();
+}
+
+// ─── SHARED ────────────────────────────
+function renderShared() {
+  if(!S.shared) S.shared={members:['أنا','شريك/ة'],expenses:[]};
+  var exps=S.shared.expenses||[], members=S.shared.members||['أنا','شريك/ة'];
+  var tot={};members.forEach(function(m){tot[m]=0;});
+  exps.forEach(function(e){tot[e.paidBy]=(tot[e.paidBy]||0)+e.amount;});
+  var total=exps.reduce(function(s,e){return s+e.amount;},0);
+  var share=total/Math.max(members.length,1);
+  var h='<div style="padding:14px 14px 80px">';
+  h+='<div class="card" style="margin-bottom:14px">';
+  h+='<div style="color:var(--muted);font-size:11px;font-weight:700;margin-bottom:12px">⚖️ ميزان الحساب المشترك</div>';
+  h+='<div style="display:flex;gap:8px;margin-bottom:12px">';
+  members.forEach(function(m){
+    var paid=tot[m]||0, bal=paid-share;
+    h+='<div style="flex:1;background:var(--subtle);border-radius:12px;padding:12px;text-align:center">';
+    h+='<div style="color:var(--muted);font-size:11px;margin-bottom:4px">'+m+'</div>';
+    h+='<div style="color:var(--text);font-weight:800;font-size:16px">'+fmt(paid)+'</div>';
+    h+='<div style="color:'+(bal>=0?'var(--income)':'var(--expense)')+';font-size:11px;margin-top:4px">'+(bal>=0?'يستحق '+fmt(bal):'عليه '+fmt(Math.abs(bal)))+'</div>';
+    h+='</div>';
+  });
+  h+='</div>';
+  h+='<div style="display:flex;justify-content:space-between"><span style="color:var(--muted);font-size:13px">الإجمالي</span><span style="color:var(--text);font-weight:700">'+fmt(total)+'</span></div>';
+  h+='<div style="display:flex;justify-content:space-between;margin-top:4px"><span style="color:var(--muted);font-size:13px">حصة كل شخص</span><span style="color:var(--accent);font-weight:700">'+fmt(share)+'</span></div></div>';
+  h+='<div class="card">';
+  h+='<div style="color:var(--muted);font-size:11px;font-weight:700;margin-bottom:12px">المصاريف المشتركة</div>';
+  exps.slice().reverse().forEach(function(e){
+    h+='<div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">';
+    h+='<div style="width:36px;height:36px;border-radius:10px;background:var(--subtle);display:flex;align-items:center;justify-content:center">💸</div>';
+    h+='<div style="flex:1"><div style="color:var(--text);font-size:13px;font-weight:600">'+e.desc+'</div><div style="color:var(--muted);font-size:11px">'+e.paidBy+' · '+e.date+'</div></div>';
+    h+='<span style="color:var(--expense);font-weight:700;font-size:14px">'+fmt(e.amount)+'</span></div>';
+  });
+  h+='<div style="border-top:1px solid var(--border);padding-top:12px;margin-top:4px;display:flex;gap:6px;flex-wrap:wrap">';
+  h+='<input type="text" id="sh-desc" placeholder="وصف" style="flex:2;min-width:100px;background:var(--subtle);border:1.5px solid var(--border);border-radius:10px;color:var(--text);font-size:13px;padding:9px 10px;font-family:inherit;outline:none;direction:rtl"/>';
+  h+='<input type="number" id="sh-amt" placeholder="المبلغ" style="width:80px;background:var(--subtle);border:1.5px solid var(--border);border-radius:10px;color:var(--text);font-size:13px;padding:9px 8px;font-family:inherit;outline:none"/>';
+  h+='<select id="sh-paid" style="flex:1;min-width:70px;background:var(--subtle);border:1.5px solid var(--border);border-radius:10px;color:var(--text);font-size:12px;padding:9px 8px;font-family:inherit;outline:none">';
+  members.forEach(function(m){h+='<option>'+m+'</option>';});
+  h+='</select><button onclick="addSharedExp()" style="background:var(--accent-dim);border:1.5px solid var(--accent);border-radius:10px;color:var(--accent);font-size:13px;font-weight:700;padding:9px 12px;cursor:pointer;font-family:inherit">+</button>';
+  h+='</div></div></div>';
+  return h;
+}
+function addSharedExp(){
+  var d=document.getElementById('sh-desc').value, a=+document.getElementById('sh-amt').value, p=document.getElementById('sh-paid').value;
+  if(!d||!a)return;
+  S.shared.expenses.push({id:Date.now(),desc:d,amount:a,paidBy:p||'أنا',date:new Date().toISOString().slice(0,10)});
+  save();render();
+}
+
+// ─── ZAKAT ──────────────────────────────
+function renderZakat() {
+  var wt=Object.values(S.wallets||{}).reduce(function(s,v){return s+v;},0);
+  var it=(S.investments||[]).reduce(function(s,i){return s+(i.qty*i.currentPrice);},0);
+  var dt=(S.debts||[]).filter(function(d){return d.type==='owed';}).reduce(function(s,d){return s+d.amount;},0);
+  var lt=(S.loans||[]).reduce(function(s,l){return s+loanCalc(l).remaining;},0);
+  var nw=wt+it-dt-lt, nisab=5200;
+  var zakat=nw>=nisab?nw*0.025:0;
+  var ai=(S.transactions||[]).filter(function(t){return t.type==='income'&&t.date&&t.date.indexOf(new Date().getFullYear()+'')===0;}).reduce(function(s,t){return s+t.amount;},0);
+  var tr=ai>80000?0.42:ai>55000?0.37:ai>30000?0.30:0.20;
+  var h='<div style="padding:14px 14px 80px">';
+  h+='<div class="card" style="background:linear-gradient(135deg,#0f2015,#0a1a0f);border-color:rgba(74,222,128,.2);margin-bottom:14px">';
+  h+='<div style="display:flex;align-items:center;gap:10px;margin-bottom:14px"><span style="font-size:28px">🕌</span>';
+  h+='<div><div style="color:#86efac;font-size:14px;font-weight:800">حاسبة الزكاة</div><div style="color:rgba(74,222,128,.5);font-size:11px">2.5% من المال الزكوي إذا بلغ النصاب</div></div></div>';
+  h+='<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px">';
+  [{l:'رصيد المحافظ',v:wt,c:'var(--income)'},{l:'الاستثمارات',v:it,c:'#60a5fa'},{l:'الديون عليك',v:-dt,c:'var(--expense)'},{l:'أقساط القروض',v:-lt,c:'var(--expense)'}].forEach(function(x){
+    h+='<div style="background:rgba(0,0,0,.2);border-radius:10px;padding:10px"><div style="color:rgba(255,255,255,.4);font-size:10px;margin-bottom:2px">'+x.l+'</div>';
+    h+='<div style="color:'+x.c+';font-weight:700;font-size:14px">'+(x.v>=0?'':'-')+fmt(Math.abs(x.v))+'</div></div>';
+  });
+  h+='</div>';
+  h+='<div style="background:rgba(0,0,0,.3);border-radius:12px;padding:12px">';
+  h+='<div style="display:flex;justify-content:space-between;margin-bottom:6px"><span style="color:#86efac;font-size:13px">صافي المال الزكوي</span><span style="color:#fff;font-weight:800;font-size:15px">'+fmt(nw)+'</span></div>';
+  h+='<div style="display:flex;justify-content:space-between;margin-bottom:6px"><span style="color:#86efac;font-size:13px">النصاب</span><span style="color:rgba(255,255,255,.7);font-size:13px">≈ '+fmt(nisab)+'</span></div>';
+  h+='<div style="height:1px;background:rgba(255,255,255,.1);margin:8px 0"></div>';
+  h+='<div style="display:flex;justify-content:space-between;align-items:center">';
+  h+='<span style="color:#86efac;font-size:14px;font-weight:700">الزكاة الواجبة (2.5%)</span>';
+  h+='<span style="color:'+(zakat>0?'#4ade80':'rgba(255,255,255,.4)')+';font-weight:900;font-size:22px">'+fmt(zakat)+'</span></div>';
+  if(nw<nisab) h+='<div style="color:rgba(255,255,255,.4);font-size:11px;margin-top:6px">⚠️ المال لم يبلغ النصاب — لا زكاة واجبة حالياً</div>';
+  h+='</div></div>';
+  h+='<div class="card">';
+  h+='<div style="display:flex;align-items:center;gap:10px;margin-bottom:14px"><span style="font-size:22px">📋</span>';
+  h+='<div><div style="color:var(--text);font-size:14px;font-weight:800">تقدير الضريبة السنوية</div><div style="color:var(--muted);font-size:11px">تقدير تقريبي — أوروبا</div></div></div>';
+  h+='<div style="display:flex;justify-content:space-between;margin-bottom:8px"><span style="color:var(--muted);font-size:13px">الدخل السنوي</span><span style="color:var(--text);font-weight:700">'+fmt(ai)+'</span></div>';
+  h+='<div style="display:flex;justify-content:space-between;margin-bottom:8px"><span style="color:var(--muted);font-size:13px">الشريحة</span><span style="color:#fbbf24;font-weight:700">'+Math.round(tr*100)+'%</span></div>';
+  h+='<div style="height:1px;background:var(--border);margin:8px 0"></div>';
+  h+='<div style="display:flex;justify-content:space-between;align-items:center"><span style="color:var(--text);font-size:14px;font-weight:700">الضريبة المقدرة</span><span style="color:var(--expense);font-weight:900;font-size:20px">'+fmt(ai*tr)+'</span></div>';
+  h+='<div style="background:rgba(248,113,113,.08);border-radius:10px;padding:8px 12px;margin-top:10px"><p style="color:var(--muted);font-size:11px;margin:0">⚠️ تقدير تقريبي فقط. استشر متخصصاً ضريبياً.</p></div>';
+  h+='</div></div>';
+  return h;
+}
+
+// ─── PDF REPORT ─────────────────────────
+function generateReport() {
+  var now=new Date(), month=now.getFullYear()+'-'+String(now.getMonth()+1).padStart(2,'0');
+  var mName=now.toLocaleDateString('ar-SA',{month:'long',year:'numeric'});
+  var txs=S.transactions||[], mTxs=txs.filter(function(t){return t.date&&t.date.indexOf(month)===0;});
+  var exp=mTxs.filter(function(t){return t.type==='expense';}).reduce(function(s,t){return s+t.amount;},0);
+  var inc=mTxs.filter(function(t){return t.type==='income'; }).reduce(function(s,t){return s+t.amount;},0);
+  var net=inc-exp, budget=S.budget||0;
+  var catRows=EXPENSE_CATS.map(function(c){
+    return {cat:c,icon:CAT_ICONS[c]||'',total:mTxs.filter(function(t){return t.type==='expense'&&t.category===c;}).reduce(function(s,t){return s+t.amount;},0)};
+  }).filter(function(r){return r.total>0;}).sort(function(a,b){return b.total-a.total;});
+  var win=window.open('','_blank');
+  if(!win){alert('السماح بالنوافذ المنبثقة');return;}
+  var h='<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"/><title>تقرير مالي PRO - '+mName+'</title>';
+  h+='<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet"/>';
+  h+='<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:Cairo,sans-serif;direction:rtl;color:#0f172a;background:#fff;padding:32px}';
+  h+='@media print{.np{display:none!important}}h1{font-size:24px;font-weight:900;color:#0f4c35;margin-bottom:4px}';
+  h+='.sub{color:#64748b;font-size:13px;margin-bottom:24px}.grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:24px}';
+  h+='.sc{border:1px solid #e2e8f0;border-radius:12px;padding:14px}.sl{color:#64748b;font-size:11px;margin-bottom:4px}.sv{font-size:20px;font-weight:900}';
+  h+='.st{font-size:14px;font-weight:700;color:#0f4c35;margin-bottom:12px;margin-top:20px;border-bottom:2px solid #dcfce7;padding-bottom:6px}';
+  h+='table{width:100%;border-collapse:collapse}th,td{padding:8px 12px;text-align:right;font-size:12px}';
+  h+='th{background:#f8fafc;font-weight:700;color:#475569}tr:nth-child(even){background:#f8fafc}';
+  h+='.btn{background:#16a34a;color:#fff;border:none;border-radius:10px;padding:10px 20px;font-size:14px;font-weight:700;cursor:pointer;font-family:Cairo,sans-serif;margin-bottom:20px}</style></head><body>';
+  h+='<button class="btn np" onclick="window.print()">🖨️ طباعة / حفظ PDF</button>';
+  h+='<h1>💶 مالي PRO — تقرير مالي</h1><div class="sub">'+mName+' · '+now.toLocaleDateString('ar-SA')+'</div>';
+  h+='<div class="grid">';
+  h+='<div class="sc"><div class="sl">مدخول</div><div class="sv" style="color:#16a34a">'+fmt(inc)+'</div></div>';
+  h+='<div class="sc"><div class="sl">مصاريف</div><div class="sv" style="color:#dc2626">'+fmt(exp)+'</div></div>';
+  h+='<div class="sc"><div class="sl">صافي</div><div class="sv" style="color:'+(net>=0?'#16a34a':'#dc2626')+'">'+fmt(net)+'</div></div>';
+  h+='<div class="sc"><div class="sl">الميزانية</div><div class="sv">'+fmt(budget)+'</div></div>';
+  h+='<div class="sc"><div class="sl">نسبة الإنفاق</div><div class="sv" style="color:#d97706">'+(budget>0?Math.round((exp/budget)*100):0)+'%</div></div>';
+  h+='<div class="sc"><div class="sl">نسبة التوفير</div><div class="sv" style="color:#16a34a">'+(inc>0?Math.round((Math.max(net,0)/inc)*100):0)+'%</div></div></div>';
+  h+='<div class="st">توزيع المصاريف</div>';
+  h+='<table><thead><tr><th>الفئة</th><th>المبلغ</th><th>النسبة</th></tr></thead><tbody>';
+  catRows.forEach(function(r){h+='<tr><td>'+r.icon+' '+r.cat+'</td><td>'+fmt(r.total)+'</td><td>'+(exp>0?Math.round((r.total/exp)*100):0)+'%</td></tr>';});
+  h+='</tbody></table>';
+  h+='<div class="st">سجل العمليات - '+mName+'</div>';
+  h+='<table><thead><tr><th>التاريخ</th><th>النوع</th><th>الفئة</th><th>المبلغ</th><th>ملاحظة</th></tr></thead><tbody>';
+  mTxs.forEach(function(t){h+='<tr><td>'+t.date+'</td><td style="color:'+(t.type==='income'?'#16a34a':'#dc2626')+'">'+(t.type==='income'?'مدخول':'مصروف')+'</td><td>'+(CAT_ICONS[t.category]||'')+' '+t.category+'</td><td style="font-weight:700">'+(t.type==='income'?'+':'-')+fmt(t.amount)+'</td><td>'+(t.note||'—')+'</td></tr>';});
+  h+='</tbody></table>';
+  h+='<div style="margin-top:32px;color:#94a3b8;font-size:11px;text-align:center">مالي PRO · '+now.toLocaleString('ar-SA')+'</div>';
+  h+='</body></html>';
+  win.document.write(h); win.document.close();
+}
+
+// ─── PATCH SETTINGS ─────────────────────
+var __origSettings = renderSettings;
+renderSettings = function(){
+  var base = __origSettings();
+  var tools = '<div class="card"><div class="sec-title"><h3>🛠️ أدوات مالية متقدمة</h3></div>'+
+    '<div style="display:flex;flex-direction:column;gap:8px">';
+  var toolItems = [
+    {s:'yearcompare',i:'📊',l:'مقارنة سنة بسنة',   d:'تحليل الإنفاق عبر السنوات'},
+    {s:'loans',      i:'🏦',l:'حاسبة القروض',      d:'أقساط شهرية وجدول السداد'},
+    {s:'investments',i:'📈',l:'محفظة الاستثمارات', d:'أسهم وعملات رقمية وصناديق'},
+    {s:'travel',     i:'✈️',l:'ميزانية السفر',      d:'تتبع مصاريف الرحلات'},
+    {s:'shared',     i:'👫',l:'الحساب المشترك',    d:'تقسيم المصاريف مع شريك'},
+    {s:'zakat',      i:'🕌',l:'الزكاة والضرائب',   d:'حاسبة الزكاة وتقدير الضريبة'},
+  ];
+  toolItems.forEach(function(item){
+    tools += '<button onclick="nav(' + "'" + item.s + "'" + ')" style="display:flex;align-items:center;gap:12px;background:var(--subtle);border:1.5px solid var(--border);border-radius:14px;padding:12px 14px;cursor:pointer;font-family:inherit;width:100%;text-align:right">';
+    tools += '<span style="font-size:24px;flex-shrink:0">' + item.i + '</span>';
+    tools += '<div style="flex:1"><div style="color:var(--text);font-size:14px;font-weight:700">' + item.l + '</div>';
+    tools += '<div style="color:var(--muted);font-size:11px">' + item.d + '</div></div>';
+    tools += '<span style="color:var(--muted);font-size:14px">←</span></button>';
+  });
+  tools+='</div></div>';
+  tools+='<div class="card"><div class="sec-title"><h3>📄 تصدير PDF</h3></div>';
+  tools+='<button onclick="generateReport()" style="width:100%;background:linear-gradient(135deg,#0f4c35,#16a34a);border:none;border-radius:14px;padding:14px;font-size:15px;font-weight:700;cursor:pointer;font-family:inherit;color:#fff;margin-bottom:8px">📊 تقرير شهري PDF</button>';
+  tools+='<p style="color:var(--muted);font-size:11px;text-align:center;margin:0">جاهز للطباعة أو الحفظ</p></div>';
+  return base.replace('<div class="card"><div class="sec-title"><h3>⚠️ إعادة الضبط</h3></div>', tools+'<div class="card"><div class="sec-title"><h3>⚠️ إعادة الضبط</h3></div>');
+};
+
+</script>
+</body>
+</html>
